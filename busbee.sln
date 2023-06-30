@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "busbee", "busbee\busbee.csproj", "{F8C6A216-0C2D-44E2-9072-A2F7D42A2ECD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8C6A216-0C2D-44E2-9072-A2F7D42A2ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C6A216-0C2D-44E2-9072-A2F7D42A2ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C6A216-0C2D-44E2-9072-A2F7D42A2ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C6A216-0C2D-44E2-9072-A2F7D42A2ECD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB4B4053-50B4-4C53-BDE9-A18780CE9A8F}
+	EndGlobalSection
+EndGlobal
