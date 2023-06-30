@@ -63,7 +63,7 @@
           <h1>Hop on, bee in control</h1>
           <h2>We are a team of talented developers bringing the control of bus schedule times to you.</h2>
           <div class="d-flex">
-            <asp:Button ID="btnUserSignUp" runat="server" Text="Sign Up" BorderColor="White" BorderStyle="None" BackColor="#8BD8BC" OnClick="btnUserSignUp_Click" Height="43px" Width="146px" />
+            <asp:Button ID="btnUserSignUp" runat="server" Text="Sign Up" BorderColor="White" BorderStyle="None" BackColor="#8BD8BC" OnClick="btnUserSignUp_Click" Height="43px" Width="146px" Font-Bold="True" Font-Names="&quot;Raleway&quot;,sans serif" Font-Size="Medium" Font-Strikeout="False" ForeColor="#6A7489" />
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 bus-img">
