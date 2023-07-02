@@ -458,11 +458,12 @@
                 <textarea class="form-control" name="message" rows="7" placeholder="Message" required style="background-color: #e0ebeb; color: black; border: #222831; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                <div class="loading text-center">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message text-center">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" style="background-color: #008374; color: white; padding: 15px 25px; border: none; border-radius: 12px; display: block; margin: 0 auto; transition: all 150ms ease-in-out;" onmouseover="this.style.backgroundColor='#0b8457';" onmouseout="this.style.backgroundColor='#008374';">Send Message</button>
+</div>
             </form>
           </div><!-- End Contact Form -->
 
