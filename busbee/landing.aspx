@@ -420,7 +420,7 @@
                 <i class="bi bi-phone flex-shrink-0"></i>
                 <div>
                   <h4>Call:</h4>
-                  <p>01 833 5918</p>
+                  <p>011 833 5918</p>
                 </div>
               </div><!-- End Info Item -->
 
