@@ -440,18 +440,22 @@
               <div class="col-lg-8">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <!--name-->
+                  <div class='col-md-6 form-group mt-3 mt-md-0'>
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></div>
+                
+                  <!--email-->
+                  <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
                 </div>
               </div>
+
+                <!--subject-->
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="7" placeholder="Message" required style="background-color: #e0ebeb; color: black; border: #222831; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
