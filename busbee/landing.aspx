@@ -392,7 +392,7 @@
 
         <div class="section-header">
           <h2>Contact</h2>
-          <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
+          <p><span style="color: rgb(68, 68, 68); font-family: &quot;Roboto Condensed&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">GET RELATED QUESTIONS ANSWERED</span></p>
         </div>
 
         <div class="row gx-lg-0 gy-4">
@@ -404,7 +404,7 @@
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>Transportation House, No 1Raikes Road, Braamfontein, 2001</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -412,7 +412,7 @@
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>Customer.serv@busbee.joburg.org.za</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -420,13 +420,14 @@
                 <i class="bi bi-phone flex-shrink-0"></i>
                 <div>
                   <h4>Call:</h4>
-                  <p>+1 5589 55488 55</p>
+                  <p>01 833 5918</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex">
                 <i class="bi bi-clock flex-shrink-0"></i>
                 <div>
+                  <h4>Open Hours:                <div>
                   <h4>Open Hours:</h4>
                   <p>Mon-Sat: 11AM - 23PM</p>
                 </div>
