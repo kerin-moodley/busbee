@@ -187,7 +187,7 @@
     <Content Include="js\main.js" />
     <Content Include="js\popper.js" />
     <Content Include="landing.aspx" />
-    <Content Include="SignIn.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -199,12 +199,12 @@
     <Compile Include="landing.aspx.designer.cs">
       <DependentUpon>landing.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SignIn.aspx.cs">
-      <DependentUpon>SignIn.aspx</DependentUpon>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SignIn.aspx.designer.cs">
-      <DependentUpon>SignIn.aspx</DependentUpon>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>

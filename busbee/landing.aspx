@@ -54,7 +54,7 @@
           <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="SignIn.aspx">Login</a></li>
+          <li><a href="login.aspx">Login</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -400,7 +400,6 @@
 
         <div class="section-header">
           <h2>Contact</h2>
-          <p><span style="color: rgb(68, 68, 68); font-family: &quot;Roboto Condensed&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">GET RELATED QUESTIONS ANSWERED</span></p>
         </div>
 
         <div class="row gx-lg-0 gy-4">
@@ -446,34 +445,30 @@
 
           
               <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <!--name-->
                   <div class='col-md-6 form-group mt-3 mt-md-0'>
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></div>
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></div>
                 
                   <!--email-->
                   <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
                 </div>
               </div>
 
                 <!--subject-->
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="7" placeholder="Message" required style="background-color: #e0ebeb; color: black; border: #222831; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></textarea>
+                <textarea class="form-control" name="message" rows="7" placeholder="Message" style="background-color: #e0ebeb; color: black; border: #222831; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></textarea>
               </div>
               <div class="my-3">
-                <div class="loading text-center">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message text-center">Your message has been sent. Thank you!</div>
-              </div>
               <div class="text-center"><button type="submit" style="background-color: #008374; color: white; padding: 15px 25px; border: none; border-radius: 12px; display: block; margin: 0 auto; transition: all 150ms ease-in-out;" onmouseover="this.style.backgroundColor='#0b8457';" onmouseout="this.style.backgroundColor='#008374';">Send Message</button>
-</div>
-            </form>
-          </div><!-- End Contact Form -->
+            </div>
+          </div>
+
+           <!-- End Contact Form -->
 
 
 
