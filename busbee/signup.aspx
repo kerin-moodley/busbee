@@ -72,16 +72,13 @@
 
 
     <form id="form1" runat="server">
-        <div>
-
-        </div>
-    </form>
+   
       <div>
         <center>
             <h1>Sign Up</h1>
         </center>
     </div>
-    <form>
+
         <div>
             <center>
                 <label for="Name"><b>Firstname</b></label>
