@@ -52,8 +52,8 @@
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
           <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href="login.aspx">Login</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -218,60 +218,22 @@
     <section id="services" class="services section-bg">
       <div class="container">
 
-        <div class="section-title">
-          <span>Services</span>
+        <div class="section-header">
           <h2>Services</h2>
-          <p>Listed below is all the services we offer: </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Bus Tracking</a></h4>
-              <p>know the location of your bus.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Online Ticket Purchase</a></h4>
-              <p>Buy bus tickets from anywhere using any smart device.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Receive Notifications</a></h4>
-              <p>Receive notifications notifying you how far your bus is from your bus-stop.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Commuters Forum</a></h4>
-              <p>Communicate with other bus commuters and get updates of any disturbances in the bus route.</p>
-            </div>
-          </div>
-
-          
-
         </div>
 
       </div>
       <!-- End Service Item -->
+
+        <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="bi bi-easel"></i>
               </div>
-              <h3>Ledo Markt</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>Bus Tracking</h3>
+              <p>know the location of your bus.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -280,9 +242,8 @@
               <div class="icon">
                 <i class="bi bi-bounding-box-circles"></i>
               </div>
-              <h3>Asperiores Commodit</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>Online Ticket Purchase</h3>
+              <p>Buy bus tickets from anywhere using any smart device.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -291,27 +252,15 @@
               <div class="icon">
                 <i class="bi bi-calendar4-week"></i>
               </div>
-              <h3>Velit Doloremque</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>Receive Notifications</h3>
+              <p>Receive notifications notifying you how far your bus is from your bus-stop.</p>
             </div>
           </div><!-- End Service Item -->
 
         </div>
 
-      </div>
-    </section><!-- End Our Services Section -->
+    </section>
+    <!-- End Our Services Section -->
 
 
 
@@ -445,28 +394,33 @@
 
           
               <div class="col-lg-8">
+
               <div class="row">
                 <!--name-->
                   <div class='col-md-6 form-group mt-3 mt-md-0'>
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></div>
-                
-                  <!--email-->
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
+                    <div class="row">
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                    </div>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
+                  </div>
+
                   <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
-                </div>
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
+                  </div>
+
+              <div class="text-center">
+                  <textarea class="form-control" name="message" rows="7" placeholder="Message" style="background-color: #e0ebeb; color: black; border: #222831; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></textarea>
+                  &nbsp;
+                  &nbsp;
+                  <button type="submit" style="background-color: #008374; color: white; padding: 15px 25px; border: none; border-radius: 12px; display: block; margin: 0 auto; transition: all 150ms ease-in-out;" onmouseover="this.style.backgroundColor='#0b8457';" onmouseout="this.style.backgroundColor='#008374';">Send Message</button>
               </div>
 
-                <!--subject-->
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="7" placeholder="Message" style="background-color: #e0ebeb; color: black; border: #222831; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></textarea>
-              </div>
-              <div class="my-3">
-              <div class="text-center"><button type="submit" style="background-color: #008374; color: white; padding: 15px 25px; border: none; border-radius: 12px; display: block; margin: 0 auto; transition: all 150ms ease-in-out;" onmouseover="this.style.backgroundColor='#0b8457';" onmouseout="this.style.backgroundColor='#008374';">Send Message</button>
-            </div>
-          </div>
+              </div> 
+
+              </div> 
 
            <!-- End Contact Form -->
 
@@ -484,7 +438,7 @@
 
 
 
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
 

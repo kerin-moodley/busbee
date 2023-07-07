@@ -51,12 +51,8 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="blog.html">Login</a></li>
+          <li><a href="landing.aspx">Back to Home</a></li>
+          <li><a href="login.aspx">Login</a></li>
         </ul>
       </nav><!-- .navbar -->
 
