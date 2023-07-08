@@ -38,6 +38,29 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+    
+    <!--Signup --->
+     <!-- LINEARICONS -->
+    <link rel="stylesheet" href="SignUpcss/fonts/linearicons/style.css">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="SignUpcss/css/style1.css">
+    <script>
+        function togglePasswordVisibility(inputId, iconId) {
+            var passwordInput = document.getElementById(inputId);
+            var eyeIcon = document.getElementById(iconId);
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                eyeIcon.classList.remove("lnr-eye");
+                eyeIcon.classList.add("lnr-eye-crossed");
+            } else {
+                passwordInput.type = "password";
+                eyeIcon.classList.remove("lnr-eye-crossed");
+                eyeIcon.classList.add("lnr-eye");
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -66,82 +89,60 @@
     </div>
   </header><!-- End Header -->
   <!-- End Header -->
-
-
-
-
-
-    <form id="form1" runat="server">
-        <div>
-
+    <!-- SIGNUP FORM-->
+     <div class="wrapper">
+    <div class="inner">
+       
+      <form action="">
+        <h3>SignUp</h3>
+        <div class="form-holder">
+          <span class="lnr lnr-user"></span>
+          <input type="text" class="form-control" placeholder="Firstname">
         </div>
-    </form>
-      <div>
-        <center>
-            <h1>Sign Up</h1>
-        </center>
+        <div class="form-holder">
+          <span class="lnr lnr-user"></span>
+          <input type="text" class="form-control" placeholder="Surname">
+        </div>
+        <div class="form-holder">
+          <span class="lnr lnr-user"></span>
+          <input type="text" class="form-control" placeholder="Username">
+        </div>
+        <div class="form-holder">
+          <span class="lnr lnr-license"></span>
+          <input type="text" class="form-control" placeholder="ID Number">
+        </div>
+        <div class="form-holder">
+          <span class="lnr lnr-phone-handset"></span>
+          <input type="text" class="form-control" placeholder="Phone Number">
+        </div>
+        <div class="form-holder">
+          <span class="lnr lnr-envelope"></span>
+          <input type="text" class="form-control" placeholder="E-Mail">
+        </div>
+        <div class="form-holder">
+          <span class="lnr lnr-lock"></span>
+          <input type="password" id="passwordInput" class="form-control" placeholder="Password">
+          <span class="lnr lnr-eye" id="passwordEye" style="margin-left: 300px; cursor: pointer;" onclick="togglePasswordVisibility('passwordInput', 'passwordEye')"></span>
+        </div>
+        <div class="form-holder">
+          <span class="lnr lnr-lock"></span>
+          <input type="password" id="confirmPasswordInput" class="form-control" placeholder="Confirm Password">
+          <span class="lnr lnr-eye" id="confirmPasswordEye" style="margin-left: 300px; cursor: pointer;" onclick="togglePasswordVisibility('confirmPasswordInput', 'confirmPasswordEye')"></span>
+        </div>
+        <div>
+          <center>
+             
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            <div class="clearfix">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </center>
+        </div>
+      </form>
+      <img src="SignUpcss/images/BUSSTOP1.png" alt="" class="image-1">
     </div>
-    <form>
-        <div>
-            <center>
-                <label for="Name"><b>Firstname</b></label>
-                <input id="User_Name" type="text" placeholder="Enter Name" />
-            </center>
-        </div>
-        <div>
-            <center>
-                <label for="Surname"><b>Surname</b></label>
-                <input id="User_Surname" type="text" placeholder="Enter Surname" />
-            </center>
-        </div>
-        <div>
-            <center>
-                <label for="User_Username"><b>Username</b></label>
-                <input id="User_Username" type="text" placeholder="Enter Username" />
-            </center>
-        </div>
-        <div>
-            <center>
-                <label for="ID"><b>ID Number</b></label>
-                <input id="User_IDNum" type="text" placeholder="Enter ID Number" />
-            </center>
-        </div>
-        <div>
-            <center>
-                <label for="Pass"><b>Password</b></label>
-                <input id="Password1" type="password" placeholder="Password" name="psw-repeat" required />
-            </center>
-        </div>
-        <div>
-            <center>
-                <label for="Pass-repeat"><b>Repeat Password</b></label>
-                <input id="Password2" type="password" placeholder="Repeat Password" name="psw-repeat" required />
-            </center>
-        </div>
-        <div>
-            <center>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                </label>
-            </center>
-        </div>
-        <div>
-            <center>
-                <div>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</div>
-
-                <div class="clearfix">
-                    <button type="button" class="cancelbtn">Cancel</button>
-                    <button type="submit" class="signupbtn">Sign Up</button>
-                </div>
-            </center>
-        </div>
-    </form>
-
-
-
-
-
-
+  </div>
 
 </body>
 </html>

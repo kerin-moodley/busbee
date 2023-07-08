@@ -189,6 +189,12 @@
     <Content Include="landing.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="signup.aspx" />
+    <Content Include="SignUpcss\css\style.css" />
+    <Content Include="SignUpcss\fonts\linearicons\fonts\Linearicons-Free.svg" />
+    <Content Include="SignUpcss\fonts\linearicons\Read Me.txt" />
+    <Content Include="SignUpcss\fonts\linearicons\style.css" />
+    <Content Include="SignUpcss\images\image-1.png" />
+    <Content Include="SignUpcss\images\image-2.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -344,6 +350,16 @@
     <Content Include="scss\bootstrap\_utilities.scss" />
     <Content Include="scss\bootstrap\_variables.scss" />
     <Content Include="scss\style.scss" />
+    <Content Include="SignUpcss\css\style.css.map" />
+    <Content Include="SignUpcss\css\style.scss" />
+    <Content Include="SignUpcss\fonts\linearicons\fonts\Linearicons-Free.eot" />
+    <Content Include="SignUpcss\fonts\linearicons\fonts\Linearicons-Free.ttf" />
+    <Content Include="SignUpcss\fonts\linearicons\fonts\Linearicons-Free.woff" />
+    <Content Include="SignUpcss\fonts\linearicons\fonts\Linearicons-Free.woff2" />
+    <Content Include="SignUpcss\fonts\linearicons\selection.json" />
+    <Content Include="SignUpcss\fonts\muli\Muli-Bold.ttf" />
+    <Content Include="SignUpcss\fonts\muli\Muli-Regular.ttf" />
+    <Content Include="SignUpcss\fonts\muli\Muli-SemiBold.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -351,6 +367,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
