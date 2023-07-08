@@ -17,7 +17,7 @@
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" >
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -52,9 +52,9 @@
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="SignIn.aspx">Login</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="login.aspx">Login</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -214,56 +214,26 @@
     </section><!-- End Stats Counter Section -->
 
 
-
-
-
-
-
-
-
-
-
     <!-- ======= Our Services Section ======= -->
-    <section id="services" class="services sections-bg">
-      <div class="container" data-aos="fade-up">
+    <section id="services" class="services section-bg">
+      <div class="container">
 
         <div class="section-header">
-          <h2>Our Services</h2>
-          <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
+          <h2>Services</h2>
         </div>
 
-        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+      </div>
+      <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <h3>Nesciunt Mete</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <h3>Eosle Commodi</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
+        <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="bi bi-easel"></i>
               </div>
-              <h3>Ledo Markt</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>Bus Tracking</h3>
+              <p>know the location of your bus.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -272,9 +242,8 @@
               <div class="icon">
                 <i class="bi bi-bounding-box-circles"></i>
               </div>
-              <h3>Asperiores Commodit</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>Online Ticket Purchase</h3>
+              <p>Buy bus tickets from anywhere using any smart device.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -283,27 +252,15 @@
               <div class="icon">
                 <i class="bi bi-calendar4-week"></i>
               </div>
-              <h3>Velit Doloremque</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>Receive Notifications</h3>
+              <p>Receive notifications notifying you how far your bus is from your bus-stop.</p>
             </div>
           </div><!-- End Service Item -->
 
         </div>
 
-      </div>
-    </section><!-- End Our Services Section -->
+    </section>
+    <!-- End Our Services Section -->
 
 
 
@@ -392,7 +349,6 @@
 
         <div class="section-header">
           <h2>Contact</h2>
-          <p><span style="color: rgb(68, 68, 68); font-family: &quot;Roboto Condensed&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">GET RELATED QUESTIONS ANSWERED</span></p>
         </div>
 
         <div class="row gx-lg-0 gy-4">
@@ -438,34 +394,35 @@
 
           
               <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
               <div class="row">
                 <!--name-->
                   <div class='col-md-6 form-group mt-3 mt-md-0'>
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></div>
-                
-                  <!--email-->
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
+                    <div class="row">
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                    </div>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
+                  </div>
+
                   <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
-                </div>
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
+                  </div>
+
+              <div class="text-center">
+                  <textarea class="form-control" name="message" rows="7" placeholder="Message" style="background-color: #e0ebeb; color: black; border: #222831; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></textarea>
+                  &nbsp;
+                  &nbsp;
+                  <button type="submit" style="background-color: #008374; color: white; padding: 15px 25px; border: none; border-radius: 12px; display: block; margin: 0 auto; transition: all 150ms ease-in-out;" onmouseover="this.style.backgroundColor='#0b8457';" onmouseout="this.style.backgroundColor='#008374';">Send Message</button>
               </div>
 
-                <!--subject-->
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="7" placeholder="Message" required style="background-color: #e0ebeb; color: black; border: #222831; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading text-center">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message text-center">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit" style="background-color: #008374; color: white; padding: 15px 25px; border: none; border-radius: 12px; display: block; margin: 0 auto; transition: all 150ms ease-in-out;" onmouseover="this.style.backgroundColor='#0b8457';" onmouseout="this.style.backgroundColor='#008374';">Send Message</button>
-</div>
-            </form>
-          </div><!-- End Contact Form -->
+              </div> 
+
+              </div> 
+
+           <!-- End Contact Form -->
 
 
 
@@ -481,7 +438,7 @@
 
 
 
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
 
