@@ -85,7 +85,7 @@
     </div>
   </header><!-- End Header -->
   <!-- End Header -->
-<<<<<<< HEAD
+
     <!-- SIGNUP FORM-->
      <div class="wrapper">
     <div class="inner">
@@ -107,6 +107,10 @@
         <div class="form-holder">
           <span class="lnr lnr-license"></span>
           <input type="text" class="form-control" placeholder="ID Number">
+        </div>
+            <div class="form-holder">
+          <span class="lnr lnr-license"></span>
+          <input type="text" class="form-control" placeholder="Passport Number">
         </div>
         <div class="form-holder">
           <span class="lnr lnr-phone-handset"></span>
@@ -140,81 +144,7 @@
       <img src="SignUpcss/images/BUSSTOP1.png" alt="" class="image-1">
     </div>
   </div>
-=======
 
-
-
-
-
-    <form id="form1" runat="server">
-   
-      <div>
-        <center>
-            <h1>Sign Up</h1>
-        </center>
-    </div>
-
-        <div>
-            <center>
-                <label for="Name"><b>Firstname</b></label>
-                <input id="User_Name" type="text" placeholder="Enter Name" />
-            </center>
-        </div>
-        <div>
-            <center>
-                <label for="Surname"><b>Surname</b></label>
-                <input id="User_Surname" type="text" placeholder="Enter Surname" />
-            </center>
-        </div>
-        <div>
-            <center>
-                <label for="User_Username"><b>Username</b></label>
-                <input id="User_Username" type="text" placeholder="Enter Username" />
-            </center>
-        </div>
-        <div>
-            <center>
-                <label for="ID"><b>ID Number</b></label>
-                <input id="User_IDNum" type="text" placeholder="Enter ID Number" />
-            </center>
-        </div>
-        <div>
-            <center>
-                <label for="Pass"><b>Password</b></label>
-                <input id="Password1" type="password" placeholder="Password" name="psw-repeat" required />
-            </center>
-        </div>
-        <div>
-            <center>
-                <label for="Pass-repeat"><b>Repeat Password</b></label>
-                <input id="Password2" type="password" placeholder="Repeat Password" name="psw-repeat" required />
-            </center>
-        </div>
-        <div>
-            <center>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                </label>
-            </center>
-        </div>
-        <div>
-            <center>
-                <div>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</div>
-
-                <div class="clearfix">
-                    <button type="button" class="cancelbtn">Cancel</button>
-                    <button type="submit" class="signupbtn">Sign Up</button>
-                </div>
-            </center>
-        </div>
-    </form>
-
-
-
-
-
-
->>>>>>> 8997b4e092e3470068b9d64de818201a9c865bae
 
 </body>
 </html>
