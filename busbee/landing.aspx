@@ -11,10 +11,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" >
@@ -29,15 +25,12 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Impact
-  * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
+
+
+
+
+
 
 <body>
 
@@ -56,73 +49,46 @@
           <li><a href="#contact">Contact</a></li>
           <li><a href="login.aspx">Login</a></li>
         </ul>
-      </nav><!-- .navbar -->
+      </nav>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
     </div>
-  </header><!-- End Header -->
+  </header>
   <!-- End Header -->
+
+
+
+
+
+
+
+
+
+
 
     <form id="form1" runat="server">
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero">
-    <div class="container position-relative">
-      <div class="row gy-5" data-aos="fade-in">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-          <h2>Welcome to <span>busbee</span></h2>
-            <p>Hop on and bee in control!</p>
-            <p>We are a team of talented developers bringing the control of bus schedule times to you.</p>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a class="btn-get-started"> <asp:Button ID="btnUserSignUp" runat="server" Text="Sign Up" BackColor="#1A9082" BorderStyle="None" ForeColor="White" Height="39px" OnClick="btnUserSignUp_Click" Width="132px" /> </a>
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+    <!-- ======= Hero Section ======= -->
+      <section id="hero" class="hero">
+        <div class="container position-relative">
+          <div class="row gy-5" data-aos="fade-in">
+            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+              <h2>Welcome to <span>busbee</span></h2>
+                <p>Hop on and bee in control!</p>
+                <p>Bringing the control of bus schedule times to you.</p>
+              <div class="d-flex justify-content-center justify-content-lg-start">
+                <a class="btn-get-started"> <asp:Button ID="btnUserSignUp" runat="server" Text="Sign Up" BackColor="#1A9082" BorderStyle="None" ForeColor="White" Height="39px" Width="132px" OnClick="btnUserSignUp_Click" /> </a>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2" style="text-align:center">
+              <img src="assets/img/bus.png" style="width:70%;" alt="" data-aos="zoom-out" data-aos-delay="100">
+            </div>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2">
-          <img src="assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
-        </div>
-      </div>
-    </div>
-
-    <div class="icon-boxes position-relative">
-      <div class="container position-relative">
-        <div class="row gy-4 mt-5">
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-easel"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-            </div>
-          </div><!--End Icon Box -->
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-gem"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Sed ut perspiciatis</a></h4>
-            </div>
-          </div><!--End Icon Box -->
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-geo-alt"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Magni Dolores</a></h4>
-            </div>
-          </div><!--End Icon Box -->
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-command"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Nemo Enim</a></h4>
-            </div>
-          </div><!--End Icon Box -->
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section -->
+      </section>
+    <!-- End Hero Section -->
 
 
 
@@ -135,35 +101,36 @@
 
         <div class="section-header">
           <h2>About Us</h2>
-          <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
+          <p>We are a team of developers bringing the ease of bus travel to the people. 
+             We recognized a way for people to buy bus tickets and track their bus whereabouts without having to go to the bus station or waiting long hours.</p>
         </div>
 
         <div class="row gy-4">
           <div class="col-lg-6">
-            <h3>Voluptatem dignissimos provident quasi corporis</h3>
-            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
-            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
-          </div>
+            <img src="assets/img/bus-1.jpg" class="img-fluid rounded-4 mb-4" alt="">
+            <p>Our mission is to promote accessible, reliable and quick bus services to allow bus commmuters to travel with ease and Metro Bus to better manage its operations. </p>
+            </div>
           <div class="col-lg-6">
             <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Our Core Values:
               </p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Honesty </li>
+                <li><i class="bi bi-check-circle-fill"></i> Accountability </li>
+                <li><i class="bi bi-check-circle-fill"></i> People-focused </li>
               </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                We aim to be a people-centered, perfomance-driven providers of an efficient transport service 
+                within integrated public transport networks.
               </p>
 
               <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+                <video width="320" height="240" controls> 
+                    <source src="assets/MetroBus-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
               </div>
             </div>
           </div>
@@ -192,18 +159,18 @@
           <div class="col-lg-6">
 
             <div class="stats-item d-flex align-items-center">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> consequuntur quae diredo para mesta</p>
+              <span data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>percent</strong> of South Africa’s population is totally dependent on public transport.</p>
             </div><!-- End Stats Item -->
 
             <div class="stats-item d-flex align-items-center">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+              <span data-purecounter-start="0" data-purecounter-end="90000" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong></strong> passengers are transported daily by Metro Bus.</p>
             </div><!-- End Stats Item -->
 
             <div class="stats-item d-flex align-items-center">
-              <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Second largest</strong> municipal bus operator in South Africa is Metro Bus.</p>
             </div><!-- End Stats Item -->
 
           </div>
@@ -212,6 +179,16 @@
 
       </div>
     </section><!-- End Stats Counter Section -->
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- ======= Our Services Section ======= -->
@@ -269,77 +246,102 @@
 
 
 
+
+
     <!-- ======= Our Team Section ======= -->
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
           <h2>Our Team</h2>
-          <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
+          <p>Meet our team of talented and creative developers who developed the system.</p>
         </div>
 
         <div class="row gy-4">
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <h4>Walter White</h4>
-              <span>Web Development</span>
+              <img src="assets/img/team/1.jpg" class="img-fluid" alt="">
+              <h4>Kerin Moodley</h4>
+              <span>Project Manager and Full Stack Developer</span>
               <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <h4>Sarah Jhinson</h4>
-              <span>Marketing</span>
+              <img src="assets/img/team/2.png" class="img-fluid" alt="">
+              <h4>Chantal Mashele</h4>
+              <span>Database Administrator</span>
               <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <h4>William Anderson</h4>
-              <span>Content</span>
+              <img src="assets/img/team/3.jpg" class="img-fluid" alt="">
+              <h4>Kimberley Isaac</h4>
+              <span>Front-end Developer</span>
               <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
+              <img src="assets/img/team/2.png" class="img-fluid" alt="">
+              <h4>Bajana Ilunga</h4>
+              <span>Front-end Developer</span>
               <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div><!-- End Team Member -->
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <img src="assets/img/team/2.png" class="img-fluid" alt="">
+              <h4>Kelebogile Nethengwe</h4>
+              <span>Full-Stack Developer</span>
+              <div class="social">
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <img src="assets/img/team/2.png" class="img-fluid" alt="">
+              <h4>Nikiwe Mbhiza</h4>
+              <span>Researcher and Front-end Developer</span>
+              <div class="social">
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <img src="assets/img/team/2.png" class="img-fluid" alt="">
+              <h4>Tshinovheya Ramulongo</h4>
+              <span>Database Administrator</span>
+              <div class="social">
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
 
         </div>
 
       </div>
     </section><!-- End Our Team Section -->
+
+
+
+
+
+
+
+
 
 
 
@@ -360,7 +362,7 @@
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h4>Location:</h4>
-                  <p>Transportation House, No 1Raikes Road, Braamfontein, 2001</p>
+                  <p>Transportation House, No 1 Raikes Road, Braamfontein, 2001</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -396,58 +398,42 @@
               <div class="col-lg-8">
 
               <div class="row">
-                <!--name-->
+
                   <div class='col-md-6 form-group mt-3 mt-md-0'>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
-                    <div class="row">
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                    </div>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
+                      <asp:TextBox ID="txtEmail" TextMode="Email" class="form-control" placeholder="Your Email" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;" runat="server" Height="48px" Width="324px"></asp:TextBox>
+                      &nbsp;
+                      &nbsp; 
+                      <asp:TextBox ID="txtSubject" class="form-control" placeholder="Subject" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;" runat="server" Height="48px" Width="324px"></asp:TextBox>
+                      &nbsp;
+                      &nbsp;         
+                      <asp:TextBox ID="txtMessage" class="form-control" rows="7" placeholder="Message" style="background-color: #e0ebeb; color: black; border: #222831; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;" runat="server" Height="167px" Width="678px"></asp:TextBox>
+  
+                      &nbsp;
+                      &nbsp;
+                      <asp:Button ID="btnSend" runat="server" style="background-color: #008374; color: white; padding: 15px 25px; border: none; border-radius: 12px; display: block; margin-left: 15px; transition: all 150ms ease-in-out;" onmouseover="this.style.backgroundColor='#0b8457';" onmouseout="this.style.backgroundColor='#008374';" Text="Send" Width="190px" OnClick="btnSend_Click" />
+                     
                   </div>
 
-                  <div class="col-md-6 form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" style="background-color: #e0ebeb; color: #222831; border: none; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;">
-                  </div>
+              </div> 
 
-              <div class="text-center">
-                  <textarea class="form-control" name="message" rows="7" placeholder="Message" style="background-color: #e0ebeb; color: black; border: #222831; box-shadow: 2px 2px 5px lightgrey; margin-left: 15px;"></textarea>
-                  &nbsp;
-                  &nbsp;
-                  <button type="submit" style="background-color: #008374; color: white; padding: 15px 25px; border: none; border-radius: 12px; display: block; margin: 0 auto; transition: all 150ms ease-in-out;" onmouseover="this.style.backgroundColor='#0b8457';" onmouseout="this.style.backgroundColor='#008374';">Send Message</button>
               </div>
-
-              </div> 
-
-              </div> 
-
-           <!-- End Contact Form -->
-
-
-
-            
-
-
-
-
-
-
-
-
-
-
 
           </div>
 
         </div>
 
     
-    </section><!-- End Contact Section -->
+    </section>
+    <!-- End Contact Section -->
 
-  </main><!-- End #main -->
+  </main>
 
     </form>
+
+
+
+
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -459,34 +445,12 @@
             <span>Impact</span>
           </a>
           <p>In pursuit of the Service Delivery Agreement and the strategic guidepost set by the City, Metrobus vision is To be a people centered,performance driven provider of an efficient conventional bus service within the Integrated Public Transport Network, which will be achieved through our</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
+      
+          &copy; Copyright <strong><span>BusBee</span></strong>. All Rights Reserved
+        
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
@@ -501,19 +465,6 @@
 
         </div>
 
-      </div>
-    </div>
-
-    <div class="container mt-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 
@@ -539,3 +490,6 @@
 </body>
 
 </html>
+
+
+

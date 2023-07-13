@@ -30,21 +30,13 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Impact
-  * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
     
     <!--Signup --->
      <!-- LINEARICONS -->
-    <link rel="stylesheet" href="SignUpcss/fonts/linearicons/style.css">
+    <link rel="stylesheet" href="signupcss/fonts/linearicons/style.css">
 
     <!-- STYLE CSS -->
-    <link rel="stylesheet" href="SignUpcss/css/style1.css">
+    <link rel="stylesheet" href="signupcss/css/style1.css">
     <script>
         function togglePasswordVisibility(inputId, iconId) {
             var passwordInput = document.getElementById(inputId);
@@ -90,53 +82,51 @@
      <div class="wrapper">
     <div class="inner">
        
-      <form action="">
+      <form id="frmSignUp" runat="server">
         <h3>SignUp</h3>
         <div class="form-holder">
           <span class="lnr lnr-user"></span>
-          <input type="text" class="form-control" placeholder="Firstname">
+          <asp:TextBox ID="txtFirstName" class="form-control" placeholder="Firstname" runat="server"></asp:TextBox>
         </div>
         <div class="form-holder">
           <span class="lnr lnr-user"></span>
-          <input type="text" class="form-control" placeholder="Surname">
+          <asp:TextBox ID="txtLastName" class="form-control" placeholder="Last Name" runat="server"></asp:TextBox>
         </div>
         <div class="form-holder">
           <span class="lnr lnr-user"></span>
-          <input type="text" class="form-control" placeholder="Username">
+          <asp:TextBox ID="txtUsername" class="form-control" placeholder="Username" runat="server"></asp:TextBox>
         </div>
         <div class="form-holder">
           <span class="lnr lnr-license"></span>
-          <input type="text" class="form-control" placeholder="ID Number">
+          <asp:TextBox ID="txtIDNum" class="form-control" placeholder="ID Number" runat="server"></asp:TextBox>
         </div>
             <div class="form-holder">
           <span class="lnr lnr-license"></span>
-          <input type="text" class="form-control" placeholder="Passport Number">
+          <asp:TextBox ID="txtPassportNum" class="form-control" placeholder="Passport Number" runat="server"></asp:TextBox>
         </div>
         <div class="form-holder">
           <span class="lnr lnr-phone-handset"></span>
-          <input type="text" class="form-control" placeholder="Phone Number">
+          <asp:TextBox ID="txtPhoneNumber" class="form-control" placeholder="Phone Number" runat="server" TextMode="Phone"></asp:TextBox>
         </div>
         <div class="form-holder">
           <span class="lnr lnr-envelope"></span>
-          <input type="text" class="form-control" placeholder="E-Mail">
+          <asp:TextBox ID="txtEmail" class="form-control" placeholder="E-Mail" runat="server" TextMode="Email"></asp:TextBox>
         </div>
         <div class="form-holder">
           <span class="lnr lnr-lock"></span>
-          <input type="password" id="passwordInput" class="form-control" placeholder="Password">
-          <span class="lnr lnr-eye" id="passwordEye" style="margin-left: 300px; cursor: pointer;" onclick="togglePasswordVisibility('passwordInput', 'passwordEye')"></span>
+          <asp:TextBox ID="txtPassword" class="form-control" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
         </div>
         <div class="form-holder">
           <span class="lnr lnr-lock"></span>
-          <input type="password" id="confirmPasswordInput" class="form-control" placeholder="Confirm Password">
-          <span class="lnr lnr-eye" id="confirmPasswordEye" style="margin-left: 300px; cursor: pointer;" onclick="togglePasswordVisibility('confirmPasswordInput', 'confirmPasswordEye')"></span>
+          <asp:TextBox ID="txtConfirmPassword" class="form-control" placeholder="Confirm Password" runat="server" TextMode="Password"></asp:TextBox>
         </div>
         <div>
           <center>
              
             <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
             <div class="clearfix">
-              <button type="button" class="cancelbtn">Cancel</button>
-              <button type="submit" class="signupbtn">Sign Up</button>
+              <asp:Button ID="btnCancel" class="cancelbtn" runat="server" Text="Cancel" />
+              <asp:Button ID="btnSignUp" class="signupbtn" runat="server" Text="Sign Up" />
             </div>
           </center>
         </div>
@@ -144,6 +134,44 @@
       <img src="SignUpcss/images/BUSSTOP1.png" alt="" class="image-1">
     </div>
   </div>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>Impact</span>
+          </a>
+          <p>In pursuit of the Service Delivery Agreement and the strategic guidepost set by the City, Metrobus vision is To be a people centered,performance driven provider of an efficient conventional bus service within the Integrated Public Transport Network, which will be achieved through our</p>
+      
+          &copy; Copyright <strong><span>BusBee</span></strong>. All Rights Reserved
+        
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            Transportation House, <br>
+            No 1 Raikes Road,<br>
+            Braamfontein, 2001 <br><br>
+            <strong>Phone:</strong> 011 833 5918<br>
+            <strong>Email:</strong> Customer.serv@busbee.joburg.org.za<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 
 </body>
