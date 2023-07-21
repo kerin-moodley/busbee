@@ -41,6 +41,24 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+		<!--RECAPTCHA-->
+		 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    function togglePasswordVisibility(inputId, iconId) {
+      var passwordInput = document.getElementById(inputId);
+      var eyeIcon = document.getElementById(iconId);
+
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+      } else {
+        passwordInput.type = "password";
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+      }
+    }
+  </script>
 </head>
 
 
@@ -91,12 +109,14 @@
 		      	<h3 class="mb-4 text-center">Have an account?</h3>
 		      	<form action="#" class="signin-form">
 		      		<div class="form-group">
-		      			<input type="text" class="form-control" placeholder="Username" required>
+		      			<input type="text" class="form-control" name="txtUsername" placeholder="Username" required>
 		      		</div>
 	            <div class="form-group">
-	              <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+	              <input id="password-field" type="password" class="form-control" name="txtPassword" placeholder="Password" required>
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
+					  <div class="g-recaptcha" data-sitekey="6Ld9AEInAAAAAIkdpQKiO7RMWtcVg3mBk55ja-DH"></div>
+
 	            <div class="form-group">
 	            	<button type="submit" class="form-control  submit px-3" style="background-color:#31b099">Sign In</button>
 	            </div>
@@ -110,6 +130,7 @@
 								<div class="w-50 text-md-right">
 									<a href="#" style="color: #fff">Forgot Password</a>
 								</div>
+
 	            </div>
 	          </form>
 		      </div>
