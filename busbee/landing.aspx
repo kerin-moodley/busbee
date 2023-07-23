@@ -271,7 +271,7 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="assets/img/team/2.png" class="img-fluid" alt="">
+              <img src="assets/img/team/2.jpg" class="img-fluid" alt="">
               <h4>Chantal Mashele</h4>
               <span>Database Administrator</span>
               <div class="social">
@@ -291,7 +291,7 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
-              <img src="assets/img/team/2.png" class="img-fluid" alt="">
+              <img src="assets/img/team/4.jpg" class="img-fluid" alt="">
               <h4>Bajana Ilunga</h4>
               <span>Front-end Developer</span>
               <div class="social">
@@ -301,7 +301,7 @@
 
         <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
-              <img src="assets/img/team/2.png" class="img-fluid" alt="">
+              <img src="assets/img/team/5.jpg" class="img-fluid" alt="">
               <h4>Kelebogile Nethengwe</h4>
               <span>Full-Stack Developer</span>
               <div class="social">
@@ -311,7 +311,7 @@
 
         <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
-              <img src="assets/img/team/2.png" class="img-fluid" alt="">
+              <img src="assets/img/team/6.jpg" class="img-fluid" alt="">
               <h4>Nikiwe Mbhiza</h4>
               <span>Researcher and Front-end Developer</span>
               <div class="social">
@@ -321,7 +321,7 @@
 
         <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
-              <img src="assets/img/team/2.png" class="img-fluid" alt="">
+              <img src="assets/img/team/7.jpg" class="img-fluid" alt="">
               <h4>Tshinovheya Ramulongo</h4>
               <span>Database Administrator</span>
               <div class="social">

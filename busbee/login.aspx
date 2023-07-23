@@ -73,7 +73,7 @@
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
-		      	<h3 class="mb-4 text-center">Have an account?</h3>
+		      	<h3 class="mb-4 text-center">Login</h3>
 
 
 		      	<form id="frmLogin" runat="server" class="signin-form">
@@ -97,7 +97,7 @@
 				</div>
 
 	            <div class="form-group">
-					<asp:Button ID="btnSignIn" runat="server" Text="Sign In" class="form-control submit px-3" style="background-color:#31b099" />
+					<asp:Button ID="btnSignIn" runat="server" Text="Sign In" class="form-control submit px-3" style="background-color:#31b099" OnClick="btnSignIn_Click" />
 	            </div>
 
 				<div class="form-group">

@@ -98,11 +98,7 @@
         </div>
         <div class="form-holder">
           <span class="lnr lnr-license"></span>
-          <asp:TextBox ID="txtIDNum" class="form-control" placeholder="ID Number" runat="server"></asp:TextBox>
-        </div>
-            <div class="form-holder">
-          <span class="lnr lnr-license"></span>
-          <asp:TextBox ID="txtPassportNum" class="form-control" placeholder="Passport Number" runat="server"></asp:TextBox>
+          <asp:TextBox ID="txtIDNum" class="form-control" placeholder="ID Number/Passport Number" runat="server"></asp:TextBox>
         </div>
         <div class="form-holder">
           <span class="lnr lnr-phone-handset"></span>
@@ -126,7 +122,7 @@
             <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
             <div class="clearfix">
               <asp:Button ID="btnCancel" class="cancelbtn" runat="server" Text="Cancel" />
-              <asp:Button ID="btnSignUp" class="signupbtn" runat="server" Text="Sign Up" />
+              <asp:Button ID="btnSignUp" class="signupbtn" runat="server" Text="Sign Up" OnClick="btnSignUp_Click" />
             </div>
           </center>
         </div>
