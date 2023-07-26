@@ -41,24 +41,6 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-		<!--RECAPTCHA-->
-		 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <script>
-    function togglePasswordVisibility(inputId, iconId) {
-      var passwordInput = document.getElementById(inputId);
-      var eyeIcon = document.getElementById(iconId);
-
-      if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-        eyeIcon.classList.remove("fa-eye");
-        eyeIcon.classList.add("fa-eye-slash");
-      } else {
-        passwordInput.type = "password";
-        eyeIcon.classList.remove("fa-eye-slash");
-        eyeIcon.classList.add("fa-eye");
-      }
-    }
-  </script>
 </head>
 
 
@@ -74,7 +56,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="landing.aspx">Back to Home</a></li>
-          <li><a href="login.aspx">Login</a></li>
+          <li><a href="signup.aspx">Sign Up</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -91,17 +73,9 @@
 
 
 
-
-
-
-
-
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Login </h2>
-				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-4">
@@ -109,17 +83,30 @@
 		      	<h3 class="mb-4 text-center">Have an account?</h3>
 		      	<form action="#" class="signin-form">
 		      		<div class="form-group">
-		      			<input type="text" class="form-control" name="txtUsername" placeholder="Username" required>
+		      			<input type="text" class="form-control" placeholder="Username" required>
 		      		</div>
 	            <div class="form-group">
-	              <input id="password-field" type="password" class="form-control" name="txtPassword" placeholder="Password" required>
+	              <input id="password-field" type="password" class="form-control" placeholder="Password" required>
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
-					  <div class="g-recaptcha" data-sitekey="6Ld9AEInAAAAAIkdpQKiO7RMWtcVg3mBk55ja-DH"></div>
+	            <div class="form-group">
+					<asp:TextBox ID="txtPassword" class="form-control" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
+	            </div>
+
+				<div class="form-group">
+					<p> </p>
+					<p> </p>
+				</div>
 
 	            <div class="form-group">
-	            	<button type="submit" class="form-control  submit px-3" style="background-color:#31b099">Sign In</button>
+					<asp:Button ID="btnSignIn" runat="server" Text="Sign In" class="form-control submit px-3" style="background-color:#31b099" OnClick="btnSignIn_Click" />
 	            </div>
+
+				<div class="form-group">
+					<p> </p>
+					<p> </p>
+				</div>
+
 	            <div class="form-group d-md-flex">
 	            	<div class="w-50">
 		            	<label class="checkbox-wrap checkbox-primary">Remember Me
@@ -130,8 +117,8 @@
 								<div class="w-50 text-md-right">
 									<a href="#" style="color: #fff">Forgot Password</a>
 								</div>
-
 	            </div>
+
 	          </form>
 		      </div>
 				</div>
@@ -139,7 +126,48 @@
 		</div>
 	</section>
 
-	<script src="js/jquery.min.js"></script>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>Impact</span>
+          </a>
+          <p>In pursuit of the Service Delivery Agreement and the strategic guidepost set by the City, Metrobus vision is To be a people centered,performance driven provider of an efficient conventional bus service within the Integrated Public Transport Network, which will be achieved through our</p>
+      
+          &copy; Copyright <strong><span>BusBee</span></strong>. All Rights Reserved
+        
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            Transportation House, <br>
+            No 1 Raikes Road,<br>
+            Braamfontein, 2001 <br><br>
+            <strong>Phone:</strong> 011 833 5918<br>
+            <strong>Email:</strong> Customer.serv@busbee.joburg.org.za<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
+  <script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>

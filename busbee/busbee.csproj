@@ -43,7 +43,94 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=4.1.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailKit.4.1.0\lib\net47\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.3.1.22\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Abstractions.3.1.22\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.3.1.22\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.3.1.22\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.3.1.22\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.3.1.22\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.3.1.22\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.3.1.22\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.22\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.3.1.22\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.3.1.22\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.3.1.22\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.22\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=4.1.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeKit.4.1.0\lib\net47\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.7.1\lib\net461\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Formats.Asn1, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Formats.Asn1.7.0.0\lib\net462\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,71 +154,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\img\bus-1.jpg" />
+    <Content Include="assets\img\bus.png" />
     <Content Include="assets\img\busbeelogo.png" />
     <Content Include="assets\css\main.css" />
-    <Content Include="assets\img\about-2.jpg" />
-    <Content Include="assets\img\about.jpg" />
-    <Content Include="assets\img\apple-touch-icon.png" />
-    <Content Include="assets\img\blog\blog-1.jpg" />
-    <Content Include="assets\img\blog\blog-2.jpg" />
-    <Content Include="assets\img\blog\blog-3.jpg" />
-    <Content Include="assets\img\blog\blog-4.jpg" />
-    <Content Include="assets\img\blog\blog-5.jpg" />
-    <Content Include="assets\img\blog\blog-6.jpg" />
-    <Content Include="assets\img\blog\blog-author-2.jpg" />
-    <Content Include="assets\img\blog\blog-author-3.jpg" />
-    <Content Include="assets\img\blog\blog-author-4.jpg" />
-    <Content Include="assets\img\blog\blog-author-5.jpg" />
-    <Content Include="assets\img\blog\blog-author-6.jpg" />
-    <Content Include="assets\img\blog\blog-author.jpg" />
-    <Content Include="assets\img\blog\blog-inside-post.jpg" />
-    <Content Include="assets\img\blog\blog-recent-1.jpg" />
-    <Content Include="assets\img\blog\blog-recent-2.jpg" />
-    <Content Include="assets\img\blog\blog-recent-3.jpg" />
-    <Content Include="assets\img\blog\blog-recent-4.jpg" />
-    <Content Include="assets\img\blog\blog-recent-5.jpg" />
-    <Content Include="assets\img\blog\comments-1.jpg" />
-    <Content Include="assets\img\blog\comments-2.jpg" />
-    <Content Include="assets\img\blog\comments-3.jpg" />
-    <Content Include="assets\img\blog\comments-4.jpg" />
-    <Content Include="assets\img\blog\comments-5.jpg" />
-    <Content Include="assets\img\blog\comments-6.jpg" />
-    <Content Include="assets\img\breadcrumbs-bg.jpg" />
-    <Content Include="assets\img\clients\client-1.png" />
-    <Content Include="assets\img\clients\client-2.png" />
-    <Content Include="assets\img\clients\client-3.png" />
-    <Content Include="assets\img\clients\client-4.png" />
-    <Content Include="assets\img\clients\client-5.png" />
-    <Content Include="assets\img\clients\client-6.png" />
-    <Content Include="assets\img\clients\client-7.png" />
-    <Content Include="assets\img\clients\client-8.png" />
-    <Content Include="assets\img\cta-bg.jpg" />
-    <Content Include="assets\img\favicon.png" />
     <Content Include="assets\img\hero-bg-abstract.jpg" />
     <Content Include="assets\img\hero-img.svg" />
-    <Content Include="assets\img\portfolio\app-1.jpg" />
-    <Content Include="assets\img\portfolio\app-2.jpg" />
-    <Content Include="assets\img\portfolio\app-3.jpg" />
-    <Content Include="assets\img\portfolio\books-1.jpg" />
-    <Content Include="assets\img\portfolio\books-2.jpg" />
-    <Content Include="assets\img\portfolio\books-3.jpg" />
-    <Content Include="assets\img\portfolio\branding-1.jpg" />
-    <Content Include="assets\img\portfolio\branding-2.jpg" />
-    <Content Include="assets\img\portfolio\branding-3.jpg" />
-    <Content Include="assets\img\portfolio\product-1.jpg" />
-    <Content Include="assets\img\portfolio\product-2.jpg" />
-    <Content Include="assets\img\portfolio\product-3.jpg" />
     <Content Include="assets\img\stats-img.svg" />
-    <Content Include="assets\img\team\team-1.jpg" />
-    <Content Include="assets\img\team\team-2.jpg" />
-    <Content Include="assets\img\team\team-3.jpg" />
-    <Content Include="assets\img\team\team-4.jpg" />
-    <Content Include="assets\img\testimonials\testimonials-1.jpg" />
-    <Content Include="assets\img\testimonials\testimonials-2.jpg" />
-    <Content Include="assets\img\testimonials\testimonials-3.jpg" />
-    <Content Include="assets\img\testimonials\testimonials-4.jpg" />
-    <Content Include="assets\img\testimonials\testimonials-5.jpg" />
+    <Content Include="assets\img\team\1.jpg" />
+    <Content Include="assets\img\team\2.jpg" />
+    <Content Include="assets\img\team\3.jpg" />
+    <Content Include="assets\img\team\4.jpg" />
+    <Content Include="assets\img\team\5.jpg" />
+    <Content Include="assets\img\team\6.jpg" />
+    <Content Include="assets\img\team\7.jpg" />
     <Content Include="assets\js\main.js" />
+    <Content Include="assets\MetroBus-video.mp4" />
     <Content Include="assets\scss\Readme.txt" />
     <Content Include="assets\vendor\aos\aos.cjs.js" />
     <Content Include="assets\vendor\aos\aos.css" />
@@ -173,31 +211,50 @@
     <Content Include="assets\vendor\purecounter\purecounter_vanilla.js" />
     <Content Include="assets\vendor\swiper\swiper-bundle.min.css" />
     <Content Include="assets\vendor\swiper\swiper-bundle.min.js" />
-    <Content Include="css\bootstrap.min.css" />
-    <Content Include="css\bootstrap\mixins\_border-radius.css" />
-    <Content Include="css\bootstrap\mixins\_reset-text.css" />
-    <Content Include="css\bootstrap\mixins\_screen-reader.css" />
-    <Content Include="css\bootstrap\mixins\_text-hide.css" />
-    <Content Include="css\bootstrap\mixins\_visibility.css" />
-    <Content Include="css\bootstrap\utilities\_stretched-link.css" />
-    <Content Include="css\bootstrap\_media.css" />
-    <Content Include="css\style.css" />
-    <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\jquery.min.js" />
-    <Content Include="js\main.js" />
-    <Content Include="js\popper.js" />
+    <Content Include="assets-2\css\bootstrap.min.css" />
+    <Content Include="assets-2\css\bootstrap\mixins\_border-radius.css" />
+    <Content Include="assets-2\css\bootstrap\mixins\_reset-text.css" />
+    <Content Include="assets-2\css\bootstrap\mixins\_screen-reader.css" />
+    <Content Include="assets-2\css\bootstrap\mixins\_text-hide.css" />
+    <Content Include="assets-2\css\bootstrap\mixins\_visibility.css" />
+    <Content Include="assets-2\css\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="assets-2\css\bootstrap\_media.css" />
+    <Content Include="assets-2\css\style.css" />
+    <Content Include="assets-2\js\bootstrap.min.js" />
+    <Content Include="assets-2\js\jquery.min.js" />
+    <Content Include="assets-2\js\main.js" />
+    <Content Include="assets-2\js\popper.js" />
+    <Content Include="dashboard-content\assets\demo\chart-area-demo.js" />
+    <Content Include="dashboard-content\assets\demo\chart-bar-demo.js" />
+    <Content Include="dashboard-content\assets\demo\chart-pie-demo.js" />
+    <Content Include="dashboard-content\assets\demo\datatables-demo.js" />
+    <Content Include="dashboard-content\assets\img\error-404-monochrome.svg" />
+    <Content Include="dashboard-content\css\maps-style.css" />
+    <Content Include="dashboard-content\css\styles.css" />
+    <Content Include="dashboard-content\js\datatables-simple-demo.js" />
+    <Content Include="dashboard-content\js\maps.js" />
+    <Content Include="dashboard-content\js\scripts.js" />
+    <Content Include="dashboard.aspx" />
     <Content Include="landing.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="maps.aspx" />
     <Content Include="signup.aspx" />
-    <Content Include="SignUpcss\css\style.css" />
-    <Content Include="SignUpcss\fonts\linearicons\fonts\Linearicons-Free.svg" />
-    <Content Include="SignUpcss\fonts\linearicons\Read Me.txt" />
-    <Content Include="SignUpcss\fonts\linearicons\style.css" />
-    <Content Include="SignUpcss\images\image-1.png" />
-    <Content Include="SignUpcss\images\image-2.png" />
+    <Content Include="signupcss\css\style.css" />
+    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.svg" />
+    <Content Include="signupcss\fonts\linearicons\Read Me.txt" />
+    <Content Include="signupcss\fonts\linearicons\style.css" />
+    <Content Include="signupcss\images\image-1.png" />
+    <Content Include="signupcss\images\image-2.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="landing.aspx.cs">
       <DependentUpon>landing.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -211,6 +268,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maps.aspx.cs">
+      <DependentUpon>maps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maps.aspx.designer.cs">
+      <DependentUpon>maps.aspx</DependentUpon>
     </Compile>
     <Compile Include="signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
@@ -251,115 +315,114 @@
     <Content Include="assets\vendor\bootstrap\js\bootstrap.min.js.map" />
     <Content Include="assets\vendor\purecounter\purecounter_vanilla.js.map" />
     <Content Include="assets\vendor\swiper\swiper-bundle.min.js.map" />
-    <Content Include="css\.DS_Store" />
-    <Content Include="css\bootstrap\.DS_Store" />
-    <Content Include="css\bootstrap\mixins\.DS_Store" />
-    <Content Include="fonts\.DS_Store" />
-    <Content Include="images\.DS_Store" />
-    <Content Include="js\.DS_Store" />
+    <Content Include="assets-2\css\.DS_Store" />
+    <Content Include="assets-2\css\bootstrap\.DS_Store" />
+    <Content Include="assets-2\css\bootstrap\mixins\.DS_Store" />
+    <Content Include="assets-2\fonts\.DS_Store" />
+    <Content Include="assets-2\js\.DS_Store" />
     <None Include="packages.config" />
-    <Content Include="scss\.DS_Store" />
-    <Content Include="scss\bootstrap\.DS_Store" />
-    <Content Include="scss\bootstrap\bootstrap-grid.scss" />
-    <Content Include="scss\bootstrap\bootstrap-reboot.scss" />
-    <Content Include="scss\bootstrap\bootstrap.scss" />
-    <Content Include="scss\bootstrap\mixins\_alert.scss" />
-    <Content Include="scss\bootstrap\mixins\_background-variant.scss" />
-    <Content Include="scss\bootstrap\mixins\_badge.scss" />
-    <Content Include="scss\bootstrap\mixins\_border-radius.scss" />
-    <Content Include="scss\bootstrap\mixins\_box-shadow.scss" />
-    <Content Include="scss\bootstrap\mixins\_breakpoints.scss" />
-    <Content Include="scss\bootstrap\mixins\_buttons.scss" />
-    <Content Include="scss\bootstrap\mixins\_caret.scss" />
-    <Content Include="scss\bootstrap\mixins\_clearfix.scss" />
-    <Content Include="scss\bootstrap\mixins\_deprecate.scss" />
-    <Content Include="scss\bootstrap\mixins\_float.scss" />
-    <Content Include="scss\bootstrap\mixins\_forms.scss" />
-    <Content Include="scss\bootstrap\mixins\_gradients.scss" />
-    <Content Include="scss\bootstrap\mixins\_grid-framework.scss" />
-    <Content Include="scss\bootstrap\mixins\_grid.scss" />
-    <Content Include="scss\bootstrap\mixins\_hover.scss" />
-    <Content Include="scss\bootstrap\mixins\_image.scss" />
-    <Content Include="scss\bootstrap\mixins\_list-group.scss" />
-    <Content Include="scss\bootstrap\mixins\_lists.scss" />
-    <Content Include="scss\bootstrap\mixins\_nav-divider.scss" />
-    <Content Include="scss\bootstrap\mixins\_pagination.scss" />
-    <Content Include="scss\bootstrap\mixins\_reset-text.scss" />
-    <Content Include="scss\bootstrap\mixins\_resize.scss" />
-    <Content Include="scss\bootstrap\mixins\_screen-reader.scss" />
-    <Content Include="scss\bootstrap\mixins\_size.scss" />
-    <Content Include="scss\bootstrap\mixins\_table-row.scss" />
-    <Content Include="scss\bootstrap\mixins\_text-emphasis.scss" />
-    <Content Include="scss\bootstrap\mixins\_text-hide.scss" />
-    <Content Include="scss\bootstrap\mixins\_text-truncate.scss" />
-    <Content Include="scss\bootstrap\mixins\_transition.scss" />
-    <Content Include="scss\bootstrap\mixins\_visibility.scss" />
-    <Content Include="scss\bootstrap\utilities\_align.scss" />
-    <Content Include="scss\bootstrap\utilities\_background.scss" />
-    <Content Include="scss\bootstrap\utilities\_borders.scss" />
-    <Content Include="scss\bootstrap\utilities\_clearfix.scss" />
-    <Content Include="scss\bootstrap\utilities\_display.scss" />
-    <Content Include="scss\bootstrap\utilities\_embed.scss" />
-    <Content Include="scss\bootstrap\utilities\_flex.scss" />
-    <Content Include="scss\bootstrap\utilities\_float.scss" />
-    <Content Include="scss\bootstrap\utilities\_overflow.scss" />
-    <Content Include="scss\bootstrap\utilities\_position.scss" />
-    <Content Include="scss\bootstrap\utilities\_screenreaders.scss" />
-    <Content Include="scss\bootstrap\utilities\_shadows.scss" />
-    <Content Include="scss\bootstrap\utilities\_sizing.scss" />
-    <Content Include="scss\bootstrap\utilities\_spacing.scss" />
-    <Content Include="scss\bootstrap\utilities\_stretched-link.scss" />
-    <Content Include="scss\bootstrap\utilities\_text.scss" />
-    <Content Include="scss\bootstrap\utilities\_visibility.scss" />
-    <Content Include="scss\bootstrap\vendor\_rfs.scss" />
-    <Content Include="scss\bootstrap\_alert.scss" />
-    <Content Include="scss\bootstrap\_badge.scss" />
-    <Content Include="scss\bootstrap\_breadcrumb.scss" />
-    <Content Include="scss\bootstrap\_button-group.scss" />
-    <Content Include="scss\bootstrap\_buttons.scss" />
-    <Content Include="scss\bootstrap\_card.scss" />
-    <Content Include="scss\bootstrap\_carousel.scss" />
-    <Content Include="scss\bootstrap\_close.scss" />
-    <Content Include="scss\bootstrap\_code.scss" />
-    <Content Include="scss\bootstrap\_custom-forms.scss" />
-    <Content Include="scss\bootstrap\_dropdown.scss" />
-    <Content Include="scss\bootstrap\_forms.scss" />
-    <Content Include="scss\bootstrap\_functions.scss" />
-    <Content Include="scss\bootstrap\_grid.scss" />
-    <Content Include="scss\bootstrap\_images.scss" />
-    <Content Include="scss\bootstrap\_input-group.scss" />
-    <Content Include="scss\bootstrap\_jumbotron.scss" />
-    <Content Include="scss\bootstrap\_list-group.scss" />
-    <Content Include="scss\bootstrap\_media.scss" />
-    <Content Include="scss\bootstrap\_mixins.scss" />
-    <Content Include="scss\bootstrap\_modal.scss" />
-    <Content Include="scss\bootstrap\_nav.scss" />
-    <Content Include="scss\bootstrap\_navbar.scss" />
-    <Content Include="scss\bootstrap\_pagination.scss" />
-    <Content Include="scss\bootstrap\_popover.scss" />
-    <Content Include="scss\bootstrap\_print.scss" />
-    <Content Include="scss\bootstrap\_progress.scss" />
-    <Content Include="scss\bootstrap\_reboot.scss" />
-    <Content Include="scss\bootstrap\_root.scss" />
-    <Content Include="scss\bootstrap\_spinners.scss" />
-    <Content Include="scss\bootstrap\_tables.scss" />
-    <Content Include="scss\bootstrap\_toasts.scss" />
-    <Content Include="scss\bootstrap\_tooltip.scss" />
-    <Content Include="scss\bootstrap\_transitions.scss" />
-    <Content Include="scss\bootstrap\_type.scss" />
-    <Content Include="scss\bootstrap\_utilities.scss" />
-    <Content Include="scss\bootstrap\_variables.scss" />
-    <Content Include="scss\style.scss" />
-    <Content Include="SignUpcss\css\style.css.map" />
-    <Content Include="SignUpcss\css\style.scss" />
-    <Content Include="SignUpcss\fonts\linearicons\fonts\Linearicons-Free.eot" />
-    <Content Include="SignUpcss\fonts\linearicons\fonts\Linearicons-Free.ttf" />
-    <Content Include="SignUpcss\fonts\linearicons\fonts\Linearicons-Free.woff" />
-    <Content Include="SignUpcss\fonts\linearicons\fonts\Linearicons-Free.woff2" />
-    <Content Include="SignUpcss\fonts\linearicons\selection.json" />
-    <Content Include="SignUpcss\fonts\muli\Muli-Bold.ttf" />
-    <Content Include="SignUpcss\fonts\muli\Muli-Regular.ttf" />
-    <Content Include="SignUpcss\fonts\muli\Muli-SemiBold.ttf" />
+    <Content Include="assets-2\scss\.DS_Store" />
+    <Content Include="assets-2\scss\bootstrap\.DS_Store" />
+    <Content Include="assets-2\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="assets-2\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="assets-2\scss\bootstrap\bootstrap.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="assets-2\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_overflow.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="assets-2\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="assets-2\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="assets-2\scss\bootstrap\_alert.scss" />
+    <Content Include="assets-2\scss\bootstrap\_badge.scss" />
+    <Content Include="assets-2\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="assets-2\scss\bootstrap\_button-group.scss" />
+    <Content Include="assets-2\scss\bootstrap\_buttons.scss" />
+    <Content Include="assets-2\scss\bootstrap\_card.scss" />
+    <Content Include="assets-2\scss\bootstrap\_carousel.scss" />
+    <Content Include="assets-2\scss\bootstrap\_close.scss" />
+    <Content Include="assets-2\scss\bootstrap\_code.scss" />
+    <Content Include="assets-2\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="assets-2\scss\bootstrap\_dropdown.scss" />
+    <Content Include="assets-2\scss\bootstrap\_forms.scss" />
+    <Content Include="assets-2\scss\bootstrap\_functions.scss" />
+    <Content Include="assets-2\scss\bootstrap\_grid.scss" />
+    <Content Include="assets-2\scss\bootstrap\_images.scss" />
+    <Content Include="assets-2\scss\bootstrap\_input-group.scss" />
+    <Content Include="assets-2\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="assets-2\scss\bootstrap\_list-group.scss" />
+    <Content Include="assets-2\scss\bootstrap\_media.scss" />
+    <Content Include="assets-2\scss\bootstrap\_mixins.scss" />
+    <Content Include="assets-2\scss\bootstrap\_modal.scss" />
+    <Content Include="assets-2\scss\bootstrap\_nav.scss" />
+    <Content Include="assets-2\scss\bootstrap\_navbar.scss" />
+    <Content Include="assets-2\scss\bootstrap\_pagination.scss" />
+    <Content Include="assets-2\scss\bootstrap\_popover.scss" />
+    <Content Include="assets-2\scss\bootstrap\_print.scss" />
+    <Content Include="assets-2\scss\bootstrap\_progress.scss" />
+    <Content Include="assets-2\scss\bootstrap\_reboot.scss" />
+    <Content Include="assets-2\scss\bootstrap\_root.scss" />
+    <Content Include="assets-2\scss\bootstrap\_spinners.scss" />
+    <Content Include="assets-2\scss\bootstrap\_tables.scss" />
+    <Content Include="assets-2\scss\bootstrap\_toasts.scss" />
+    <Content Include="assets-2\scss\bootstrap\_tooltip.scss" />
+    <Content Include="assets-2\scss\bootstrap\_transitions.scss" />
+    <Content Include="assets-2\scss\bootstrap\_type.scss" />
+    <Content Include="assets-2\scss\bootstrap\_utilities.scss" />
+    <Content Include="assets-2\scss\bootstrap\_variables.scss" />
+    <Content Include="assets-2\scss\style.scss" />
+    <Content Include="signupcss\css\style.css.map" />
+    <Content Include="signupcss\css\style.scss" />
+    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.eot" />
+    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.ttf" />
+    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.woff" />
+    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.woff2" />
+    <Content Include="signupcss\fonts\linearicons\selection.json" />
+    <Content Include="signupcss\fonts\muli\Muli-Bold.ttf" />
+    <Content Include="signupcss\fonts\muli\Muli-Regular.ttf" />
+    <Content Include="signupcss\fonts\muli\Muli-SemiBold.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
