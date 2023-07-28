@@ -118,11 +118,9 @@
         </div>
         <div>
           <center>
-             
-            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            <br />
             <div class="clearfix">
-              <asp:Button ID="btnCancel" class="cancelbtn" runat="server" Text="Cancel" />
-              <asp:Button ID="btnSignUp" class="signupbtn" runat="server" Text="Sign Up" OnClick="btnSignUp_Click" />
+              <asp:Button ID="btnSignUp" class="signupbtn" runat="server" Text="Sign Up" OnClick="btnSignUp_Click" BackColor="#339966" BorderStyle="None" Font-Names="Bahnschrift" Font-Size="Large" ForeColor="White" Height="41px" Width="137px" />
             </div>
           </center>
         </div>
