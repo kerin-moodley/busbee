@@ -17,35 +17,38 @@ namespace busbee
 
         }
 
-        protected void btnSignIn_Click(object sender, EventArgs e)
+        protected void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["BusbeeConnection"].ConnectionString);
             try
             {
-                string User_Username = txtUsername.Text;
-                string User_Password = txtPassword.Text;
-                conn.Open();
-                string qry = "SELECT * FROM Commuter WHERE Commuter_Username='" + User_Username + "' and Commuter_Password='" + User_Password + "'";
-                SqlCommand cmd = new SqlCommand(qry, conn);
-                SqlDataReader sdr = cmd.ExecuteReader();
-                if (sdr.Read())
-                {
-                    string Message = "Login successful!";
-                    ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + Message + "');", true);
-                    Response.Redirect("dashboard.aspx");
-                    
-                }
-                else
-                {
-                    string Message = "Login unsuccessful!";
-                    ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + Message + "');", true);
 
-                }
-                conn.Close();
+                string cs = System.Configuration.ConfigurationManager.ConnectionStrings["BusbeeConnection"].ConnectionString;
+
+                SqlConnection con = new SqlConnection(cs);
+
+
+                SqlCommand cmd = new SqlCommand("SELECT Commuter_ID from Commuter where Commuter_Username= @Username AND Commuter_Password= @Password", con);
+                cmd.Parameters.AddWithValue("@Username", this.txtUsername.Text);
+                cmd.Parameters.AddWithValue("@Password", this.txtPassword.Text);
+
+                con.Open();
+
+                cmd.ExecuteNonQuery();
+
+                string Message = "Login successful!";
+                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + Message + "');", true);
+
+                txtUsername.Text = "";
+                txtPassword.Text = "";
+
+                con.Close();
+
+                Response.Redirect("dashboard.aspx");
+
             }
             catch (Exception ex)
             {
-                Response.Write(ex.Message);
+                Response.Write("error" + ex.ToString());
             }
         }
     }

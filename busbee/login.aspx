@@ -33,11 +33,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
 	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="login.css"/>
+
+  <!--RECAPTCHA-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 
 
-	<body class="img js-fullheight" style="background-image: url(images/bg.jpg);">
+	<body class="">
 
 
 		      <!-- ======= Header ======= -->
@@ -49,7 +53,6 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="landing.aspx">Back to Home</a></li>
-          <li><a href="signup.aspx">Sign Up</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -61,69 +64,54 @@
   <!-- End Header -->
 
 
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
 
+                <form id="frmLogin" runat="server">
 
+                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
 
+                  <div class="form-outline mb-4">
+                      <label class="form-label" for="form2Example17">Username</label>
+                      <br />
+                      <asp:TextBox type="text" ID="txtUsername" class="form-control form-control-lg" runat="server" BorderColor="Silver" BorderStyle="Solid"></asp:TextBox>
+                  </div>
 
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example27">Password</label>
+                      <br />
+                    <asp:TextBox type="password" ID="txtPassword" class="form-control form-control-lg" runat="server" BorderColor="Silver" BorderStyle="Solid"></asp:TextBox>
+                  </div>
 
-	<section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-center">
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-6 col-lg-4">
-					<div class="login-wrap p-0">
-		      	<h3 class="mb-4 text-center">Login</h3>
+                  <div class="pt-1 mb-4">
+                    <div class="g-recaptcha" data-sitekey="6Ld9AEInAAAAAIkdpQKiO7RMWtcVg3mBk55ja-DH"></div>
+                    <br />
+                    <asp:Button ID="btnLogin" class="btn btn-dark btn-lg btn-block" runat="server" Text="Login" Width="140px" OnClick="btnLogin_Click" />
+                  </div>
 
+                  <a class="small text-muted" href="#!">Forgot password?</a>
+                  <br />
+                  <br />
+                  <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="signup.aspx"
+                      style="color: #393f81;">Register here</a></p>
+                </form>
 
-		      	<form id="frmLogin" runat="server" class="signin-form">
-
-		      	<div class="form-group">
-					<asp:TextBox ID="txtUsername" class="form-control" placeholder="Username" runat="server"></asp:TextBox>
-		      	</div>
-					 
-				<div class="form-group">
-					<p> </p>
-					<p> </p>
-				</div>
-
-	            <div class="form-group">
-					<asp:TextBox ID="txtPassword" class="form-control" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
-	            </div>
-
-				<div class="form-group">
-					<p> </p>
-					<p> </p>
-				</div>
-
-	            <div class="form-group">
-					<asp:Button ID="btnSignIn" runat="server" Text="Sign In" class="form-control submit px-3" style="background-color:#31b099" OnClick="btnSignIn_Click" />
-	            </div>
-
-				<div class="form-group">
-					<p> </p>
-					<p> </p>
-				</div>
-
-	            <div class="form-group d-md-flex">
-	            	<div class="w-50">
-		            	<label class="checkbox-wrap checkbox-primary">Remember Me
-							<input type="checkbox" checked>
-							<span class="checkmark"></span>
-		            	</label>
-	            	</div>
-					
-					<div class="w-50 text-md-right">
-						<a href="#" style="color: #fff">Forgot Password</a>
-					</div>
-	            </div>
-
-	          </form>
-		      </div>
-				</div>
-			</div>
-		</div>
-	</section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- ======= Footer ======= -->
@@ -171,6 +159,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
 
