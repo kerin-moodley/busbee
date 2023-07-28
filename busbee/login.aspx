@@ -113,48 +113,7 @@
     </div>
   </div>
 
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span>Impact</span>
-          </a>
-          <p>In pursuit of the Service Delivery Agreement and the strategic guidepost set by the City, Metrobus vision is To be a people centered,performance driven provider of an efficient conventional bus service within the Integrated Public Transport Network, which will be achieved through our</p>
-      
-          &copy; Copyright <strong><span>BusBee</span></strong>. All Rights Reserved
-        
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>
-            Transportation House, <br>
-            No 1 Raikes Road,<br>
-            Braamfontein, 2001 <br><br>
-            <strong>Phone:</strong> 011 833 5918<br>
-            <strong>Email:</strong> Customer.serv@busbee.joburg.org.za<br>
-          </p>
-
-        </div>
-
-      </div>
-    </div>
-
-  </footer>
-  <!-- End Footer -->
-
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-
-
-  <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
@@ -162,4 +121,3 @@
 </body>
 
 </html>
-
