@@ -19,37 +19,79 @@ namespace busbee
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            try
+            // Validate reCAPTCHA response
+            string reCaptchaResponse = Request.Form["g-recaptcha-response"];
+            bool isCaptchaValid = ValidateReCaptcha(reCaptchaResponse);
+
+            if (!isCaptchaValid)
             {
-
-                string cs = System.Configuration.ConfigurationManager.ConnectionStrings["BusbeeConnection"].ConnectionString;
-
-                SqlConnection con = new SqlConnection(cs);
-
-
-                SqlCommand cmd = new SqlCommand("SELECT Commuter_ID from Commuter where Commuter_Username= @Username AND Commuter_Password= @Password", con);
-                cmd.Parameters.AddWithValue("@Username", this.txtUsername.Text);
-                cmd.Parameters.AddWithValue("@Password", this.txtPassword.Text);
-
-                con.Open();
-
-                cmd.ExecuteNonQuery();
-
-                string Message = "Login successful!";
+                string Message = "Please complete the reCAPTCHA verification!";
                 ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + Message + "');", true);
-
-                txtUsername.Text = "";
-                txtPassword.Text = "";
-
-                con.Close();
-
-                Response.Redirect("dashboard.aspx");
-
+                return;
             }
-            catch (Exception ex)
+            else
             {
-                Response.Write("error" + ex.ToString());
+                try
+                {
+
+                    string cs = System.Configuration.ConfigurationManager.ConnectionStrings["BusbeeConnection"].ConnectionString;
+
+                    SqlConnection con = new SqlConnection(cs);
+
+
+                    SqlCommand cmd = new SqlCommand("SELECT Commuter_ID from Commuter where Commuter_Username= @Username AND Commuter_Password= @Password", con);
+                    cmd.Parameters.AddWithValue("@Username", this.txtUsername.Text);
+                    cmd.Parameters.AddWithValue("@Password", this.txtPassword.Text);
+
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+
+                    string Message = "Login successful!";
+                    ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + Message + "');", true);
+
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
+
+                    con.Close();
+
+                    Response.Redirect("dashboard.aspx");
+
+                }
+                catch (Exception ex)
+                {
+                    Response.Write("error" + ex.ToString());
+                }
+            }
+
+        
+        }
+
+
+        // Function to validate reCAPTCHA response
+        private bool ValidateReCaptcha(string reCaptchaResponse)
+        {
+            string secretKey = "6Ld9AEInAAAAAIkdpQKiO7RMWtcVg3mBk55ja-DH";
+            string apiUrl = "https://www.google.com/recaptcha/api/siteverify";
+
+            using (var client = new System.Net.WebClient())
+            {
+                var response = client.DownloadString($"{apiUrl}?secret={secretKey}&response={reCaptchaResponse}");
+                var result = Newtonsoft.Json.JsonConvert.DeserializeObject<ReCaptchaResponse>(response);
+                return result.Success;
             }
         }
+
+        // Helper class for reCAPTCHA API response
+        public class ReCaptchaResponse
+        {
+            public bool Success { get; set; }
+            public string ChallengeTs { get; set; }
+            public string Hostname { get; set; }
+            public string ErrorCodes { get; set; }
+        }
+
+
+
     }
 }
