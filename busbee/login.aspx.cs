@@ -43,29 +43,34 @@ namespace busbee
                     cmd.Parameters.AddWithValue("@Username", this.txtUsername.Text);
                     cmd.Parameters.AddWithValue("@Password", this.txtPassword.Text);
 
-                    con.Open();
+                      con.Open();
 
-                    cmd.ExecuteNonQuery();
+            object result = cmd.ExecuteScalar();
 
-                    string Message = "Login successful!";
-                    ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + Message + "');", true);
-
-                    txtUsername.Text = "";
-                    txtPassword.Text = "";
-
-                    con.Close();
-
-                    Response.Redirect("dashboard.aspx");
-
-                }
-                catch (Exception ex)
-                {
-                    Response.Write("error" + ex.ToString());
-                }
+            if (result != null)
+            {
+                // User found, login successful
+                Session["Username"] = this.txtUsername.Text; // Store the username in a session for later use
+                Response.Redirect("landing.aspx"); // Redirect to the home page
+            }
+            else
+            {
+                // User not found, login unsuccessful
+                string Message = "Invalid username or password!";
+                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + Message + "');", true);
             }
 
-        
+            con.Close();
         }
+        catch (Exception ex)
+        {
+            Response.Write("Error: " + ex.ToString());
+        }
+    }
+}
+
+        
+        
 
 
         // Function to validate reCAPTCHA response

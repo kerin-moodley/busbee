@@ -95,10 +95,13 @@
                   <div class="pt-1 mb-4">
                     <div class="g-recaptcha" data-sitekey="6Ld9AEInAAAAAIkdpQKiO7RMWtcVg3mBk55ja-DH"></div>
                     <br />
-                    <asp:Button ID="btnLogin" class="btn btn-dark btn-lg btn-block" runat="server" Text="Login" Width="140px" OnClick="btnLogin_Click" />
+                     
+                      <button type="button" ID="btnLogin" class="btn btn-outline-success btn-lg" runat="server" Text="Login" Width="400px" OnClick="btnLogin_Click">Login</button>
                   </div>
 
-                  <a class="small text-muted" href="#!">Forgot password?</a>
+                  <div class="w-50 text-md-right">
+                      <a href="ForgotPassword.aspx" style="color: #000000">Forgot Password?</a>
+                  </div>
                   <br />
                   <br />
                   <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="signup.aspx"
