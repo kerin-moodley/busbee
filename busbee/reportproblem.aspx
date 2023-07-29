@@ -1,27 +1,34 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="maps.aspx.cs" Inherits="busbee.maps" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="reportproblem.aspx.cs" Inherits="busbee.reportproblem" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
- <head runat="server">
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Dashboard - BusBee</title>
-        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-        <link href="dashboard-content/css/styles.css" rel="stylesheet" />
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        <link rel="stylesheet" type="text/css" href="dashboard-content/css/maps-style.css" />
-    </head>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashboard - BusBee</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="dashboard-content/css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+      <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet"/>
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet"/>
+</head>
 
 
-
-    <body class="sb-nav-fixed">
-        <form id="form2" runat="server">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+<body>
+    <form id="form1" runat="server">
+ <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
             <a class="navbar-brand ps-3" href="index.html">BUSBEE</a>
             <!-- Sidebar Toggle-->
@@ -58,7 +65,7 @@
                             </a>
                           
                             <div class="sb-sidenav-menu-heading">Services</div>
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="maps.aspx">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Maps
                             </a>
@@ -82,21 +89,33 @@
                     </div>
                 </nav>
             </div>
-            
             <div id="layoutSidenav_content">
                 <main>
-                    <div class="container-fluid px-4">
-                        <h1 class="mt-4">Notifications</h1>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active"> </li>
-                        </ol>
-                            
+                    
+                    
 
 
 
 
 
-                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
@@ -111,17 +130,8 @@
                     </div>
                 </footer>
             </div>
-
-
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-        <script src="js/datatables-simple-demo.js"></script>
 
-        </form>
-    </body>
+    </form>
+</body>
 </html>

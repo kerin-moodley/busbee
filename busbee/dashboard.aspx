@@ -65,9 +65,9 @@
                                 <div class="sb-nav-link-icon"><i  class="fas fa-table"></i></div>
                                 Bus Schedules
                             </a>
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="reportproblem.aspx">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Query a problem
+                                Report a problem
                             </a>
                         </div>
                     </div>
