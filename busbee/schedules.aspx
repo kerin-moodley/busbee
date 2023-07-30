@@ -50,7 +50,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="dashboard.aspx">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Notifications
                             </a>
@@ -64,7 +64,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Purchase bus tickets
                             </a>
-                            <a class="nav-link schedules-dashboard-link" href="charts.html">
+                            <a class="nav-link schedules-dashboard-link" href="schedules.aspx">
                                 <div class="sb-nav-link-icon"><i  class="fas fa-table"></i></div>
                                 Bus Schedules
                             </a>
@@ -86,7 +86,6 @@
                 <div class="container mt-4">
         <h2>Bus Schedules</h2>
         <div class="mb-4">
-            <label for="busSelect">Select a Bus:</label>
             <select id="busSelect" class="form-select">
                 <option value="0">Select a Bus</option>
                 <option value="1">412 Ghandi Square to Witpoortjie</option>
@@ -545,12 +544,7 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
+                            <div class="text-muted">Copyright &copy; BUSBEE 2023</div>
                         </div>
                     </div>
                 </footer>

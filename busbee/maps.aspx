@@ -26,10 +26,7 @@
         <form id="form2" runat="server">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">BUSBEE</a>
-            <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-
+            <a class="navbar-brand ps-3" href="index.html">BUSBEE</a>        
 
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
@@ -49,13 +46,13 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="dashboard.aspx">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Notifications
                             </a>
                           
                             <div class="sb-sidenav-menu-heading">Services</div>
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="maps.aspx">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Maps
                             </a>
@@ -63,13 +60,13 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Purchase bus tickets
                             </a>
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="schedules.aspx">
                                 <div class="sb-nav-link-icon"><i  class="fas fa-table"></i></div>
                                 Bus Schedules
                             </a>
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="reportproblem.aspx">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Query a problem
+                                Report a problem
                             </a>
                         </div>
                     </div>
