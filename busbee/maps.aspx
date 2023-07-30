@@ -15,6 +15,7 @@
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <link rel="stylesheet" type="text/css" href="dashboard-content/css/maps-style.css" />
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8wSR6iW7ZHSD3KPUDYP9dXlGovy1RxhE"></script>
     </head>
 
 
@@ -26,13 +27,7 @@
             <a class="navbar-brand ps-3" href="index.html">BUSBEE</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <!-- Navbar Search-->
-            
-                <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-                </div>
-            <!-- Navbar-->
+
 
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
@@ -86,27 +81,54 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Notifications</h1>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active"> </li>
-                        </ol>
+                        
+                        <div>
                             
+                            <div>
+                          <iframe id="947-traffic" src="https://947.co.za/features/947-traffic-updates" align="center" frameborder:"0" scrolling="yes" style="width:80%; height:500px"></iframe>
+                      </div>
+                            
+                            <br />
+                            <br />
+                            <br />    
+                            
+                            <div>
+                          <div id="map" align="center" style="width: 800px; height: 400px;"></div>
+                      </div>
+                            
+                            <script>
+                          // Create a map object
+                          var map = new google.maps.Map(document.getElementById("map"), {
+                            // Set the center of the map
+                            center: { lat: -34.397, lng: 150.644 },
+                            // Set the zoom level of the map
+                            zoom: 8,
+                            // Set the map type to show roads and terrain
+                            mapTypeId: "roadmap",
+                          });
+
+                          // Create a traffic layer object
+                          var trafficLayer = new google.maps.TrafficLayer();
+
+                          // Add the traffic layer to the map object
+                          trafficLayer.setMap(map);
+                                  </script>
 
 
-
-
-
+                        </div>
+                        
                     </div>
+
                 </main>
+
+
+
+
+
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
+                            <div class="text-muted">Copyright &copy; BusBee 2023</div>
                         </div>
                     </div>
                 </footer>
