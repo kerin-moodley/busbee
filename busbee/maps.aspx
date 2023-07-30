@@ -15,7 +15,9 @@
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <link rel="stylesheet" type="text/css" href="dashboard-content/css/maps-style.css" />
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8wSR6iW7ZHSD3KPUDYP9dXlGovy1RxhE"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8wSR6iW7ZHSD3KPUDYP9dXlGovy1RxhE&callback=initMap&libraries=geometry,places&v=weekly" defer></script>
+
+
     </head>
 
 
@@ -83,6 +85,7 @@
                     <div class="container-fluid px-4">
                         
                         <div>
+
                             
                             <div>
                           <iframe id="947-traffic" src="https://947.co.za/features/947-traffic-updates" align="center" frameborder:"0" scrolling="yes" style="width:80%; height:500px"></iframe>
@@ -96,23 +99,43 @@
                           <div id="map" align="center" style="width: 800px; height: 400px;"></div>
                       </div>
                             
-                            <script>
-                          // Create a map object
-                          var map = new google.maps.Map(document.getElementById("map"), {
-                            // Set the center of the map
-                            center: { lat: -34.397, lng: 150.644 },
-                            // Set the zoom level of the map
-                            zoom: 8,
-                            // Set the map type to show roads and terrain
-                            mapTypeId: "roadmap",
-                          });
+                         <script>
+                             function initMap() {
+                                 // Create the map.
+                                 const map = new google.maps.Map(document.getElementById("map"), {
+                                     zoom: 13,
+                                     center: { lat: 0, lng: 0 }, // Set a default center
+                                 });
 
-                          // Create a traffic layer object
-                          var trafficLayer = new google.maps.TrafficLayer();
+                                 // Try to get the device location using the Geolocation API.
+                                 if (navigator.geolocation) {
+                                     navigator.geolocation.getCurrentPosition(
+                                         (position) => {
+                                             // Success callback
+                                             // Get the latitude and longitude from the position object.
+                                             const pos = {
+                                                 lat: position.coords.latitude,
+                                                 lng: position.coords.longitude,
+                                             };
+                                             // Set the map center to the device location.
+                                             map.setCenter(pos);
+                                         },
+                                         () => {
+                                             // Error callback
+                                             alert("Unable to get your location.");
+                                         }
+                                     );
+                                 } else {
+                                     // Browser doesn't support Geolocation
+                                     alert("Your browser doesn't support geolocation.");
+                                 }
 
-                          // Add the traffic layer to the map object
-                          trafficLayer.setMap(map);
-                                  </script>
+                                 // Add the traffic layer to the map.
+                                 const trafficLayer = new google.maps.TrafficLayer();
+                                 trafficLayer.setMap(map);
+                             }
+
+                         </script>
 
 
                         </div>
