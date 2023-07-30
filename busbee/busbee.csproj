@@ -267,6 +267,7 @@
     <Content Include="dashboard-content\css\styles.css" />
     <Content Include="dashboard-content\js\datatables-simple-demo.js" />
     <Content Include="dashboard-content\js\maps.js" />
+    <Content Include="dashboard-content\js\schedules.js" />
     <Content Include="dashboard-content\js\scripts.js" />
     <Content Include="dashboard.aspx" />
     <Content Include="landing.aspx" />
@@ -274,6 +275,7 @@
     <Content Include="maps.aspx" />
     <Content Include="RecaptchaNet.Readme.txt" />
     <Content Include="reportproblem.aspx" />
+    <Content Include="schedules.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="signupcss\css\style.css" />
     <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.svg" />
@@ -318,6 +320,13 @@
     </Compile>
     <Compile Include="reportproblem.aspx.designer.cs">
       <DependentUpon>reportproblem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="schedules.aspx.cs">
+      <DependentUpon>schedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="schedules.aspx.designer.cs">
+      <DependentUpon>schedules.aspx</DependentUpon>
     </Compile>
     <Compile Include="signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
