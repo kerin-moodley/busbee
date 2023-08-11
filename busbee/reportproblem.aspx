@@ -23,10 +23,14 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet"/>
+    <!--link to rpstyle-->
+   <link href="reportproblemcss/rpstyle.css" rel="stylesheet" />
+
 </head>
 
 
 <body>
+
     <form id="form1" runat="server">
  <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
@@ -88,31 +92,40 @@
                 </nav>
             </div>
             <div id="layoutSidenav_content">
+                <!-- Issue Page-->
+   
                 <main>
+    
+     <div class="wrapper">
+    <div class="inner">
                     
-                    
+                     <div class="container" >
+        <h2>Report Issue</h2>
+        <p>Welcome to the Report Issues page. Please use this form to report any problems or concerns you encounter during your bus journey.</p>
+        <div class="form-group">
+            <label for="issueTitle">Issue Title:</label>
+            <input type="text" class="form-control" id="issueTitle" runat="server" required="required" />
+        </div>
+          <div class="form-group">
+            <label for="busNumber">Bus Number:</label>
+            <input type="text" class="form-control" id="busNumber" runat="server" required="required" />
+        </div>
+           <div class="form-group">
+            <label for="dateof">Date of Incident:</label>
+            <input type="text" class="form-control" id="dateof" runat="server" required="required" />
+        </div>
+                   <div class="form-group">
+            <label for="descrip">Description:</label>
+            <input type="text" class="form-control" id="descrip" runat="server" required="required" />
+        </div>
+      <button type="button" id="btnSubmit" class="btn btn-success">Submit Issue</button>
 
 
+       <asp:Label ID="lblStatus" runat="server" Text="" Style="display:inherit"></asp:Label>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+        </div>
+         </div>
 
                 </main>
                 <footer class="py-4 bg-light mt-auto">

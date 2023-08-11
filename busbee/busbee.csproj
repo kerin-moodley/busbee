@@ -294,6 +294,7 @@
     <Content Include="purchasebusticket.aspx" />
     <Content Include="RecaptchaNet.Readme.txt" />
     <Content Include="reportproblem.aspx" />
+    <Content Include="reportproblemcss\rpstyle.css" />
     <Content Include="schedules.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="signupcss\css\style.css" />
