@@ -1,4 +1,5 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -23,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>4.3</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -258,6 +260,22 @@
     <Content Include="assets-2\js\jquery.min.js" />
     <Content Include="assets-2\js\main.js" />
     <Content Include="assets-2\js\popper.js" />
+    <Content Include="dashboard-assets\css\icons\tabler-icons\fonts\tabler-icons.svg" />
+    <Content Include="dashboard-assets\css\icons\tabler-icons\tabler-icons.css" />
+    <Content Include="dashboard-assets\css\styles.css" />
+    <Content Include="dashboard-assets\css\styles.min.css" />
+    <Content Include="dashboard-assets\images\backgrounds\rocket.png" />
+    <Content Include="dashboard-assets\images\logos\dark-logo.svg" />
+    <Content Include="dashboard-assets\images\logos\favicon.png" />
+    <Content Include="dashboard-assets\images\products\s1.jpg" />
+    <Content Include="dashboard-assets\images\products\s11.jpg" />
+    <Content Include="dashboard-assets\images\products\s4.jpg" />
+    <Content Include="dashboard-assets\images\products\s5.jpg" />
+    <Content Include="dashboard-assets\images\products\s7.jpg" />
+    <Content Include="dashboard-assets\images\profile\user-1.jpg" />
+    <Content Include="dashboard-assets\js\app.min.js" />
+    <Content Include="dashboard-assets\js\dashboard.js" />
+    <Content Include="dashboard-assets\js\sidebarmenu.js" />
     <Content Include="dashboard-content\assets\demo\chart-area-demo.js" />
     <Content Include="dashboard-content\assets\demo\chart-bar-demo.js" />
     <Content Include="dashboard-content\assets\demo\chart-pie-demo.js" />
@@ -273,6 +291,7 @@
     <Content Include="landing.aspx" />
     <Content Include="login.aspx" />
     <Content Include="maps.aspx" />
+    <Content Include="purchasebusticket.aspx" />
     <Content Include="RecaptchaNet.Readme.txt" />
     <Content Include="reportproblem.aspx" />
     <Content Include="schedules.aspx" />
@@ -313,6 +332,13 @@
     </Compile>
     <Compile Include="maps.aspx.designer.cs">
       <DependentUpon>maps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="purchasebusticket.aspx.cs">
+      <DependentUpon>purchasebusticket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="purchasebusticket.aspx.designer.cs">
+      <DependentUpon>purchasebusticket.aspx</DependentUpon>
     </Compile>
     <Compile Include="reportproblem.aspx.cs">
       <DependentUpon>reportproblem.aspx</DependentUpon>
@@ -372,6 +398,22 @@
     <Content Include="assets-2\css\bootstrap\mixins\.DS_Store" />
     <Content Include="assets-2\fonts\.DS_Store" />
     <Content Include="assets-2\js\.DS_Store" />
+    <Content Include="dashboard-assets\css\icons\tabler-icons\fonts\tabler-icons.eot" />
+    <Content Include="dashboard-assets\css\icons\tabler-icons\fonts\tabler-icons.ttf" />
+    <Content Include="dashboard-assets\css\icons\tabler-icons\fonts\tabler-icons.woff" />
+    <Content Include="dashboard-assets\css\icons\tabler-icons\fonts\tabler-icons.woff2" />
+    <Content Include="dashboard-assets\scss\component\_card.scss" />
+    <Content Include="dashboard-assets\scss\component\_reboot.scss" />
+    <Content Include="dashboard-assets\scss\layouts\_header.scss" />
+    <Content Include="dashboard-assets\scss\layouts\_layouts.scss" />
+    <Content Include="dashboard-assets\scss\layouts\_sidebar.scss" />
+    <Content Include="dashboard-assets\scss\pages\_dashboard1.scss" />
+    <Content Include="dashboard-assets\scss\prepros.config" />
+    <Content Include="dashboard-assets\scss\styles.scss" />
+    <Content Include="dashboard-assets\scss\utilities\_background.scss" />
+    <Content Include="dashboard-assets\scss\utilities\_icon-size.scss" />
+    <Content Include="dashboard-assets\scss\variables\_theme-variables.scss" />
+    <Content Include="dashboard-assets\scss\variables\_variables.scss" />
     <None Include="packages.config" />
     <Content Include="assets-2\scss\.DS_Store" />
     <Content Include="assets-2\scss\bootstrap\.DS_Store" />
@@ -482,12 +524,15 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>

@@ -50,11 +50,15 @@ namespace busbee
                         {
                             // User found, login successful
                             Session["Username"] = this.txtUsername.Text; // Store the username in a session for later use
+                            txtPassword.Text = string.Empty;
+                            txtUsername.Text = string.Empty;
                             Response.Redirect("dashboard.aspx"); // Redirect to the home page
                         }
                         else
                         {
                             // User not found, login unsuccessful
+                            txtPassword.Text = string.Empty;
+                            txtUsername.Text = string.Empty;
                             string Message = "Invalid username or password!";
                             ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + Message + "');", true);
                         }
@@ -63,6 +67,8 @@ namespace busbee
                     }
                     catch (Exception ex)
                     {
+                        txtPassword.Text = string.Empty;
+                        txtUsername.Text = string.Empty;
                         Response.Write("Error: " + ex.ToString());
                     }
                 }
@@ -71,6 +77,8 @@ namespace busbee
                     string errormessage = "Error(s): ";
                     foreach (var err in result.ErrorCodes)
                     {
+                        txtPassword.Text = string.Empty;
+                        txtUsername.Text = string.Empty;
                         Response.Write("Error: " + errormessage);
                     }
                 }
