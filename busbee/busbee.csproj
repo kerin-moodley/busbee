@@ -195,7 +195,6 @@
     <Content Include="assets\img\busbeelogo.png" />
     <Content Include="assets\css\main.css" />
     <Content Include="assets\img\hero-bg-abstract.jpg" />
-    <Content Include="assets\img\hero-img.svg" />
     <Content Include="assets\img\stats-img.svg" />
     <Content Include="assets\img\team\1.jpg" />
     <Content Include="assets\img\team\2.jpg" />
@@ -264,9 +263,8 @@
     <Content Include="dashboard-assets\css\icons\tabler-icons\tabler-icons.css" />
     <Content Include="dashboard-assets\css\styles.css" />
     <Content Include="dashboard-assets\css\styles.min.css" />
-    <Content Include="dashboard-assets\images\backgrounds\rocket.png" />
-    <Content Include="dashboard-assets\images\logos\dark-logo.svg" />
     <Content Include="dashboard-assets\images\logos\favicon.png" />
+    <Content Include="dashboard-assets\images\logos\logo.png" />
     <Content Include="dashboard-assets\images\products\s1.jpg" />
     <Content Include="dashboard-assets\images\products\s11.jpg" />
     <Content Include="dashboard-assets\images\products\s4.jpg" />
@@ -287,15 +285,16 @@
     <Content Include="dashboard-content\js\maps.js" />
     <Content Include="dashboard-content\js\schedules.js" />
     <Content Include="dashboard-content\js\scripts.js" />
+    <Content Include="dashboard-delete.aspx" />
+    <Content Include="dashboard-profile.aspx" />
     <Content Include="dashboard.aspx" />
     <Content Include="landing.aspx" />
     <Content Include="login.aspx" />
-    <Content Include="maps.aspx" />
-    <Content Include="purchasebusticket.aspx" />
-    <Content Include="RecaptchaNet.Readme.txt" />
-    <Content Include="reportproblem.aspx" />
+    <Content Include="dashboard-maps.aspx" />
+    <Content Include="dashboard-purchase.aspx" />
+    <Content Include="dashboard-problem.aspx" />
     <Content Include="reportproblemcss\rpstyle.css" />
-    <Content Include="schedules.aspx" />
+    <Content Include="dashboard-schedules.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="signupcss\css\style.css" />
     <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.svg" />
@@ -306,6 +305,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashboard-delete.aspx.cs">
+      <DependentUpon>dashboard-delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard-delete.aspx.designer.cs">
+      <DependentUpon>dashboard-delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard-profile.aspx.cs">
+      <DependentUpon>dashboard-profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard-profile.aspx.designer.cs">
+      <DependentUpon>dashboard-profile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="dashboard.aspx.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -327,33 +340,33 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="maps.aspx.cs">
-      <DependentUpon>maps.aspx</DependentUpon>
+    <Compile Include="dashboard-maps.aspx.cs">
+      <DependentUpon>dashboard-maps.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="maps.aspx.designer.cs">
-      <DependentUpon>maps.aspx</DependentUpon>
+    <Compile Include="dashboard-maps.aspx.designer.cs">
+      <DependentUpon>dashboard-maps.aspx</DependentUpon>
     </Compile>
-    <Compile Include="purchasebusticket.aspx.cs">
-      <DependentUpon>purchasebusticket.aspx</DependentUpon>
+    <Compile Include="dashboard-purchase.aspx.cs">
+      <DependentUpon>dashboard-purchase.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="purchasebusticket.aspx.designer.cs">
-      <DependentUpon>purchasebusticket.aspx</DependentUpon>
+    <Compile Include="dashboard-purchase.aspx.designer.cs">
+      <DependentUpon>dashboard-purchase.aspx</DependentUpon>
     </Compile>
-    <Compile Include="reportproblem.aspx.cs">
-      <DependentUpon>reportproblem.aspx</DependentUpon>
+    <Compile Include="dashboard-problem.aspx.cs">
+      <DependentUpon>dashboard-problem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="reportproblem.aspx.designer.cs">
-      <DependentUpon>reportproblem.aspx</DependentUpon>
+    <Compile Include="dashboard-problem.aspx.designer.cs">
+      <DependentUpon>dashboard-problem.aspx</DependentUpon>
     </Compile>
-    <Compile Include="schedules.aspx.cs">
-      <DependentUpon>schedules.aspx</DependentUpon>
+    <Compile Include="dashboard-schedules.aspx.cs">
+      <DependentUpon>dashboard-schedules.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="schedules.aspx.designer.cs">
-      <DependentUpon>schedules.aspx</DependentUpon>
+    <Compile Include="dashboard-schedules.aspx.designer.cs">
+      <DependentUpon>dashboard-schedules.aspx</DependentUpon>
     </Compile>
     <Compile Include="signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>

@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard.aspx.cs" Inherits="busbee.dashboard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard-maps.aspx.cs" Inherits="busbee.maps" %>
+
 
 <!doctype html>
 <html lang="en">
@@ -78,7 +79,6 @@
             </li>
 
 
-
             <li class="sidebar-item">
               <a class="sidebar-link" href="dashboard-purchase.aspx" aria-expanded="false">
                 <span>
@@ -151,7 +151,65 @@
     <!--  Main wrapper -->
     <div class="body-wrapper">
       
+<div class="container-fluid px-4">
+                        
+                        <div>
 
+                            
+                            <div>
+                          <iframe id="947-traffic" src="https://947.co.za/features/947-traffic-updates" align="center" frameborder:"0" scrolling="yes" style="width:80%; height:500px"></iframe>
+                      </div>
+                            
+                            <br />
+                            <br />
+                            <br />    
+                            
+                            <div>
+                          <div id="map" align="center" style="width: 800px; height: 400px;"></div>
+                      </div>
+                            
+                         <script>
+                             function initMap() {
+                                 // Create the map.
+                                 const map = new google.maps.Map(document.getElementById("map"), {
+                                     zoom: 13,
+                                     center: { lat: 0, lng: 0 }, // Set a default center
+                                 });
+
+                                 // Try to get the device location using the Geolocation API.
+                                 if (navigator.geolocation) {
+                                     navigator.geolocation.getCurrentPosition(
+                                         (position) => {
+                                             // Success callback
+                                             // Get the latitude and longitude from the position object.
+                                             const pos = {
+                                                 lat: position.coords.latitude,
+                                                 lng: position.coords.longitude,
+                                             };
+                                             // Set the map center to the device location.
+                                             map.setCenter(pos);
+                                         },
+                                         () => {
+                                             // Error callback
+                                             alert("Unable to get your location.");
+                                         }
+                                     );
+                                 } else {
+                                     // Browser doesn't support Geolocation
+                                     alert("Your browser doesn't support geolocation.");
+                                 }
+
+                                 // Add the traffic layer to the map.
+                                 const trafficLayer = new google.maps.TrafficLayer();
+                                 trafficLayer.setMap(map);
+                             }
+
+                         </script>
+
+
+                        </div>
+                        
+                    </div>
 
 
 

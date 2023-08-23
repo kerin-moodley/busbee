@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard.aspx.cs" Inherits="busbee.dashboard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard-delete.aspx.cs" Inherits="busbee.dashboard_delete" %>
 
 <!doctype html>
 <html lang="en">
@@ -76,7 +76,6 @@
                 <span class="hide-menu">Bus Schedules</span>
               </a>
             </li>
-
 
 
             <li class="sidebar-item">

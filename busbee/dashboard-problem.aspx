@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard.aspx.cs" Inherits="busbee.dashboard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard-problem.aspx.cs" Inherits="busbee.reportproblem" %>
+
 
 <!doctype html>
 <html lang="en">
@@ -8,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
+  <link href="reportproblemcss/rpstyle.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -76,7 +78,6 @@
                 <span class="hide-menu">Bus Schedules</span>
               </a>
             </li>
-
 
 
             <li class="sidebar-item">
@@ -152,7 +153,36 @@
     <div class="body-wrapper">
       
 
+<div class="wrapper">
+    <div class="inner">
+                    
+                     <div class="container" >
+        <h2>Report Issue</h2>
+        <p>Welcome to the Report Issues page. Please use this form to report any problems or concerns you encounter during your bus journey.</p>
+        <div class="form-group">
+            <label for="issueTitle">Issue Title:</label>
+            <input type="text" class="form-control" id="Text1" runat="server" required="required" />
+        </div>
+          <div class="form-group">
+            <label for="busNumber">Bus Number:</label>
+            <input type="text" class="form-control" id="Text2" runat="server" required="required" />
+        </div>
+           <div class="form-group">
+            <label for="dateof">Date of Incident:</label>
+            <input type="text" class="form-control" id="Text3" runat="server" required="required" />
+        </div>
+                   <div class="form-group">
+            <label for="descrip">Description:</label>
+            <input type="text" class="form-control" id="Text4" runat="server" required="required" />
+        </div>
+      <button type="button" id="btnSubmit" class="btn btn-success">Submit Issue</button>
 
+
+       <asp:Label ID="Label1" runat="server" Text="" Style="display:inherit"></asp:Label>
+
+    </div>
+        </div>
+         </div>
 
 
 
