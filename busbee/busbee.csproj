@@ -288,6 +288,8 @@
     <Content Include="dashboard-delete.aspx" />
     <Content Include="dashboard-profile.aspx" />
     <Content Include="dashboard.aspx" />
+    <Content Include="deletecss\bus.png" />
+    <Content Include="deletecss\delete.css" />
     <Content Include="landing.aspx" />
     <Content Include="login.aspx" />
     <Content Include="dashboard-maps.aspx" />
