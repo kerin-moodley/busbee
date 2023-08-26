@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
+    <link rel="stylesheet" href="purchase/purchase.css" />
 </head>
 
 <body>
@@ -149,25 +150,37 @@
     <!--  Sidebar End -->
     <!--  Main wrapper -->
     <div class="body-wrapper">
-      
+      <div class="wrapper">
+    <div class="inner">
+                    
+                     <div class="container" >
+        <h2>Bus fare </h2>
+        <p>Select your bus fare based on age group:</p>
 
+         <div class="button-block">
+         <a href="AdultPage.aspx" class="block-button">Adult</a>
+         </div>
+         <div class="button-block">
+         <a href="ScholarPage.aspx" class="block-button">Scholars in Uniform</a>
+         </div>
+         <div class="button-block">
+         <a href="PensionerPage.aspx" class="block-button">Pensioners</a>
+         </div>
+         <div class="button-block">
+         <a href="DisabilitiesPage.aspx" class="block-button">Persons with Disabilities</a>
+           
+         </div>
 
+       
 
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+        </div>
+         </div>
 
 
     </div>
   </div>
+
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/sidebarmenu.js"></script>

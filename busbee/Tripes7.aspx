@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard-profile.aspx.cs" Inherits="busbee.dashboard_profile" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Tripes7.aspx.cs" Inherits="busbee.purchasebusticket" %>
 
 <!doctype html>
 <html lang="en">
@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
-    <link rel ="stylesheet" href="profilecss/profile.css" />
+    <link rel="stylesheet" href="purchase/stages.css" />
 </head>
 
 <body>
@@ -147,74 +147,45 @@
       </div>
       <!-- End Sidebar scroll-->
     </aside>
-      </div>
     <!--  Sidebar End -->
     <!--  Main wrapper -->
     <div class="body-wrapper">
-      <!--Profile page-->
-    <div class="wrapper">
-  <div class="inner">
-    <div class="container">
-      <div class="avatar-container">
+      <div class="wrapper">
+    <div class="inner">
+                    
+                     <div class="container" >
+        <h2>Prices </h2>
+        <p>Select your prices:</p>
 
-        <img src="profilecss/avatar.png" alt="Avatar" class="avatar" id="avatar">
-          <p>JPG or PNG no larger than 5 MB</p>
-        <label for="fileInput" class="upload-btn">Upload Image
-        </label>
-        <input type="file" id="fileInput" accept="image/*" onchange="updateAvatar(this)">
-      </div>
+         <div class="button-block">
+         <a href="StoredValue.aspx" class="block-button">Stored Value:  R31.40</a>
+         </div>
+          <div class="button-block">
+         <a href="10t.aspx" class="block-button">10 Trip Weekly:  R259.00</a>
+         </div>
+          <div class="button-block">
+         <a href="12t.aspx" class="block-button">12 Trip Weekly:  R310.90</a>
+         </div>
+         <div class="button-block">
+         <a href="14t.aspx" class="block-button">14 Trip Weekly:  R362.60</a>
+         </div>
+         <div class="button-block">
+         <a href="44t.aspx" class="block-button">44 Trip Monthly:  R1 139.50</a>
+         </div>
+         <div class="button-block">
+         <a href="52t.aspx" class="block-button">52 Trip Weekly:  R1 346.70</a>
+         </div>
+      
+        
+
     </div>
+        </div>
+         </div>
 
-    <div class="container">
-      <div class="form-group">
-            <label for="username">User Name:</label>
-            <input type="text" class="form-control" id="Text1" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="firstname">First Name:</label>
-            <input type="text" class="form-control" id="Text2" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="lastname">Last Name:</label>
-            <input type="text" class="form-control" id="Text3" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="email">Email Address:</label>
-            <input type="text" class="form-control" id="Text4" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="text" class="form-control" id="Text5" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="bday">Brthday:</label>
-            <input type="text" class="form-control" id="Text6" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="location">Location:</label>
-            <input type="text" class="form-control" id="Text7" runat="server" required="required" />
-        </div>  
-      <button class="save-btn">Save Changes</button>
+
     </div>
   </div>
-</div>
 
-<script>
-    function updateAvatar(input) {
-        const avatar = document.getElementById("avatar");
-        const file = input.files[0];
-
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                avatar.src = e.target.result;
-            };
-            reader.readAsDataURL(file);
-        }
-    }
-</script>
-
-  </div>
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/sidebarmenu.js"></script>
@@ -224,3 +195,4 @@
 </body>
 
 </html>
+
