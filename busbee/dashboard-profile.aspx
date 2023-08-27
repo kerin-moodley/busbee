@@ -1,5 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard-profile.aspx.cs" Inherits="busbee.dashboard_profile" %>
 
+
 <!doctype html>
 <html lang="en">
 
@@ -58,7 +59,7 @@
 
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="dashboard-notifications.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-bell-ringing"></i>
                 </span>
