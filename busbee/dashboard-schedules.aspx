@@ -8,6 +8,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
+    <style>
+        
+.scheduleTables table {
+    border-radius: 10px; /* Curved border */
+    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: black; /* Text color */
+    width: 95%;
+    margin: 0 auto; /* Center the table */
+}
+.scheduleTables h3 {
+    text-align:center;
+    margin-bottom:15px;
+}
+.scheduleTables th {
+  background-color: #008374;
+    color: white;
+    padding: 10px;
+}
+
+
+.scheduleTables td, th {
+    padding: 12px 15px;
+
+}
+
+
+/* Additional styles for dropdowns */
+
+.scheduleTables .select-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+    </style>
 </head>
 
 <body>
@@ -58,7 +95,7 @@
 
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="dashboard-notifications.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-bell-ringing"></i>
                 </span>
@@ -623,6 +660,72 @@
 
     </div>
   </div>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const busSelect = document.getElementById("busSelect");
+            const busTablesContainer = document.getElementById("busTables");
+
+            function showTable(tableToShow) {
+                const busTables = document.querySelectorAll(".bus-tables");
+                busTables.forEach(table => table.style.display = "none");
+
+                tableToShow.style.display = "block";
+            }
+
+            busSelect.addEventListener("change", function () {
+                const selectedBus = this.value;
+                switch (selectedBus) {
+                    case "1":
+                        showTable(document.getElementById("bus1Table"));
+                        break;
+                    case "2":
+                        showTable(document.getElementById("bus2Table"));
+                        break;
+                    case "3":
+                        showTable(document.getElementById("bus3Table"));
+                        break;
+                    case "4":
+                        showTable(document.getElementById("bus4Table"));
+                        break;
+                    default:
+                        busTablesContainer.style.display = "none";
+                        break;
+                }
+            });
+        });
+
+
+        // Get references to the bus select element and the bus tables container
+        const busSelect = document.getElementById('busSelect');
+        const busTablesContainer = document.getElementById('busTables');
+
+        // Show the bus tables when a bus is selected
+        busSelect.addEventListener('change', function () {
+            // Get the value of the selected bus
+            const selectedBus = parseInt(busSelect.value);
+
+            // Hide all bus tables by default
+            document.querySelectorAll('.bus-tables').forEach(table => {
+                table.style.display = 'none';
+            });
+
+            // Show the corresponding bus table if a valid bus is selected
+            if (selectedBus > 0) {
+                const selectedBusTable = document.getElementById(`bus${selectedBus}Table`);
+                if (selectedBusTable) {
+                    selectedBusTable.style.display = 'block';
+                    busTablesContainer.style.display = 'block'; // Show the bus tables container
+                }
+            } else {
+                busTablesContainer.style.display = 'none'; // Hide the bus tables container if no bus is selected
+            }
+        });
+
+
+
+    </script>
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/sidebarmenu.js"></script>
