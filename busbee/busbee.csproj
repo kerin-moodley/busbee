@@ -322,6 +322,7 @@
     <Content Include="Tripes6.aspx" />
     <Content Include="Tripes7.aspx" />
     <Content Include="Tripes8.aspx" />
+    <Content Include="Tripes9.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -486,6 +487,13 @@
     </Compile>
     <Compile Include="Tripes8.aspx.designer.cs">
       <DependentUpon>Tripes8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tripes9.aspx.cs">
+      <DependentUpon>Tripes9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tripes9.aspx.designer.cs">
+      <DependentUpon>Tripes9.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

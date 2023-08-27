@@ -1,4 +1,4 @@
-﻿.profilewrapper {
+﻿.wrapper {
     display: flex;
     justify-content: space-around;
     height: 50%;
@@ -7,13 +7,13 @@
     background-color: #f2f2f2; /* Background color */
 }
 
-.profileinner {
+.inner {
     display:flex;
     width: 80%; /* Occupy the entire width */
     margin: 0 auto; /* Center align the content */
 }
 
-.profilecontainer {
+.container {
     flex: 1;
     display: grid;
     grid-template-columns: 1fr;
