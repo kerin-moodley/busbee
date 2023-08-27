@@ -1,5 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard-profile.aspx.cs" Inherits="busbee.dashboard_profile" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PensionerPage.aspx.cs" Inherits="busbee.purchasebustickete" %>
 
 <!doctype html>
 <html lang="en">
@@ -9,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
-    <link rel ="stylesheet" href="profilecss/profile.css" />
+    <link rel="stylesheet" href="purchase/stages.css" />
 </head>
 
 <body>
@@ -60,7 +59,7 @@
 
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-notifications.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="dashboard.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-bell-ringing"></i>
                 </span>
@@ -148,74 +147,52 @@
       </div>
       <!-- End Sidebar scroll-->
     </aside>
-      </div>
     <!--  Sidebar End -->
     <!--  Main wrapper -->
     <div class="body-wrapper">
-      <!--Profile page-->
-    <div class="wrapper">
-  <div class="inner">
-    <div class="container">
-      <div class="avatar-container">
+      <div class="wrapper">
+    <div class="inner">
+                    
+                     <div class="container" >
+        <h2>Stages </h2>
+        <p>Select your stages:</p>
 
-        <img src="profilecss/avatar.png" alt="Avatar" class="avatar" id="avatar">
-          <p>JPG or PNG no larger than 5 MB</p>
-        <label for="fileInput" class="upload-btn">Upload Image
-        </label>
-        <input type="file" id="fileInput" accept="image/*" onchange="updateAvatar(this)">
-      </div>
+         <div class="button-block">
+         <a href="Tripes1.aspx" class="block-button">NO:1</a>
+         </div>
+          <div class="button-block">
+         <a href="Tripes2.aspx" class="block-button">NO:2</a>
+         </div>
+          <div class="button-block">
+         <a href="Tripes3.aspx" class="block-button">NO:3</a>
+         </div>
+         <div class="button-block">
+         <a href="Tripes4.aspx" class="block-button">NO:4</a>
+         </div>
+         <div class="button-block">
+         <a href="Tripes5.aspx" class="block-button">NO:5</a>
+         </div>
+         <div class="button-block">
+         <a href="Tripes6.aspx" class="block-button">NO:6</a>
+         </div>
+         <div class="button-block">
+         <a href="Tripes7.aspx" class="block-button">NO:7</a>
+         </div>
+         <div class="button-block">
+         <a href="Tripes8.aspx" class="block-button">NO:8</a>
+         </div>
+        
+
+       
+
     </div>
+        </div>
+         </div>
 
-    <div class="container">
-      <div class="form-group">
-            <label for="username">User Name:</label>
-            <input type="text" class="form-control" id="Text1" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="firstname">First Name:</label>
-            <input type="text" class="form-control" id="Text2" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="lastname">Last Name:</label>
-            <input type="text" class="form-control" id="Text3" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="email">Email Address:</label>
-            <input type="text" class="form-control" id="Text4" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="text" class="form-control" id="Text5" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="bday">Brthday:</label>
-            <input type="text" class="form-control" id="Text6" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="location">Location:</label>
-            <input type="text" class="form-control" id="Text7" runat="server" required="required" />
-        </div>  
-      <button class="save-btn">Save Changes</button>
+
     </div>
   </div>
-</div>
 
-<script>
-    function updateAvatar(input) {
-        const avatar = document.getElementById("avatar");
-        const file = input.files[0];
-
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                avatar.src = e.target.result;
-            };
-            reader.readAsDataURL(file);
-        }
-    }
-</script>
-
-  </div>
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/sidebarmenu.js"></script>

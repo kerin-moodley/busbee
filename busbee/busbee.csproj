@@ -289,14 +289,24 @@
     <Content Include="dashboard-profile.aspx" />
     <Content Include="dashboard.aspx" />
     <Content Include="deletecss\bus.png" />
+    <Content Include="deletecss\dashboard-purchase.aspx" />
     <Content Include="deletecss\delete.css" />
     <Content Include="landing.aspx" />
     <Content Include="login.aspx" />
     <Content Include="dashboard-maps.aspx" />
     <Content Include="dashboard-purchase.aspx" />
     <Content Include="dashboard-problem.aspx" />
+    <Content Include="profilecss\avatar.png" />
+    <Content Include="profilecss\profile.css" />
+    <Content Include="AdultPage.aspx" />
+    <Content Include="DisabilitiesPage.aspx" />
+    <Content Include="PensionerPage.aspx" />
+    <Content Include="purchase\purchase.css" />
+    <Content Include="purchase\stages.css" />
+    <Content Include="purchase\trips.css" />
     <Content Include="reportproblemcss\rpstyle.css" />
     <Content Include="dashboard-schedules.aspx" />
+    <Content Include="ScholarPage.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="signupcss\css\style.css" />
     <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.svg" />
@@ -304,6 +314,14 @@
     <Content Include="signupcss\fonts\linearicons\style.css" />
     <Content Include="signupcss\images\image-1.png" />
     <Content Include="signupcss\images\image-2.png" />
+    <Content Include="Tripes1.aspx" />
+    <Content Include="Tripes2.aspx" />
+    <Content Include="Tripes3.aspx" />
+    <Content Include="Tripes4.aspx" />
+    <Content Include="Tripes5.aspx" />
+    <Content Include="Tripes6.aspx" />
+    <Content Include="Tripes7.aspx" />
+    <Content Include="Tripes8.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -327,6 +345,13 @@
     </Compile>
     <Compile Include="dashboard.aspx.designer.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deletecss\dashboard-purchase.aspx.cs">
+      <DependentUpon>dashboard-purchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deletecss\dashboard-purchase.aspx.designer.cs">
+      <DependentUpon>dashboard-purchase.aspx</DependentUpon>
     </Compile>
     <Compile Include="landing.aspx.cs">
       <DependentUpon>landing.aspx</DependentUpon>
@@ -370,6 +395,34 @@
     <Compile Include="dashboard-schedules.aspx.designer.cs">
       <DependentUpon>dashboard-schedules.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdultPage.aspx.cs">
+      <DependentUpon>AdultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdultPage.aspx.designer.cs">
+      <DependentUpon>AdultPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisabilitiesPage.aspx.cs">
+      <DependentUpon>DisabilitiesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisabilitiesPage.aspx.designer.cs">
+      <DependentUpon>DisabilitiesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PensionerPage.aspx.cs">
+      <DependentUpon>PensionerPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PensionerPage.aspx.designer.cs">
+      <DependentUpon>PensionerPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScholarPage.aspx.cs">
+      <DependentUpon>ScholarPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScholarPage.aspx.designer.cs">
+      <DependentUpon>ScholarPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -378,6 +431,62 @@
       <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tripes1.aspx.cs">
+      <DependentUpon>Tripes1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tripes1.aspx.designer.cs">
+      <DependentUpon>Tripes1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tripes2.aspx.cs">
+      <DependentUpon>Tripes2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tripes2.aspx.designer.cs">
+      <DependentUpon>Tripes2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tripes3.aspx.cs">
+      <DependentUpon>Tripes3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tripes3.aspx.designer.cs">
+      <DependentUpon>Tripes3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tripes4.aspx.cs">
+      <DependentUpon>Tripes4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tripes4.aspx.designer.cs">
+      <DependentUpon>Tripes4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tripes5.aspx.cs">
+      <DependentUpon>Tripes5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tripes5.aspx.designer.cs">
+      <DependentUpon>Tripes5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tripes6.aspx.cs">
+      <DependentUpon>Tripes6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tripes6.aspx.designer.cs">
+      <DependentUpon>Tripes6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tripes7.aspx.cs">
+      <DependentUpon>Tripes7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tripes7.aspx.designer.cs">
+      <DependentUpon>Tripes7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tripes8.aspx.cs">
+      <DependentUpon>Tripes8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tripes8.aspx.designer.cs">
+      <DependentUpon>Tripes8.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\vendor\aos\aos.js.map" />
@@ -543,6 +652,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
