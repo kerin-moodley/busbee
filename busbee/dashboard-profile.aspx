@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
-    <link rel ="stylesheet" href="profilecss/profile.css" />
+  <link rel ="stylesheet" href="profilecss/profile.css" />
 </head>
 
 <body>
@@ -151,10 +151,15 @@
     <!--  Sidebar End -->
     <!--  Main wrapper -->
     <div class="body-wrapper">
+
+
+
+
+
       <!--Profile page-->
-    <div class="wrapper">
-  <div class="inner">
-    <div class="container">
+    <div class="profilewrapper">
+  <div class="profileinner">
+    <div class="profilecontainer">
       <div class="avatar-container">
 
         <img src="profilecss/avatar.png" alt="Avatar" class="avatar" id="avatar">
@@ -165,7 +170,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="profilecontainer">
       <div class="form-group">
             <label for="username">User Name:</label>
             <input type="text" class="form-control" id="Text1" runat="server" required="required" />
@@ -198,6 +203,12 @@
     </div>
   </div>
 </div>
+
+
+
+
+
+
 
 <script>
     function updateAvatar(input) {

@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard-maps.aspx.cs" Inherits="busbee.maps" %>
 
-
 <!doctype html>
 <html lang="en">
 
@@ -9,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYZBumNxHYJtkUcaISoGXrWRoqY9io18w&callback=initMap" async defer></script>
 </head>
 
 <body>
@@ -150,23 +150,17 @@
     <!--  Sidebar End -->
     <!--  Main wrapper -->
     <div class="body-wrapper">
-      
-<div class="container-fluid px-4">
-                        
-                        <div>
+        <div class="container-fluid px-4">
+            <div>
 
-                            
-                            <div>
-                          <iframe id="947-traffic" src="https://947.co.za/features/947-traffic-updates" align="center" frameborder:"0" scrolling="yes" style="width:80%; height:500px"></iframe>
-                      </div>
-                            
-                            <br />
-                            <br />
-                            <br />    
-                            
-                            <div>
-                          <div id="map" align="center" style="width: 800px; height: 400px;"></div>
-                      </div>
+                <br />
+                <br />
+                
+                <div>
+                    <div id="map" style="width: 800px; height: 400px;  margin: 0 auto;"></div>
+                </div>
+
+
                             
                          <script>
                              function initMap() {
@@ -205,6 +199,10 @@
                              }
 
                          </script>
+                
+                <div>
+                    <iframe id="itraffic" src="https://www.i-traffic.co.za/region/Gauteng" align="center" frameborder:"0" scrolling="yes" style="width:80%; height:500px"></iframe>
+                </div>
 
 
                         </div>

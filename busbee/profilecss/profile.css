@@ -1,19 +1,19 @@
-﻿.wrapper {
+﻿.profilewrapper {
     display: flex;
     justify-content: space-around;
+    height: 50%;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50%;
     background-color: #f2f2f2; /* Background color */
 }
 
-.inner {
-    display: flex;
-    width: 100%; /* Occupy the entire width */
-    max-width: 1200px; /* Set a maximum width if needed */
+.profileinner {
+    display:flex;
+    width: 80%; /* Occupy the entire width */
     margin: 0 auto; /* Center align the content */
 }
 
-.container {
+.profilecontainer {
     flex: 1;
     display: grid;
     grid-template-columns: 1fr;
@@ -23,6 +23,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    height: 700px;
 }
 
 .avatar-container {
