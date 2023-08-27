@@ -232,7 +232,7 @@
             <label for="time-input">Choose a time between 04:00 AM and 07:00 PM:</label>
             <select id="time-input">
                <option value="06:10 AM">06:10 AM</option>
-        <option value="07:05 AM">07:05 AM</option>
+        <option value="07:05 AM">07:00 AM</option>
         <option value="08:10 AM">08:10 AM</option>
         <option value="09:00 AM">09:00 AM</option>
         <option value="09:45 AM">09:45 AM</option>
