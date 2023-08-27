@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard-purchase.aspx.cs" Inherits="busbee.purchasebusticket" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard-purchase.aspx.cs" Inherits="busbee.dashboard_purchase" %>
 
 <!doctype html>
 <html lang="en">

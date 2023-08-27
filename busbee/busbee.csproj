@@ -287,6 +287,7 @@
     <Content Include="dashboard-content\js\scripts.js" />
     <Content Include="dashboard-delete.aspx" />
     <Content Include="dashboard-profile.aspx" />
+    <Content Include="dashboard-purchase.aspx" />
     <Content Include="dashboard.aspx" />
     <Content Include="deletecss\bus.png" />
     <Content Include="deletecss\dashboard-purchase.aspx" />
@@ -294,7 +295,6 @@
     <Content Include="landing.aspx" />
     <Content Include="login.aspx" />
     <Content Include="dashboard-maps.aspx" />
-    <Content Include="dashboard-purchase.aspx" />
     <Content Include="dashboard-problem.aspx" />
     <Content Include="profilecss\avatar.png" />
     <Content Include="profilecss\profile.css" />
@@ -339,6 +339,13 @@
     <Compile Include="dashboard-profile.aspx.designer.cs">
       <DependentUpon>dashboard-profile.aspx</DependentUpon>
     </Compile>
+    <Compile Include="dashboard-purchase.aspx.cs">
+      <DependentUpon>dashboard-purchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard-purchase.aspx.designer.cs">
+      <DependentUpon>dashboard-purchase.aspx</DependentUpon>
+    </Compile>
     <Compile Include="dashboard.aspx.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -373,13 +380,6 @@
     </Compile>
     <Compile Include="dashboard-maps.aspx.designer.cs">
       <DependentUpon>dashboard-maps.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="dashboard-purchase.aspx.cs">
-      <DependentUpon>dashboard-purchase.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="dashboard-purchase.aspx.designer.cs">
-      <DependentUpon>dashboard-purchase.aspx</DependentUpon>
     </Compile>
     <Compile Include="dashboard-problem.aspx.cs">
       <DependentUpon>dashboard-problem.aspx</DependentUpon>

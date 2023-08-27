@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace busbee
 {
-    public partial class purchasebusticket : System.Web.UI.Page
+    public partial class dashboard_purchase : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
