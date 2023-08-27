@@ -130,17 +130,6 @@
 
 
 
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-delete.aspx" aria-expanded="false">
-                <span>
-                  <i class="ti ti-user-minus"></i>
-                </span>
-                <span class="hide-menu">Delete account</span>
-              </a>
-            </li>
-
-
-
           </ul>
         </nav>
         <!-- End Sidebar navigation -->
@@ -151,63 +140,18 @@
     <!--  Main wrapper -->
     <div class="body-wrapper">
         <div class="container-fluid px-4">
+            
+            
             <div>
-
-                <br />
-                <br />
-                
-                <div>
-                    <div id="map" style="width: 800px; height: 400px;  margin: 0 auto;"></div>
-                </div>
-
-
-                            
-                         <script>
-                             function initMap() {
-                                 // Create the map.
-                                 const map = new google.maps.Map(document.getElementById("map"), {
-                                     zoom: 13,
-                                     center: { lat: 0, lng: 0 }, // Set a default center
-                                 });
-
-                                 // Try to get the device location using the Geolocation API.
-                                 if (navigator.geolocation) {
-                                     navigator.geolocation.getCurrentPosition(
-                                         (position) => {
-                                             // Success callback
-                                             // Get the latitude and longitude from the position object.
-                                             const pos = {
-                                                 lat: position.coords.latitude,
-                                                 lng: position.coords.longitude,
-                                             };
-                                             // Set the map center to the device location.
-                                             map.setCenter(pos);
-                                         },
-                                         () => {
-                                             // Error callback
-                                             alert("Unable to get your location.");
-                                         }
-                                     );
-                                 } else {
-                                     // Browser doesn't support Geolocation
-                                     alert("Your browser doesn't support geolocation.");
-                                 }
-
-                                 // Add the traffic layer to the map.
-                                 const trafficLayer = new google.maps.TrafficLayer();
-                                 trafficLayer.setMap(map);
-                             }
-
-                         </script>
-                
-                <div>
-                    <iframe id="itraffic" src="https://www.i-traffic.co.za/region/Gauteng" align="center" frameborder:"0" scrolling="yes" style="width:80%; height:500px"></iframe>
-                </div>
+                <iframe src="https://www.tomtom.com/en_gb/traffic-index/johannesburg-traffic/" title="Traffic information for Johannesburg" style="width: 950px; height: 500px;  align-self:center;" ></iframe>
+            </div>
+            
+            <br />
+            <br />
+            <br />
 
 
-                        </div>
-                        
-                    </div>
+        </div>
 
 
 
