@@ -309,12 +309,6 @@
     <Content Include="dashboard-schedules.aspx" />
     <Content Include="ScholarPage.aspx" />
     <Content Include="signup.aspx" />
-    <Content Include="signupcss\css\style.css" />
-    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.svg" />
-    <Content Include="signupcss\fonts\linearicons\Read Me.txt" />
-    <Content Include="signupcss\fonts\linearicons\style.css" />
-    <Content Include="signupcss\images\image-1.png" />
-    <Content Include="signupcss\images\image-2.png" />
     <Content Include="Tripes1.aspx" />
     <Content Include="Tripes2.aspx" />
     <Content Include="Tripes3.aspx" />
@@ -641,16 +635,7 @@
     <Content Include="assets-2\scss\bootstrap\_utilities.scss" />
     <Content Include="assets-2\scss\bootstrap\_variables.scss" />
     <Content Include="assets-2\scss\style.scss" />
-    <Content Include="signupcss\css\style.css.map" />
-    <Content Include="signupcss\css\style.scss" />
-    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.eot" />
-    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.ttf" />
-    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.woff" />
-    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.woff2" />
-    <Content Include="signupcss\fonts\linearicons\selection.json" />
-    <Content Include="signupcss\fonts\muli\Muli-Bold.ttf" />
-    <Content Include="signupcss\fonts\muli\Muli-Regular.ttf" />
-    <Content Include="signupcss\fonts\muli\Muli-SemiBold.ttf" />
+    <None Include="Properties\PublishProfiles\BusBee - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

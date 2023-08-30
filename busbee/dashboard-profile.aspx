@@ -49,6 +49,17 @@
                 <span class="hide-menu">Profile</span>
               </a>
             </li>
+              
+              
+              
+              <li class="sidebar-item">
+              <a class="sidebar-link" href="dashboard-delete.aspx" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user-minus"></i>
+                </span>
+                <span class="hide-menu">Delete Account</span>
+              </a>
+            </li>
 
 
 
