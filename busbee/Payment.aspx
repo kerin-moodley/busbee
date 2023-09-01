@@ -1,14 +1,19 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Tripes2.aspx.cs" Inherits="busbee.purchasebusticket" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Payment.aspx.cs" Inherits="busbee.Payment" %>
 
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="purchase/payment.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
-    <link rel="stylesheet" href="purchase/stages.css" />
+  <link rel ="stylesheet" href="profilecss/profile.css" />
 </head>
 
 <body>
@@ -48,6 +53,17 @@
                 <span class="hide-menu">Profile</span>
               </a>
             </li>
+              
+              
+              
+              <li class="sidebar-item">
+              <a class="sidebar-link" href="dashboard-delete.aspx" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user-minus"></i>
+                </span>
+                <span class="hide-menu">Delete Account</span>
+              </a>
+            </li>
 
 
 
@@ -59,7 +75,7 @@
 
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="dashboard-notifications.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-bell-ringing"></i>
                 </span>
@@ -130,68 +146,54 @@
 
 
 
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-delete.aspx" aria-expanded="false">
-                <span>
-                  <i class="ti ti-user-minus"></i>
-                </span>
-                <span class="hide-menu">Delete account</span>
-              </a>
-            </li>
-
-
-
           </ul>
         </nav>
         <!-- End Sidebar navigation -->
       </div>
       <!-- End Sidebar scroll-->
     </aside>
-    <!--  Sidebar End -->
-    <!--  Main wrapper -->
+      </div>
+
+  
     <div class="body-wrapper">
-      <div class="wrapper">
-    <div class="inner">
-                    
-                     <div class="container" >
-        <h2>Prices </h2>
-        <p>Select your prices:</p>
-
-         <div class="button-block">
-         <a href="StoredValue.aspx" class="block-button">Stored Value:  R16.30</a>
-         </div>
-          <div class="button-block">
-         <a href="10t.aspx" class="block-button">10 Trip Weekly:  R131.00</a>
-         </div>
-          <div class="button-block">
-         <a href="12t.aspx" class="block-button">12 Trip Weekly:  R157.30</a>
-         </div>
-         <div class="button-block">
-         <a href="14t.aspx" class="block-button">14 Trip Weekly:  R183.40</a>
-         </div>
-         <div class="button-block">
-         <a href="44t.aspx" class="block-button">44 Trip Monthly:  R576.60</a>
-         </div>
-         <div class="button-block">
-         <a href="52t.aspx" class="block-button">52 Trip Weekly:  R681.40</a>
-         </div>
-      
-        
-
-    </div>
+        <div class="wrapper">
+            <div class="inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 leftside">
+                            <img
+                                src="purchase/bus_zooming.jpg"
+                                class="product"
+                                alt="Bus"
+                            />
+                        </div>
+                        <div class="col-md-6 rightside">
+                            <h1>Checkout</h1>
+                            <h2>Payment Information</h2>
+                            <p>Cardholder Name</p>
+                            <input type="text" class="inputbox" name="name" required />
+                            <p>Card Number</p>
+                            <input type="number" class="inputbox" name="card_number" id="card_number" required />
+                            <p>Card Type</p>
+                            <select class="inputbox" name="card_type" id="card_type" required>
+                                <option value="">--Select a Card Type--</option>
+                                <option value="Visa">Visa</option>
+                                <option value="MasterCard">MasterCard</option>
+                            </select>
+                            <div class="expcvv">
+                                <p class="expcvv_text">Expiry</p>
+                                <input type="date" class="inputbox" name="exp_date" id="exp_date" required />
+                                <p class="expcvv_text2">CVV</p>
+                                <input type="password" class="inputbox" name="cvv" id="cvv" required />
+                            </div>
+                            <p></p>
+                            <button type="submit" class="button">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-         </div>
-
-
     </div>
-  </div>
-
-  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/sidebarmenu.js"></script>
-  <script src="../assets/js/app.min.js"></script>
-  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
-  <script src="../assets/js/dashboard.js"></script>
+    <!-- Add your scripts and other content here -->
 </body>
-
 </html>

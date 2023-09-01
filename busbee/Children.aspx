@@ -1,7 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Tripes6.aspx.cs" Inherits="busbee.purchasebusticket" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Children.aspx.cs" Inherits="busbee.purchasebusticket" %>
 
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 
 <head>
   <meta charset="utf-8">
@@ -154,29 +153,35 @@
     <div class="inner">
                     
                      <div class="container" >
-        <h2>Prices </h2>
-        <p>Select your prices:</p>
+        <h2>Stages </h2>
+        <p>Select your stages:</p>
 
          <div class="button-block">
-         <a href="StoredValue.aspx" class="block-button">Stored Value:  R29.00</a>
+         <a href="TripsC1.aspx" class="block-button">NO:1 City Centre > Park Town > Joe Slovo and Louis Botha Avenue </a>
          </div>
           <div class="button-block">
-         <a href="10t.aspx" class="block-button">10 Trip Weekly:  R236.20</a>
+         <a href="TripsC2.aspx" class="block-button">NO:2 Corner Jan Smuts Avenue & Empire Road in Braamfontein > Corner Jan Smuts Avenue & Tyrwhitt Road in Rosebank. </a>
          </div>
           <div class="button-block">
-         <a href="12t.aspx" class="block-button">12 Trip Weekly:  R284.80</a>
+         <a href="TripsC3.aspx" class="block-button">NO:3 Corner Jan Smuts  Avenue to Tyrwhitt Road in Rosebank > Craighall Park.</a>
          </div>
          <div class="button-block">
-         <a href="14t.aspx" class="block-button">14 Trip Weekly:  R332.20</a>
+         <a href="TripsC4.aspx" class="block-button">NO:4 Craighall Park along Beyees Nuede Drive > Randburg Mall. </a>
          </div>
          <div class="button-block">
-         <a href="44t.aspx" class="block-button">44 Trip Monthly:  R1 044.10</a>
+         <a href="TripsC5.aspx" class="block-button">NO:5 Randburg Mall > Beverly Gardens</a>
          </div>
          <div class="button-block">
-         <a href="52t.aspx" class="block-button">52 Trip Weekly:  R1234.00</a>
+         <a href="TripsC6.aspx" class="block-button">NO:6 Beverly Gardens to North Gate. </a>
          </div>
-      
-        
+         <div class="button-block">
+         <a href="TripsC7.aspx" class="block-button">NO:7 Route 520: between Naturena and Randburg Centre </a>
+         </div>
+         <div class="button-block">
+         <a href="TripsC8.aspx" class="block-button">NO:8 Route 420: Westgate Shopping Centre Randburg Centre via Strijdom Park.</a>
+         </div>
+
+       
 
     </div>
         </div>

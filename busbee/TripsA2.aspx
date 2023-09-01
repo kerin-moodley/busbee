@@ -9,6 +9,50 @@
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
     <link rel="stylesheet" href="purchase/stages.css" />
+     <style>
+        /* Style for the pop-up container */
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        /* Style for the pop-up box */
+        .popup-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Style for the buttons */
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            background-color: transparent;
+             color:#3498db; /* Text color */
+             text-align: center;
+            text-decoration: none;
+            margin: 17px auto;
+            border: 2px solid #3498db; /* Primary color for outline */
+            border-radius: 10px;
+            cursor: pointer;
+        }
+         .btn:hover {
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+    }
+    </style>
 </head>
 
 <body>
@@ -154,28 +198,48 @@
     <div class="inner">
                     
                      <div class="container" >
-        <h2>Prices </h2>
+       <h2>Prices </h2>
         <p>Select your prices:</p>
+    <!-- Buttons with event listeners -->
+    <button class="block-button" onclick="showConfirmation('Stored Value', ' R16.30')">Stored Value: R16.30</button>
+    <button class="block-button" onclick="showConfirmation('10 Trip Weekly', 'R131.00')">10 Trip Weekly: R131.00</button>
+    <button class="block-button" onclick="showConfirmation('12 Trip Weekly', 'R157.30')">12 Trip Weekly:R157.30</button>
+    <button class="block-button" onclick="showConfirmation('14 Trip Weekly', 'R183.40')">14 Trip Weekly: R183.40</button>
+    <button class="block-button" onclick="showConfirmation('44 Trip Monthly)', R576.60')">44 Trip Monthly: R576.60</button>
+    <button class="block-button" onclick="showConfirmation('52 Trip Monthly', ' R681.40')">52 Trip Monthly:  R681.40</button>
 
-         <div class="button-block">
-         <a href="StoredValue.aspx" class="block-button">Stored Value:  R16.30</a>
-         </div>
-          <div class="button-block">
-         <a href="10t.aspx" class="block-button">10 Trip Weekly:  R131.00</a>
-         </div>
-          <div class="button-block">
-         <a href="12t.aspx" class="block-button">12 Trip Weekly:  R157.30</a>
-         </div>
-         <div class="button-block">
-         <a href="14t.aspx" class="block-button">14 Trip Weekly:  R183.40</a>
-         </div>
-         <div class="button-block">
-         <a href="44t.aspx" class="block-button">44 Trip Monthly:  R576.60</a>
-         </div>
-         <div class="button-block">
-         <a href="52t.aspx" class="block-button">52 Trip Weekly:  R681.40</a>
-         </div>
-      
+   <!-- Pop-up container -->
+    <div id="popup" class="popup-container">
+        <!-- Pop-up box -->
+        <div class="popup-box">
+            <span id="popup-message"></span>
+            <button class="btn" onclick="navigateToAnotherPage()">YES</button>
+            <button class="btn" onclick="closePopup()">NO</button>
+        </div>
+    </div>
+
+    <script>
+        
+        // Function to show the confirmation pop-up
+        function showConfirmation(buttonName, amount) {
+            const popup = document.getElementById('popup');
+            const message = document.getElementById('popup-message');
+            message.innerHTML = `You pressed ${buttonName} with amount ${amount}.Do you want to proceed?`;
+            popup.style.display = 'flex';
+        }
+
+        // Function to close the pop-up
+        function closePopup() {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        }
+
+        // Function to navigate to another page 
+        function navigateToAnotherPage() {
+            window.location.href = 'Payment.aspx'; 
+        }
+    
+    </script>
         
 
     </div>
