@@ -158,22 +158,22 @@
         <p>Select your prices:</p>
 
          <div class="button-block">
-         <a href="StoredValue.aspx" class="block-button">Stored Value:  R13.90</a>
+         <a href="ConfirmationPage.aspx?price=R13.90" class="block-button">Stored Value:  R13.90</a>
          </div>
           <div class="button-block">
-         <a href="10t.aspx" class="block-button">10 Trip Weekly:  R111.00</a>
+         <a href="ConfirmationPage.aspx?price=R110.00" class="block-button">10 Trip Weekly:  R111.00</a>
          </div>
           <div class="button-block">
-         <a href="12t.aspx" class="block-button">12 Trip Weekly:  R133.80</a>
+         <a href="ConfirmationPage.aspx?price=R133.80" class="block-button">12 Trip Weekly:  R133.80</a>
          </div>
          <div class="button-block">
-         <a href="14t.aspx" class="block-button">14 Trip Weekly:  R156.10</a>
+         <a href="ConfirmationPage.aspx?price=R156.10" class="block-button">14 Trip Weekly:  R156.10</a>
          </div>
          <div class="button-block">
-         <a href="44t.aspx" class="block-button">44 Trip Monthly:  R490.30</a>
+         <a href="ConfirmationPage.aspx?price=R490.30" class="block-button">44 Trip Monthly:  R490.30</a>
          </div>
          <div class="button-block">
-         <a href="52t.aspx" class="block-button">52 Trip Weekly:  R579.50</a>
+         <a href="ConfirmationPage.aspx?price=R579.50" class="block-button">52 Trip Weekly:  R579.50</a>
          </div>
       
         

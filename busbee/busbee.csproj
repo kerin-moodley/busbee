@@ -260,6 +260,7 @@
     <Content Include="assets-2\js\jquery.min.js" />
     <Content Include="assets-2\js\main.js" />
     <Content Include="assets-2\js\popper.js" />
+    <Content Include="ConfirmationPage.aspx" />
     <Content Include="dashboard-assets\css\icons\tabler-icons\fonts\tabler-icons.svg" />
     <Content Include="dashboard-assets\css\icons\tabler-icons\tabler-icons.css" />
     <Content Include="dashboard-assets\css\styles.css" />
@@ -302,6 +303,7 @@
     <Content Include="AdultPage.aspx" />
     <Content Include="DisabilitiesPage.aspx" />
     <Content Include="PensionerPage.aspx" />
+    <Content Include="purchase\buscard.jpg" />
     <Content Include="purchase\purchase.css" />
     <Content Include="purchase\stages.css" />
     <Content Include="purchase\trips.css" />
@@ -321,6 +323,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfirmationPage.aspx.cs">
+      <DependentUpon>ConfirmationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmationPage.aspx.designer.cs">
+      <DependentUpon>ConfirmationPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="dashboard-delete.aspx.cs">
       <DependentUpon>dashboard-delete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

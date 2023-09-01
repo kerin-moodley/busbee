@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard-delete.aspx.cs" Inherits="busbee.dashboard_delete" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ConfirmationPage.aspx.cs" Inherits="busbee.ConfirmationPage" %>
+
 
 <!doctype html>
 <html lang="en">
@@ -8,38 +9,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
-      <link href="deletecss/delete.css" rel="stylesheet" />
-   <script>
-       function allowDrop(ev) {
-           ev.preventDefault();
-       }
-
-       function drag(ev) {
-           ev.dataTransfer.setData("text", ev.target.id);
-       }
-
-       function drop(ev) {
-           ev.preventDefault();
-           var data = ev.dataTransfer.getData("text");
-           ev.target.appendChild(document.getElementById(data));
-       }
-
-       function verifyImage() {
-           // Check if the image has been dropped in div2
-           if (document.getElementById("div2").contains(document.getElementById("drag1"))) {
-               alert("Account has been deleted.");
-           } else {
-               alert("Please drag the image to the second rectangle.");
-           }
-
-       }
-   </script>
+    <link rel="stylesheet" href="purchase/stages.css" />
 </head>
 
 <body>
   <!--  Body Wrapper -->
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-    data-sidebar-position="fixed" data-header-position="fixed"></div>
+    data-sidebar-position="fixed" data-header-position="fixed">
     <!-- Sidebar Start -->
     <aside class="left-sidebar">
       <!-- Sidebar scroll-->
@@ -71,17 +47,6 @@
                   <i class="ti ti-user"></i>
                 </span>
                 <span class="hide-menu">Profile</span>
-              </a>
-            </li>
-
-
-
-              <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-delete.aspx" aria-expanded="false">
-                <span>
-                  <i class="ti ti-user-minus"></i>
-                </span>
-                <span class="hide-menu">Delete Account</span>
               </a>
             </li>
 
@@ -185,51 +150,36 @@
     </aside>
     <!--  Sidebar End -->
     <!--  Main wrapper -->
-   
     <div class="body-wrapper">
-<!--DELETE ACCOUNT-->
-   <div class="wrapper">
+      <div class="wrapper">
     <div class="inner">
-        <div class="container">
-            <h2>DELETE ACCOUNT</h2>
-            <p>Welcome to the Account Deletion Page.
-            If you wish to remove your account from our bus app, you're at the right place.</p>
-            <p>Please proceed with caution, as deleting your account will result in the loss of all your saved preferences and data within the app.</p>
-            <br />
-            <div class="form-group">
-                <label for="reasons">Why do you want to delete Busbee?</label>
-                <select name="reasons" id="reasons">
-                    <option value="nothing">---</option>
-                    <option value="ads">Too many ads</option>
-                    <option value="distracting">Too distracting</option>
-                    <option value="data">Concerned about my data</option>
-                    <option value="trouble">Trouble getting started</option>
-                    <option value="secondacc">Created a second account</option>
-                    <option value="privacy">Privacy concerns</option>
-                    <option value="something else">Other</option>
-                </select>
-            </div>
-
-            <p>To confirm deletion the Bus image into the empty rectangle:</p>
-           
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <img src="deletecss/bus.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="32">
-</div>
-
-<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <br />
-            <br />
-            <br />
-            <br />
-            
-             <button  Text="DELETE" class="button button2" id="btnDelete"  OnClick="verifyImage()">DELETE</button>
-
+                    
+                     <div class="container" >
+        <asp:Label ID="lblConfirmation" runat="server" Text=""></asp:Label>
+                          <div class="form-group">
+            <label for="BusCard">Bus Card Number:</label>
+            <input type="text" class="form-control" id="Text1" runat="server" required="required" />
         </div>
+         <img src="purchase/buscard.jpg" alt="adultbuscard" width="480" height="360">
+
+                        <div class="button-container">
+                    <a href="Tripes1.aspx" class="button button2">BACK</a>
+                    <span class="button-space"></span> <!-- Add space here -->
+                    <a href="Payment.aspx" class="button button2">NEXT</a>
+                </div>
+
+     
+      
+        
+
     </div>
-</div>
         </div>
-   
-    
+         </div>
+
+
+    </div>
+  </div>
+
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/sidebarmenu.js"></script>
