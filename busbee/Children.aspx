@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Children.aspx.cs" Inherits="busbee.purchasebusticket" %>
 
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
