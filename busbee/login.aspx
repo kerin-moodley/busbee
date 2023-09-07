@@ -34,9 +34,11 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="login.css"/>
+        
+        
+  <!-- ReCAPTCHA -->        
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
-  <!--RECAPTCHA-->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 
@@ -77,7 +79,6 @@
               <div class="card-body p-4 p-lg-5 text-black">
 
                 <form id="frmLogin" runat="server">
-
                   <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
 
                   <div class="form-outline mb-4">
@@ -159,6 +160,7 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+   
 
 </body>
 

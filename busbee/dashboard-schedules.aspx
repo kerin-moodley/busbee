@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="schedules.aspx.cs" Inherits="busbee.schedules" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard-schedules.aspx.cs" Inherits="busbee.schedules" %>
 
 <!doctype html>
 <html lang="en">
