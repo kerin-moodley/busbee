@@ -11,7 +11,7 @@ namespace busbee
 {
 
 
-    public partial class purchasebusticket
+    public partial class Payment
     {
     }
 }

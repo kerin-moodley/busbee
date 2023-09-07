@@ -8,7 +8,7 @@
 }
 
 .inner {
-    display:flex;
+    display: flex;
     width: 80%; /* Occupy the entire width */
     margin: 0 auto; /* Center align the content */
 }
@@ -84,4 +84,3 @@
 input[type="file"] {
     display: none;
 }
-

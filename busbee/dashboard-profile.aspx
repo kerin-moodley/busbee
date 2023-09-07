@@ -158,7 +158,7 @@
 
 
       <!--Profile page-->
-    <div class="wrapper">
+ <div class="wrapper">
   <div class="inner">
     <div class="container">
       <div class="avatar-container">

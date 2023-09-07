@@ -168,8 +168,10 @@
          <a href="PensionerPage.aspx" class="block-button">Pensioners</a>
          </div>
          <div class="button-block">
-         <a href="DisabilitiesPage.aspx" class="block-button">Persons with Disabilities</a>
-           
+         <a href="DisabilitiesPage.aspx" class="block-button">Persons with Disabilities</a> 
+         </div>
+         <div class="button-block">
+         <a href="DisabilitiesPage.aspx" class="block-button">Children between the ages of 3 and 12 years old</a> 
          </div>
 
        

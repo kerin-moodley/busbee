@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PensionerPage.aspx.cs" Inherits="busbee.purchasebusticket" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TripsA3.aspx.cs" Inherits="busbee.purchasebusticket" %>
 
 <!doctype html>
 <html lang="en">
@@ -9,6 +9,50 @@
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
     <link rel="stylesheet" href="purchase/stages.css" />
+     <style>
+        /* Style for the pop-up container */
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        /* Style for the pop-up box */
+        .popup-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Style for the buttons */
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            background-color: transparent;
+             color:#3498db; /* Text color */
+             text-align: center;
+            text-decoration: none;
+            margin: 17px auto;
+            border: 2px solid #3498db; /* Primary color for outline */
+            border-radius: 10px;
+            cursor: pointer;
+        }
+         .btn:hover {
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+    }
+    </style>
 </head>
 
 <body>
@@ -154,37 +198,50 @@
     <div class="inner">
                     
                      <div class="container" >
-        <h2>Stages </h2>
-        <p>Select your stages:</p>
-
-         <div class="button-block">
-         <a href="TripsP1.aspx" class="block-button">NO:1 City Centre > Park Town > Joe Slovo and Louis Botha Avenue</a>
-         </div>
-          <div class="button-block">
-         <a href="TripsP2.aspx" class="block-button">NO:2 Corner Jan Smuts Avenue & Empire Road in Braamfontein > Corner Jan Smuts Avenue & Tyrwhitt Road in Rosebank.</a>
-         </div>
-          <div class="button-block">
-         <a href="TripsP3.aspx" class="block-button">NO:3 Corner Jan Smuts  Avenue to Tyrwhitt Road in Rosebank > Craighall Park.</a>
-         </div>
-         <div class="button-block">
-         <a href="TripsP4.aspx" class="block-button">NO:4 Craighall Park along Beyees Nuede Drive > Randburg Mall.</a>
-         </div>
-         <div class="button-block">
-         <a href="TripsP5.aspx" class="block-button">NO:5 Randburg Mall > Beverly Gardens</a>
-         </div>
-         <div class="button-block">
-         <a href="TripsP6.aspx" class="block-button">NO:6 Beverly Gardens to North Gate.</a>
-         </div>
-         <div class="button-block">
-         <a href="TripsP7.aspx" class="block-button">NO:7 Route 520: between Naturena and Randburg Centre</a>
-         </div>
-         <div class="button-block">
-         <a href="TripsP8.aspx" class="block-button">NO:8 Route 420: Westgate Shopping Centre Randburg Centre via Strijdom Park.</a>
-         </div>
       
-        
+           <h2>Prices </h2>
+        <p>Select your prices:</p>
+    <!-- Buttons with event listeners -->
+    <button class="block-button" onclick="showConfirmation('Stored Value', ' R19.70')">Stored Value: R19.70</button>
+    <button class="block-button" onclick="showConfirmation('10 Trip Weekly', 'R157.80')">10 Trip Weekly: R157.80</button>
+    <button class="block-button" onclick="showConfirmation('12 Trip Weekly', 'R189.40')">12 Trip Weekly: R189.40</button>
+    <button class="block-button" onclick="showConfirmation('14 Trip Weekly', 'R220.90')">14 Trip Weekly: R220.90</button>
+    <button class="block-button" onclick="showConfirmation('44 Trip Monthly)', R694.60')">44 Trip Monthly: R694.60</button>
+    <button class="block-button" onclick="showConfirmation('52 Trip Monthly', ' R820.90')">52 Trip Monthly: R820.90</button>
 
-       
+   <!-- Pop-up container -->
+    <div id="popup" class="popup-container">
+        <!-- Pop-up box -->
+        <div class="popup-box">
+            <span id="popup-message"></span>
+            <button class="btn" onclick="navigateToAnotherPage()">YES</button>
+            <button class="btn" onclick="closePopup()">NO</button>
+        </div>
+    </div>
+
+    <script>
+        
+        // Function to show the confirmation pop-up
+        function showConfirmation(buttonName, amount) {
+            const popup = document.getElementById('popup');
+            const message = document.getElementById('popup-message');
+            message.innerHTML = `You pressed ${buttonName} with amount ${amount}.Do you want to proceed?`;
+            popup.style.display = 'flex';
+        }
+
+        // Function to close the pop-up
+        function closePopup() {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        }
+
+        // Function to navigate to another page 
+        function navigateToAnotherPage() {
+            window.location.href = 'Payment.aspx'; 
+        }
+    
+    </script>
+        
 
     </div>
         </div>

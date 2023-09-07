@@ -158,31 +158,28 @@
         <p>Select your stages:</p>
 
          <div class="button-block">
-         <a href="Tripes1.aspx" class="block-button">NO:1 City Centre > Park Town > Joe Slovo and Louis Botha Avenue </a>
+         <a href="TripsA1.aspx" class="block-button">NO:1 City Centre > Park Town > Joe Slovo and Louis Botha Avenue </a>
          </div>
           <div class="button-block">
-         <a href="Tripes2.aspx" class="block-button">NO:2 Corner Jan Smuts Avenue & Empire Road in Braamfontein > Corner Jan Smuts Avenue & Tyrwhitt Road in Rosebank. </a>
+         <a href="TripsA2.aspx" class="block-button">NO:2 Corner Jan Smuts Avenue & Empire Road in Braamfontein > Corner Jan Smuts Avenue & Tyrwhitt Road in Rosebank. </a>
          </div>
           <div class="button-block">
-         <a href="Tripes3.aspx" class="block-button">NO:3 Corner Jan Smuts  Avenue to Tyrwhitt Road in Rosebank > Craighall Park.</a>
+         <a href="TripsA3.aspx" class="block-button">NO:3 Corner Jan Smuts  Avenue to Tyrwhitt Road in Rosebank > Craighall Park.</a>
          </div>
          <div class="button-block">
-         <a href="Tripes4.aspx" class="block-button">NO:4 Craighall Park along Beyees Nuede Drive > Randburg Mall. </a>
+         <a href="TripsA4.aspx" class="block-button">NO:4 Craighall Park along Beyees Nuede Drive > Randburg Mall. </a>
          </div>
          <div class="button-block">
-         <a href="Tripes5.aspx" class="block-button">NO:5 Randburg Mall > Beverly Gardens</a>
+         <a href="TripsA5.aspx" class="block-button">NO:5 Randburg Mall > Beverly Gardens</a>
          </div>
          <div class="button-block">
-         <a href="Tripes6.aspx" class="block-button">NO:6 Beverly Gardens to North Gate. </a>
+         <a href="TripsA6.aspx" class="block-button">NO:6 Beverly Gardens to North Gate. </a>
          </div>
          <div class="button-block">
-         <a href="Tripes7.aspx" class="block-button">NO:7 Route 520: between Naturena and Randburg Centre </a>
+         <a href="TripsA7.aspx" class="block-button">NO:7 Route 520: between Naturena and Randburg Centre </a>
          </div>
          <div class="button-block">
-         <a href="Tripes8.aspx" class="block-button">NO:8 Route 420: Westgate Shopping Centre Randburg Centre via Strijdom Park.</a>
-         </div>
-         <div class="button-block">
-         <a href="Tripes9.aspx" class="block-button">NO:9 Route 421</a>
+         <a href="TripsA8.aspx"  class="block-button">NO:8 Route 420: Westgate Shopping Centre Randburg Centre via Strijdom Park.</a>
          </div>
 
        

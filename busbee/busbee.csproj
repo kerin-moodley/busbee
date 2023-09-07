@@ -410,6 +410,7 @@
     <Content Include="assets-2\js\jquery.min.js" />
     <Content Include="assets-2\js\main.js" />
     <Content Include="assets-2\js\popper.js" />
+    <Content Include="Children.aspx" />
     <Content Include="dashboard-assets\css\icons\tabler-icons\fonts\tabler-icons.svg" />
     <Content Include="dashboard-assets\css\icons\tabler-icons\tabler-icons.css" />
     <Content Include="dashboard-assets\css\styles.css" />
@@ -447,11 +448,15 @@
     <Content Include="login.aspx" />
     <Content Include="dashboard-maps.aspx" />
     <Content Include="dashboard-problem.aspx" />
+    <Content Include="Payment.aspx" />
     <Content Include="profilecss\avatar.png" />
     <Content Include="profilecss\profile.css" />
     <Content Include="AdultPage.aspx" />
     <Content Include="DisabilitiesPage.aspx" />
     <Content Include="PensionerPage.aspx" />
+    <Content Include="purchase\buscard.jpg" />
+    <Content Include="purchase\bus_zooming.jpg" />
+    <Content Include="purchase\payment.css" />
     <Content Include="purchase\purchase.css" />
     <Content Include="purchase\stages.css" />
     <Content Include="purchase\trips.css" />
@@ -459,18 +464,56 @@
     <Content Include="dashboard-schedules.aspx" />
     <Content Include="ScholarPage.aspx" />
     <Content Include="signup.aspx" />
-    <Content Include="Tripes1.aspx" />
-    <Content Include="Tripes2.aspx" />
-    <Content Include="Tripes3.aspx" />
-    <Content Include="Tripes4.aspx" />
-    <Content Include="Tripes5.aspx" />
-    <Content Include="Tripes6.aspx" />
-    <Content Include="Tripes7.aspx" />
-    <Content Include="Tripes8.aspx" />
-    <Content Include="Tripes9.aspx" />
+    <Content Include="TripsA1.aspx" />
+    <Content Include="TripsA2.aspx" />
+    <Content Include="TripsA3.aspx" />
+    <Content Include="TripsA4.aspx" />
+    <Content Include="TripsA5.aspx" />
+    <Content Include="TripsA6.aspx" />
+    <Content Include="TripsA7.aspx" />
+    <Content Include="TripsA8.aspx" />
+    <Content Include="TripsC1.aspx" />
+    <Content Include="TripsC2.aspx" />
+    <Content Include="TripsC3.aspx" />
+    <Content Include="TripsC4.aspx" />
+    <Content Include="TripsC5.aspx" />
+    <Content Include="TripsC6.aspx" />
+    <Content Include="TripsC7.aspx" />
+    <Content Include="TripsC8.aspx" />
+    <Content Include="TripsD1.aspx" />
+    <Content Include="TripsD2.aspx" />
+    <Content Include="TripsD3.aspx" />
+    <Content Include="TripsD4.aspx" />
+    <Content Include="TripsD5.aspx" />
+    <Content Include="TripsD6.aspx" />
+    <Content Include="TripsD7.aspx" />
+    <Content Include="TripsD8.aspx" />
+    <Content Include="TripsP1.aspx" />
+    <Content Include="TripsP2.aspx" />
+    <Content Include="TripsP3.aspx" />
+    <Content Include="TripsP4.aspx" />
+    <Content Include="TripsP5.aspx" />
+    <Content Include="TripsP6.aspx" />
+    <Content Include="TripsP7.aspx" />
+    <Content Include="TripsP8.aspx" />
+    <Content Include="TripsS1.aspx" />
+    <Content Include="TripsS2.aspx" />
+    <Content Include="TripsS3.aspx" />
+    <Content Include="TripsS4.aspx" />
+    <Content Include="TripsS5.aspx" />
+    <Content Include="TripsS6.aspx" />
+    <Content Include="TripsS7.aspx" />
+    <Content Include="TripsS8.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Children.aspx.cs">
+      <DependentUpon>Children.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Children.aspx.designer.cs">
+      <DependentUpon>Children.aspx</DependentUpon>
+    </Compile>
     <Compile Include="dashboard-delete.aspx.cs">
       <DependentUpon>dashboard-delete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -555,6 +598,13 @@
     <Compile Include="DisabilitiesPage.aspx.designer.cs">
       <DependentUpon>DisabilitiesPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PensionerPage.aspx.cs">
       <DependentUpon>PensionerPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -577,68 +627,245 @@
       <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tripes1.aspx.cs">
-      <DependentUpon>Tripes1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="TripsA1.aspx.cs">
+      <DependentUpon>TripsA1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes1.aspx.designer.cs">
-      <DependentUpon>Tripes1.aspx</DependentUpon>
+    <Compile Include="TripsA1.aspx.designer.cs">
+      <DependentUpon>TripsA1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes2.aspx.cs">
-      <DependentUpon>Tripes2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="TripsA2.aspx.cs">
+      <DependentUpon>TripsA2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes2.aspx.designer.cs">
-      <DependentUpon>Tripes2.aspx</DependentUpon>
+    <Compile Include="TripsA2.aspx.designer.cs">
+      <DependentUpon>TripsA2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes3.aspx.cs">
-      <DependentUpon>Tripes3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="TripsA3.aspx.cs">
+      <DependentUpon>TripsA3.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes3.aspx.designer.cs">
-      <DependentUpon>Tripes3.aspx</DependentUpon>
+    <Compile Include="TripsA3.aspx.designer.cs">
+      <DependentUpon>TripsA3.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes4.aspx.cs">
-      <DependentUpon>Tripes4.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="TripsA4.aspx.cs">
+      <DependentUpon>TripsA4.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes4.aspx.designer.cs">
-      <DependentUpon>Tripes4.aspx</DependentUpon>
+    <Compile Include="TripsA4.aspx.designer.cs">
+      <DependentUpon>TripsA4.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes5.aspx.cs">
-      <DependentUpon>Tripes5.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="TripsA5.aspx.cs">
+      <DependentUpon>TripsA5.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes5.aspx.designer.cs">
-      <DependentUpon>Tripes5.aspx</DependentUpon>
+    <Compile Include="TripsA5.aspx.designer.cs">
+      <DependentUpon>TripsA5.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes6.aspx.cs">
-      <DependentUpon>Tripes6.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="TripsA6.aspx.cs">
+      <DependentUpon>TripsA6.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes6.aspx.designer.cs">
-      <DependentUpon>Tripes6.aspx</DependentUpon>
+    <Compile Include="TripsA6.aspx.designer.cs">
+      <DependentUpon>TripsA6.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes7.aspx.cs">
-      <DependentUpon>Tripes7.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="TripsA7.aspx.cs">
+      <DependentUpon>TripsA7.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes7.aspx.designer.cs">
-      <DependentUpon>Tripes7.aspx</DependentUpon>
+    <Compile Include="TripsA7.aspx.designer.cs">
+      <DependentUpon>TripsA7.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes8.aspx.cs">
-      <DependentUpon>Tripes8.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="TripsA8.aspx.cs">
+      <DependentUpon>TripsA8.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes8.aspx.designer.cs">
-      <DependentUpon>Tripes8.aspx</DependentUpon>
+    <Compile Include="TripsA8.aspx.designer.cs">
+      <DependentUpon>TripsA8.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes9.aspx.cs">
-      <DependentUpon>Tripes9.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="TripsC1.aspx.cs">
+      <DependentUpon>TripsC1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tripes9.aspx.designer.cs">
-      <DependentUpon>Tripes9.aspx</DependentUpon>
+    <Compile Include="TripsC1.aspx.designer.cs">
+      <DependentUpon>TripsC1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC2.aspx.cs">
+      <DependentUpon>TripsC2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC2.aspx.designer.cs">
+      <DependentUpon>TripsC2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC3.aspx.cs">
+      <DependentUpon>TripsC3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC3.aspx.designer.cs">
+      <DependentUpon>TripsC3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC4.aspx.cs">
+      <DependentUpon>TripsC4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC4.aspx.designer.cs">
+      <DependentUpon>TripsC4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC5.aspx.cs">
+      <DependentUpon>TripsC5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC5.aspx.designer.cs">
+      <DependentUpon>TripsC5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC6.aspx.cs">
+      <DependentUpon>TripsC6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC6.aspx.designer.cs">
+      <DependentUpon>TripsC6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC7.aspx.cs">
+      <DependentUpon>TripsC7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC7.aspx.designer.cs">
+      <DependentUpon>TripsC7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC8.aspx.cs">
+      <DependentUpon>TripsC8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsC8.aspx.designer.cs">
+      <DependentUpon>TripsC8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD1.aspx.cs">
+      <DependentUpon>TripsD1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD1.aspx.designer.cs">
+      <DependentUpon>TripsD1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD2.aspx.cs">
+      <DependentUpon>TripsD2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD2.aspx.designer.cs">
+      <DependentUpon>TripsD2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD3.aspx.cs">
+      <DependentUpon>TripsD3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD3.aspx.designer.cs">
+      <DependentUpon>TripsD3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD4.aspx.cs">
+      <DependentUpon>TripsD4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD4.aspx.designer.cs">
+      <DependentUpon>TripsD4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD5.aspx.cs">
+      <DependentUpon>TripsD5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD5.aspx.designer.cs">
+      <DependentUpon>TripsD5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD6.aspx.cs">
+      <DependentUpon>TripsD6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD6.aspx.designer.cs">
+      <DependentUpon>TripsD6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD7.aspx.cs">
+      <DependentUpon>TripsD7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD7.aspx.designer.cs">
+      <DependentUpon>TripsD7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD8.aspx.cs">
+      <DependentUpon>TripsD8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsD8.aspx.designer.cs">
+      <DependentUpon>TripsD8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP1.aspx.cs">
+      <DependentUpon>TripsP1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP1.aspx.designer.cs">
+      <DependentUpon>TripsP1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP2.aspx.cs">
+      <DependentUpon>TripsP2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP2.aspx.designer.cs">
+      <DependentUpon>TripsP2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP3.aspx.cs">
+      <DependentUpon>TripsP3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP3.aspx.designer.cs">
+      <DependentUpon>TripsP3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP4.aspx.cs">
+      <DependentUpon>TripsP4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP4.aspx.designer.cs">
+      <DependentUpon>TripsP4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP5.aspx.cs">
+      <DependentUpon>TripsP5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP5.aspx.designer.cs">
+      <DependentUpon>TripsP5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP6.aspx.cs">
+      <DependentUpon>TripsP6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP6.aspx.designer.cs">
+      <DependentUpon>TripsP6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP7.aspx.cs">
+      <DependentUpon>TripsP7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP7.aspx.designer.cs">
+      <DependentUpon>TripsP7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP8.aspx.cs">
+      <DependentUpon>TripsP8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsP8.aspx.designer.cs">
+      <DependentUpon>TripsP8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS1.aspx.cs">
+      <DependentUpon>TripsS1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS1.aspx.designer.cs">
+      <DependentUpon>TripsS1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS2.aspx.cs">
+      <DependentUpon>TripsS2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS2.aspx.designer.cs">
+      <DependentUpon>TripsS2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS3.aspx.cs">
+      <DependentUpon>TripsS3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS3.aspx.designer.cs">
+      <DependentUpon>TripsS3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS4.aspx.cs">
+      <DependentUpon>TripsS4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS4.aspx.designer.cs">
+      <DependentUpon>TripsS4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS5.aspx.cs">
+      <DependentUpon>TripsS5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS5.aspx.designer.cs">
+      <DependentUpon>TripsS5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS6.aspx.cs">
+      <DependentUpon>TripsS6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS6.aspx.designer.cs">
+      <DependentUpon>TripsS6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS7.aspx.cs">
+      <DependentUpon>TripsS7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS7.aspx.designer.cs">
+      <DependentUpon>TripsS7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS8.aspx.cs">
+      <DependentUpon>TripsS8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripsS8.aspx.designer.cs">
+      <DependentUpon>TripsS8.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
