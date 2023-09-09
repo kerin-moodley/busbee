@@ -11,7 +11,7 @@ namespace busbee
 {
 
 
-    public partial class Dashboard_BusDriver
+    public partial class BusNotification
     {
     }
 }

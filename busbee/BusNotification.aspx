@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Dashboard-BusDriver.aspx.cs" Inherits="busbee.Dashboard_BusDriver" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BusNotification.aspx.cs" Inherits="busbee.BusNotification" %>
 
 <!doctype html>
 <html lang="en">
@@ -8,35 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
-      <link rel="stylesheet" href="busdriver.css" />
-        <style>
-        /* Style for the buttons */
-        .button {
-            background-color: #4CAF50; /* Green background color */
-            border: none; /* Remove border */
-            color: white; /* White text color */
-            padding: 15px 32px; /* Padding to maintain size */
-            text-align: center; /* Center text */
-            text-decoration: none; /* Remove underline */
-            display: inline-block; /* Make it an inline block element */
-            font-size: 16px; /* Font size */
-            margin: 4px 2px; /* Margin */
-            transition-duration: 0.4s; /* Transition duration */
-            cursor: pointer; /* Cursor pointer */
-        }
-
-        /* Hover effect for buttons */
-        .button:hover {
-            background-color: white; /* Change background color on hover */
-            color: black; /* Change text color on hover */
-            border: 2px solid #4CAF50; /* Add border on hover */
-        }
-
-        /* Style for the label */
-        .label {
-            font-size: 20px; /* Font size for the label */
-        }
-    </style>
+      <link rel="stylesheet" href="./busdriver.css" />
 
 </head>
 
@@ -190,17 +162,33 @@
     <!--  Main wrapper -->
     <div class="body-wrapper">
       
-<!--Bus DRIVER-->
+<!--Bus Notification-->
 <div class="wrapper">
     <div class="inner">
                     
                      <div class="container" >
-      <button id="locationButton">Allow to detect location</button>
-      <label id="locationLabel"></label>
-      <button id="navigateButton" style="display: none;">Go to BusNotification</button>
-      <button id="stopAutoUpdate">Stop Automatic Update</button>
+ <h1>Bus Location Information</h1>
 
-    <script src="script.js"></script>
+    <div id="locationInfo">
+        <!-- The location information will be displayed here -->
+    </div>
+
+    <script>
+        // JavaScript code to retrieve and display the location information from the query parameter
+        document.addEventListener("DOMContentLoaded", function () {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const locationInfo = urlParams.get("location");
+
+            if (locationInfo) {
+                const locationInfoElement = document.getElementById("locationInfo");
+                locationInfoElement.textContent = "Location: " + decodeURIComponent(locationInfo);
+            } else {
+                const locationInfoElement = document.getElementById("locationInfo");
+                locationInfoElement.textContent = "Location information not found.";
+            }
+        });
+    </script>
     </div>
         </div>
          </div>
@@ -217,4 +205,5 @@
 </body>
 
 </html>
+
 
