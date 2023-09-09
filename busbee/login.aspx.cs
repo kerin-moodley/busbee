@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
+using Recaptcha.Web;
 
 namespace busbee
 {
@@ -67,12 +68,12 @@ namespace busbee
                 }
                 else
                 {
-                    string errormessage = "Error(s): ";
+                    string errormessage = "Error";
                     foreach (var err in result.ErrorCodes)
                     {
                         txtPassword.Text = string.Empty;
                         txtUsername.Text = string.Empty;
-                        Response.Write("Error: " + errormessage);
+                        Response.Write(errormessage);
                     }
                 }
             }
@@ -83,3 +84,4 @@ namespace busbee
 
     }
 }
+
