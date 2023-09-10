@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace busbee
 {
-    public partial class dashboard_notifications : System.Web.UI.Page
+    public partial class notifications : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -25,13 +25,13 @@ namespace busbee
                 time_input.Text = "04:00"; // Set to the desired default time
 
                 // Clear the result message
-                result.InnerHtml = "";
+                result.Text = "";
             }
         }
 
-        protected void ConfirmButton_Click(object sender, EventArgs e)
+        protected void confirm_button_Click(object sender, EventArgs e)
         {
-            string selectedBus = bus_select.Value; // Assuming bus_select is the ID of the DropDownList
+            string selectedBus = bus_select.SelectedValue; // Assuming bus_select is the ID of the DropDownList
             string selectedTime = time_input.Text; // Assuming time_input is the ID of the TextBox
             bool receiveNotifications = notification_checkbox.Checked; // Assuming notification_checkbox is the ID of the CheckBox
 
@@ -41,7 +41,7 @@ namespace busbee
 
             if (selectedHour < 4 || selectedHour > 19)
             {
-                result.InnerHtml = "Error: Bus is unavailable at this time. Please choose a time between 04:00 AM and 07:00 PM.";
+                result.Text = "Error: Bus is unavailable at this time. Please choose a time between 04:00 AM and 07:00 PM.";
                 return;
             }
 
@@ -59,7 +59,8 @@ namespace busbee
                 ClientScript.RegisterStartupScript(this.GetType(), "notification", "alert('You will receive a notification when the bus is 10 minutes away.');", true);
             }
 
-            result.InnerHtml = resultMessage;
+            result.Text = resultMessage;
+
         }
     }
 }

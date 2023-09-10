@@ -1,85 +1,24 @@
-﻿
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="notifications.aspx.cs" Inherits="busbee.notifications" %>
 
+<!DOCTYPE html>
 
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
-
-    <style>
-         .body-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-        /* Styling for the Bus Booking System */
-.booking-system {
-    background: #ffffff;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 50px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-  
-}
-
-.booking-system h2 {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.booking-system label {
-    color: #555;
-    margin-top: 10px;
-    display: block;
-}
-
-.booking-system select,
-.booking-system input[type="time"],
-.booking-system input[type="checkbox"],
-.booking-system button {
-    margin: 5px 0;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    font-size: 0.9rem;
-}
-
-.booking-system button{
-    background-color: #008374;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border:none;
-    border-radius:8px;
-    padding:10px;
-    
-}
-
-.booking-system button:hover {
-    background-color: #45a049;
-}
-
-.booking-result {
-    margin-top: 20px;
-    font-weight: bold;
-    color: #555;
-}
-
-    </style>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Notifications</title>
+    <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
+    <link rel="stylesheet" href="../dashboard-assets/css/notifications.css" />
 </head>
 
+
+
+
 <body>
+
+
+    <form runat="server">
+
   <!--  Body Wrapper -->
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
     data-sidebar-position="fixed" data-header-position="fixed">
@@ -119,6 +58,17 @@
 
 
 
+              <li class="sidebar-item">
+              <a class="sidebar-link" href="dashboard-delete.aspx" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user-minus"></i>
+                </span>
+                <span class="hide-menu">Delete Account</span>
+              </a>
+            </li>
+
+
+
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">Services</span>
@@ -145,6 +95,7 @@
                 <span class="hide-menu">Bus Schedules</span>
               </a>
             </li>
+
 
 
             <li class="sidebar-item">
@@ -198,17 +149,6 @@
 
 
 
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-delete.aspx" aria-expanded="false">
-                <span>
-                  <i class="ti ti-user-minus"></i>
-                </span>
-                <span class="hide-menu">Delete account</span>
-              </a>
-            </li>
-
-
-
           </ul>
         </nav>
         <!-- End Sidebar navigation -->
@@ -221,40 +161,68 @@
 
          <div class="booking-system">
         <h2>Get Notified When Your Next Ride Is On Its Way</h2>
+
         <div id="bus-selection">
-            <label for="bus-select">Choose a bus:</label>
-            <select id="bus-select">
-                <option value="412 Ghandi Square to Witpoortjie">412 Ghandi Square to Witpoortjie</option>
-                <option value="413 Ghandi Square to Roodekrans">413 Ghandi Square to Roodekrans</option>
-            </select>
+            <asp:Label ID="bus_select_label" runat="server" Text="Choose a bus:"></asp:Label>
+
+            <asp:DropDownList ID="bus_select" runat="server">
+                <asp:ListItem Value="412 Ghandi Square to Witpoortjie"></asp:ListItem>
+                <asp:ListItem Value="413 Ghandi Square to Roodekrans"></asp:ListItem>
+            </asp:DropDownList>
+
         </div>
+
+
         <div id="time-selection">
-            <label for="time-input">Choose a time between 04:00 AM and 07:00 PM:</label>
-            <select id="time-input">
-               <option value="06:10 AM">06:10 AM</option>
-        <option value="07:05 AM">07:00 AM</option>
-        <option value="08:10 AM">08:10 AM</option>
-        <option value="09:00 AM">09:00 AM</option>
-        <option value="09:45 AM">09:45 AM</option>
-        <option value="10:45 AM">10:45 AM</option>
-        <option value="11:30 AM">11:30 AM</option>
-        <option value="12:20 PM">12:20 PM</option>
-        <option value="02:00 PM">02:00 PM</option>
-        <option value="02:45 PM">02:45 PM</option>
-        <option value="03:30 PM">03:30 PM</option>
-        <option value="04:10 PM">04:10 PM</option>
-        <option value="04:50 PM">04:50 PM</option>
-        <option value="05:30 PM">05:30 PM</option>
-        <option value="06:15 PM">06:15 PM</option>
-        <option value="07:00 PM">07:00 PM</option>
-            </select>
+            <asp:Label ID="time_input_label" runat="server" Text="Choose a time between 04:00 AM and 07:00 PM:"></asp:Label>     
         </div>
+
+
+             <asp:DropDownList ID="time_input" runat="server">
+                 <asp:ListItem value="07:00 AM"></asp:ListItem>
+
+                 <asp:ListItem value="08:10 AM"></asp:ListItem>
+
+                 <asp:ListItem value="09:00 AM"></asp:ListItem>
+
+                 <asp:ListItem value="06:10 AM"></asp:ListItem>
+
+                 <asp:ListItem value="09:45 AM"></asp:ListItem>
+
+                 <asp:ListItem value="10:45 AM"></asp:ListItem>
+
+                 <asp:ListItem value="11:30 AM"></asp:ListItem>
+
+                 <asp:ListItem value="12:20 PM"></asp:ListItem>
+
+                 <asp:ListItem value="02:00 PM"></asp:ListItem>
+
+                 <asp:ListItem value="02:45 PM"></asp:ListItem>
+
+                 <asp:ListItem value="03:30 PM"></asp:ListItem>
+
+                 <asp:ListItem value="04:10 PM"></asp:ListItem>
+
+                 <asp:ListItem value="04:50 PM"></asp:ListItem>
+
+                 <asp:ListItem value="05:30 PM"></asp:ListItem>
+
+                 <asp:ListItem value="06:15 PM"></asp:ListItem>
+
+                 <asp:ListItem value="07:00 PM"></asp:ListItem>
+
+             </asp:DropDownList>
+
+
+
         <div id="notification-selection">
-            <label for="notification-checkbox">Receive notifications:</label>
-            <input type="checkbox" id="notification-checkbox">
+            <asp:CheckBox ID="notification_checkbox" Text="Receive notifications:" runat="server" />
+
         </div>
-        <button id="confirm-button" onclick="onConfirmButtonClick()">Confirm Booking</button>
-        <div id="result" class="booking-result"></div>
+
+        <asp:Button ID="confirm_button" runat="server" Text="Confirm Booking" OnClick="confirm_button_Click" />
+        <asp:Label ID="result" runat="server" Text="" class="booking-result"></asp:Label>
+
     </div>
 
    
@@ -269,14 +237,14 @@
    
        <script>
            // Populate time options based on bus schedule
-           const timeInput = document.getElementById('time-input');
+           const timeInput = document.getElementById('time_input');
            const busSchedule = {
                '412 Ghandi Square to Witpoortjie': ['06:10', '07:05', '08:10', '09:00', '09:45', '10:45', '11:30', '12:20', '14:00', '14:45', '15:30', '16:10', '16:50', '17:30', '18:15', '19:00'],
                '413 Ghandi Square to Roodekrans': ['04:40', '05:05', '05:40', '06:10', '07:00', '07:45', '08:00', '08:45', '09:45', '10:45', '11:45', '12:45', '13:35', '14:10', '15:45', '16:20', '16:50']
            };
 
            document.addEventListener('DOMContentLoaded', () => {
-               const busSelect = document.getElementById('bus-select');
+               const busSelect = document.getElementById('bus_select');
 
                // Event listener for bus selection change
                busSelect.addEventListener('change', () => {
@@ -326,6 +294,9 @@
            });
        </script>
 
+
+    </form>
+
     <!-- End of notifications Javascript -->
      <script src="../dashboard-content/js/notifications.js"></script>
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
@@ -335,5 +306,25 @@
   <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
   <script src="../assets/js/dashboard.js"></script>
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </html>
