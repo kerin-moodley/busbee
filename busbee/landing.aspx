@@ -25,6 +25,44 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+    <!--style for dropDoown-->
+   <style>
+       /* Style for the dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the dropdown button */
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#008374;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown content when hovering or clicking on the dropdown button */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+   </style>
 </head>
 
 
@@ -37,14 +75,21 @@
           <img style="width:15%;" src="assets/img/busbeelogo.png" alt=""> 
 
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="login.aspx">Login</a></li>
-        </ul>
+       <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+       <li><a href="#contact">Contact</a></li>
+     <li id="busDriver" class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Bus Driver</a>
+    <div class="dropdown-content">
+      <a href="Bus login.aspx">Login</a>
+      <a href="Bus SignUp.aspx">SignUp</a>
+    </div>
+  </li>
+  <li><a href="login.aspx">Login</a></li>
+</ul>
       </nav>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -482,6 +527,16 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+    <!--Script for dropdown-->
+     <script>
+         document.addEventListener("click", function (e) {
+             const busDriver = document.getElementById("busDriver");
+             if (!busDriver.contains(e.target)) {
+                 const dropdownContent = busDriver.querySelector(".dropdown-content");
+                 dropdownContent.style.display = "none";
+             }
+         });
+     </script>
 
 </body>
 

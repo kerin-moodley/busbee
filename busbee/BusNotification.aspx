@@ -1,5 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard-profile.aspx.cs" Inherits="busbee.dashboard_profile" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BusNotification.aspx.cs" Inherits="busbee.BusNotification" %>
 
 <!doctype html>
 <html lang="en">
@@ -9,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
-  <link rel ="stylesheet" href="profilecss/profile.css" />
+      <link rel="stylesheet" href="./busdriver.css" />
+
 </head>
 
 <body>
@@ -49,9 +49,9 @@
                 <span class="hide-menu">Profile</span>
               </a>
             </li>
-              
-              
-              
+
+
+
               <li class="sidebar-item">
               <a class="sidebar-link" href="DashboardDelete.aspx" aria-expanded="false">
                 <span>
@@ -68,7 +68,14 @@
               <span class="hide-menu">Services</span>
             </li>
 
-
+                  <li class="sidebar-item">
+              <a class="sidebar-link" href="Dashboard-BusDriver.aspx" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user"></i>
+                </span>
+                <span class="hide-menu">Bus Driver</span>
+              </a>
+            </li>
 
             <li class="sidebar-item">
               <a class="sidebar-link" href="dashboard-notifications.aspx" aria-expanded="false">
@@ -82,7 +89,7 @@
 
 
                <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-schedules.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="DashboardSchedule.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-calendar"></i>
                 </span>
@@ -91,19 +98,10 @@
             </li>
 
 
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-purchase.aspx" aria-expanded="false">
-                <span>
-                  <i class="ti ti-cards"></i>
-                </span>
-                <span class="hide-menu">Purchase bus tickets</span>
-              </a>
-            </li>
-
 
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-maps.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="DashboardMaps.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-map"></i>
                 </span>
@@ -114,7 +112,7 @@
 
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-problem.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="DashboardReport.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
@@ -128,11 +126,13 @@
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">AUTH</span>
             </li>
+              
+          
 
 
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="login.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="Bus login.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-logout"></i>
                 </span>
@@ -142,90 +142,50 @@
 
 
 
+
           </ul>
         </nav>
         <!-- End Sidebar navigation -->
       </div>
       <!-- End Sidebar scroll-->
     </aside>
-      </div>
     <!--  Sidebar End -->
     <!--  Main wrapper -->
     <div class="body-wrapper">
+      
+<!--Bus Notification-->
+<div class="wrapper">
+    <div class="inner">
+                    
+                     <div class="container" >
+ <h1>Bus Location Information</h1>
 
-
-
-
-
-      <!--Profile page-->
- <div class="wrapper">
-  <div class="inner">
-    <div class="container">
-      <div class="avatar-container">
-
-        <img src="profilecss/avatar.png" alt="Avatar" class="avatar" id="avatar">
-          <p>JPG or PNG no larger than 5 MB</p>
-        <label for="fileInput" class="upload-btn">Upload Image
-        </label>
-        <input type="file" id="fileInput" accept="image/*" onchange="updateAvatar(this)">
-      </div>
+    <div id="locationInfo">
+        <!-- The location information will be displayed here -->
     </div>
 
-    <div class="container">
-      <div class="form-group">
-            <label for="username">User Name:</label>
-            <input type="text" class="form-control" id="Text1" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="firstname">First Name:</label>
-            <input type="text" class="form-control" id="Text2" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="lastname">Last Name:</label>
-            <input type="text" class="form-control" id="Text3" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="email">Email Address:</label>
-            <input type="text" class="form-control" id="Text4" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="text" class="form-control" id="Text5" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="bday">Brthday:</label>
-            <input type="text" class="form-control" id="Text6" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="location">Location:</label>
-            <input type="text" class="form-control" id="Text7" runat="server" required="required" />
-        </div>  
-      <button class="save-btn">Save Changes</button>
+    <script>
+        // JavaScript code to retrieve and display the location information from the query parameter
+        document.addEventListener("DOMContentLoaded", function () {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const locationInfo = urlParams.get("location");
+
+            if (locationInfo) {
+                const locationInfoElement = document.getElementById("locationInfo");
+                locationInfoElement.textContent = "Location: " + decodeURIComponent(locationInfo);
+            } else {
+                const locationInfoElement = document.getElementById("locationInfo");
+                locationInfoElement.textContent = "Location information not found.";
+            }
+        });
+    </script>
     </div>
-  </div>
-</div>
+        </div>
+         </div>
 
 
-
-
-
-
-
-<script>
-    function updateAvatar(input) {
-        const avatar = document.getElementById("avatar");
-        const file = input.files[0];
-
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                avatar.src = e.target.result;
-            };
-            reader.readAsDataURL(file);
-        }
-    }
-</script>
-
+    </div>
   </div>
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -236,3 +196,5 @@
 </body>
 
 </html>
+
+
