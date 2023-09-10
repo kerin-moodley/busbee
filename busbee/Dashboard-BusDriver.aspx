@@ -9,34 +9,7 @@
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
       <link rel="stylesheet" href="busdriver.css" />
-        <style>
-        /* Style for the buttons */
-        .button {
-            background-color: #4CAF50; /* Green background color */
-            border: none; /* Remove border */
-            color: white; /* White text color */
-            padding: 15px 32px; /* Padding to maintain size */
-            text-align: center; /* Center text */
-            text-decoration: none; /* Remove underline */
-            display: inline-block; /* Make it an inline block element */
-            font-size: 16px; /* Font size */
-            margin: 4px 2px; /* Margin */
-            transition-duration: 0.4s; /* Transition duration */
-            cursor: pointer; /* Cursor pointer */
-        }
-
-        /* Hover effect for buttons */
-        .button:hover {
-            background-color: white; /* Change background color on hover */
-            color: black; /* Change text color on hover */
-            border: 2px solid #4CAF50; /* Add border on hover */
-        }
-
-        /* Style for the label */
-        .label {
-            font-size: 20px; /* Font size for the label */
-        }
-    </style>
+ 
 
 </head>
 
@@ -70,7 +43,7 @@
 
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-profile.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="DashboardProfile.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-user"></i>
                 </span>
@@ -81,7 +54,7 @@
 
 
               <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-delete.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="DashboardDelete.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-user-minus"></i>
                 </span>
@@ -96,7 +69,14 @@
               <span class="hide-menu">Services</span>
             </li>
 
-
+                  <li class="sidebar-item">
+              <a class="sidebar-link" href="Dashboard-BusDriver.aspx" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user"></i>
+                </span>
+                <span class="hide-menu">Bus Driver</span>
+              </a>
+            </li>
 
             <li class="sidebar-item">
               <a class="sidebar-link" href="dashboard-notifications.aspx" aria-expanded="false">
@@ -110,7 +90,7 @@
 
 
                <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-schedules.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="DashboardSchedule.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-calendar"></i>
                 </span>
@@ -119,19 +99,10 @@
             </li>
 
 
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-purchase.aspx" aria-expanded="false">
-                <span>
-                  <i class="ti ti-cards"></i>
-                </span>
-                <span class="hide-menu">Purchase bus tickets</span>
-              </a>
-            </li>
-
-
+       
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-maps.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="DashboardMaps.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-map"></i>
                 </span>
@@ -142,7 +113,7 @@
 
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-problem.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="DashboardReport.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
@@ -157,19 +128,10 @@
               <span class="hide-menu">AUTH</span>
             </li>
               
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="Dashboard-BusDriver.aspx" aria-expanded="false">
-                <span>
-                  <i class="ti ti-user"></i>
-                </span>
-                <span class="hide-menu">Bus Driver</span>
-              </a>
-            </li>
-
-
+       
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="login.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="Bus login.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-logout"></i>
                 </span>
@@ -195,10 +157,11 @@
     <div class="inner">
                     
                      <div class="container" >
-      <button id="locationButton">Allow to detect location</button>
-      <label id="locationLabel"></label>
-      <button id="navigateButton" style="display: none;">Go to BusNotification</button>
-      <button id="stopAutoUpdate">Stop Automatic Update</button>
+<button id="locationButton" class="common-button">Allow to detect location</button>
+<label id="locationLabel" class="common-label"></label>
+<button id="navigateButton" class="common-button" style="display: none;">Go to BusNotification</button>
+<button id="stopAutoUpdate" class="common-button">Stop Automatic Update</button>
+
 
     <script src="script.js"></script>
     </div>

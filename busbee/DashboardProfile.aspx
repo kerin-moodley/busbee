@@ -1,5 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard-profile.aspx.cs" Inherits="busbee.dashboard_profile" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DashboardProfile.aspx.cs" Inherits="busbee.DashboardProfile" %>
 
 <!doctype html>
 <html lang="en">
@@ -68,7 +67,14 @@
               <span class="hide-menu">Services</span>
             </li>
 
-
+                  <li class="sidebar-item">
+              <a class="sidebar-link" href="Dashboard-BusDriver.aspx" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user"></i>
+                </span>
+                <span class="hide-menu">Bus Driver</span>
+              </a>
+            </li>
 
             <li class="sidebar-item">
               <a class="sidebar-link" href="dashboard-notifications.aspx" aria-expanded="false">
@@ -82,7 +88,7 @@
 
 
                <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-schedules.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="DashboardSchedule.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-calendar"></i>
                 </span>
@@ -92,18 +98,7 @@
 
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-purchase.aspx" aria-expanded="false">
-                <span>
-                  <i class="ti ti-cards"></i>
-                </span>
-                <span class="hide-menu">Purchase bus tickets</span>
-              </a>
-            </li>
-
-
-
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-maps.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="DashboardMaps.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-map"></i>
                 </span>
@@ -114,7 +109,7 @@
 
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-problem.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="DashboardReport.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
@@ -128,11 +123,14 @@
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">AUTH</span>
             </li>
+              
+             
+
 
 
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="login.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="Bus login.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-logout"></i>
                 </span>

@@ -459,6 +459,8 @@
     <Content Include="assets-2\js\jquery.min.js" />
     <Content Include="assets-2\js\main.js" />
     <Content Include="assets-2\js\popper.js" />
+    <Content Include="Bus login.aspx" />
+    <Content Include="Bus SignUp.aspx" />
     <Content Include="busdriver.css" />
     <Content Include="BusNotification.aspx" />
     <Content Include="Children.aspx" />
@@ -493,6 +495,12 @@
     <Content Include="dashboard-profile.aspx" />
     <Content Include="dashboard-purchase.aspx" />
     <Content Include="dashboard.aspx" />
+    <Content Include="DashboardBus.aspx" />
+    <Content Include="DashboardDelete.aspx" />
+    <Content Include="DashBoardMaps.aspx" />
+    <Content Include="DashboardProfile.aspx" />
+    <Content Include="DashboardReport.aspx" />
+    <Content Include="DashboardSchedule.aspx" />
     <Content Include="deletecss\bus.png" />
     <Content Include="deletecss\dashboard-purchase.aspx" />
     <Content Include="deletecss\delete.css" />
@@ -560,6 +568,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bus login.aspx.cs">
+      <DependentUpon>Bus login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bus login.aspx.designer.cs">
+      <DependentUpon>Bus login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bus SignUp.aspx.cs">
+      <DependentUpon>Bus SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bus SignUp.aspx.designer.cs">
+      <DependentUpon>Bus SignUp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BusNotification.aspx.cs">
       <DependentUpon>BusNotification.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -608,6 +630,48 @@
     </Compile>
     <Compile Include="dashboard.aspx.designer.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardBus.aspx.cs">
+      <DependentUpon>DashboardBus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardBus.aspx.designer.cs">
+      <DependentUpon>DashboardBus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardDelete.aspx.cs">
+      <DependentUpon>DashboardDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardDelete.aspx.designer.cs">
+      <DependentUpon>DashboardDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoardMaps.aspx.cs">
+      <DependentUpon>DashBoardMaps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoardMaps.aspx.designer.cs">
+      <DependentUpon>DashBoardMaps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardProfile.aspx.cs">
+      <DependentUpon>DashboardProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardProfile.aspx.designer.cs">
+      <DependentUpon>DashboardProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardReport.aspx.cs">
+      <DependentUpon>DashboardReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardReport.aspx.designer.cs">
+      <DependentUpon>DashboardReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardSchedule.aspx.cs">
+      <DependentUpon>DashboardSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardSchedule.aspx.designer.cs">
+      <DependentUpon>DashboardSchedule.aspx</DependentUpon>
     </Compile>
     <Compile Include="deletecss\dashboard-purchase.aspx.cs">
       <DependentUpon>dashboard-purchase.aspx</DependentUpon>
