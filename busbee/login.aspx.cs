@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Data.SqlClient;
-using Recaptcha.Web;
 
 namespace busbee
 {
@@ -15,6 +14,8 @@ namespace busbee
         {
             if (String.IsNullOrEmpty(Recaptchalogin.Response))
             {
+                txtUsername.Text = "";
+                txtPassword.Text = "";
                 string Message = "Please complete the reCAPTCHA verification!";
                 ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + Message + "');", true);
                 return;
@@ -44,15 +45,15 @@ namespace busbee
                         {
                             // User found, login successful
                             Session["Username"] = this.txtUsername.Text; // Store the username in a session for later use
-                            txtPassword.Text = string.Empty;
-                            txtUsername.Text = string.Empty;
+                            txtUsername.Text = "";
+                            txtPassword.Text = "";
                             Response.Redirect("dashboard.aspx"); // Redirect to the home page
                         }
                         else
                         {
                             // User not found, login unsuccessful
-                            txtPassword.Text = string.Empty;
-                            txtUsername.Text = string.Empty;
+                            txtUsername.Text = "";
+                            txtPassword.Text = "";
                             string Message = "Invalid username or password!";
                             ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + Message + "');", true);
                         }
@@ -61,8 +62,8 @@ namespace busbee
                     }
                     catch (Exception ex)
                     {
-                        txtPassword.Text = string.Empty;
-                        txtUsername.Text = string.Empty;
+                        txtUsername.Text = "";
+                        txtPassword.Text = "";
                         Response.Write("Error: " + ex.ToString());
                     }
                 }
@@ -71,8 +72,8 @@ namespace busbee
                     string errormessage = "Error";
                     foreach (var err in result.ErrorCodes)
                     {
-                        txtPassword.Text = string.Empty;
-                        txtUsername.Text = string.Empty;
+                        txtUsername.Text = "";
+                        txtPassword.Text = "";
                         Response.Write(errormessage);
                     }
                 }

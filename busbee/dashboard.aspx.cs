@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace busbee
 {
@@ -11,6 +12,20 @@ namespace busbee
             {
                 lblusername.Text = lblusername.Text + Session["UserName"].ToString();
             }
+            else
+            {
+                Response.Redirect("login.aspx");
+                MessageBox.Show("Please login first before accessing the dashboard");
+            }
+
+
+
+        }
+
+        protected void logoutlink_Click(object sender, EventArgs e)
+        {
+            Session.Remove("UserName");
+            Response.Redirect("landing.aspx");
         }
     }
 }
