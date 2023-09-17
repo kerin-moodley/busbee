@@ -422,15 +422,11 @@
     <Content Include="dashboard-assets\css\styles.min.css" />
     <Content Include="dashboard-assets\images\logos\favicon.png" />
     <Content Include="dashboard-assets\images\logos\logo.png" />
-    <Content Include="dashboard-assets\images\products\s1.jpg" />
-    <Content Include="dashboard-assets\images\products\s11.jpg" />
-    <Content Include="dashboard-assets\images\products\s4.jpg" />
-    <Content Include="dashboard-assets\images\products\s5.jpg" />
-    <Content Include="dashboard-assets\images\products\s7.jpg" />
     <Content Include="dashboard-assets\images\profile\user-1.jpg" />
     <Content Include="dashboard-assets\js\app.min.js" />
     <Content Include="dashboard-assets\js\dashboard.js" />
     <Content Include="dashboard-assets\js\sidebarmenu.js" />
+    <Content Include="dashboard-assets\css\notifications.css" />
     <Content Include="Dashboard-BusDriver.aspx" />
     <Content Include="dashboard-content\assets\demo\chart-area-demo.js" />
     <Content Include="dashboard-content\assets\demo\chart-bar-demo.js" />
@@ -460,6 +456,7 @@
     <Content Include="login.aspx" />
     <Content Include="dashboard-maps.aspx" />
     <Content Include="dashboard-problem.aspx" />
+    <Content Include="dashboard-notifications.aspx" />
     <Content Include="Payment.aspx" />
     <Content Include="profilecss\avatar.png" />
     <Content Include="profilecss\beestyle.css" />
@@ -681,6 +678,13 @@
     </Compile>
     <Compile Include="DisabilitiesPage.aspx.designer.cs">
       <DependentUpon>DisabilitiesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard-notifications.aspx.cs">
+      <DependentUpon>dashboard-notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard-notifications.aspx.designer.cs">
+      <DependentUpon>dashboard-notifications.aspx</DependentUpon>
     </Compile>
     <Compile Include="Payment.aspx.cs">
       <DependentUpon>Payment.aspx</DependentUpon>
@@ -1137,6 +1141,7 @@
     <Content Include="assets-2\scss\bootstrap\_variables.scss" />
     <Content Include="assets-2\scss\style.scss" />
     <None Include="Properties\PublishProfiles\BusBee - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\busbee20230911112628 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

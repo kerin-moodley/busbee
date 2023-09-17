@@ -1,0 +1,80 @@
+﻿.body-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* Styling for the Bus Booking System */
+.booking-system {
+    background: #ffffff;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+    .booking-system h2 {
+        color: #333;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .booking-system label {
+        color: #555;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .booking-system select,
+    .booking-system input[type="time"],
+    .booking-system input[type="checkbox"],
+    .booking-system button {
+        margin: 5px 0;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .booking-system button {
+        background-color: #008374;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+        .booking-system button:hover {
+            background-color: #45a049;
+        }
+
+.booking-result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+.confirm_button {
+    border: none;
+    color: white;
+    background-color : mediumseagreen;
+    padding: 16px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    align-items:center;
+}
+
