@@ -198,13 +198,6 @@
     <div class="inner">
                     
                      <div class="container" >
-        <h2>Prices </h2>
-        <p>Select your prices:</p>
-
-         <div class="button-block">
-         <a href="StoredValue.aspx" class="block-button">Stored Value:  R6.00</a>
-         </div>
-          
           <h2>Prices </h2>
         <p>Select your prices:</p>
     <!-- Buttons with event listeners -->

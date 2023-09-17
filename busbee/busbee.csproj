@@ -2,7 +2,6 @@
   <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
   <Import Project="..\packages\Microsoft.CodeAnalysis.NetAnalyzers.7.0.3\build\Microsoft.CodeAnalysis.NetAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.NetAnalyzers.7.0.3\build\Microsoft.CodeAnalysis.NetAnalyzers.props')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -92,14 +91,17 @@
     <Reference Include="Microsoft.AspNetCore.Http.Features, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNetCore.Session, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNetCore.Session.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Session.dll</HintPath>
+    <Reference Include="Microsoft.AspNetCore.Session, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Session.2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Session.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5, processorArchitecture=MSIL">
@@ -220,6 +222,11 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Linq, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.4.3.0\lib\net463\System.Linq.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -333,11 +340,6 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="WindowsBase" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\img\bus-1.jpg" />
@@ -460,6 +462,7 @@
     <Content Include="dashboard-problem.aspx" />
     <Content Include="Payment.aspx" />
     <Content Include="profilecss\avatar.png" />
+    <Content Include="profilecss\beestyle.css" />
     <Content Include="profilecss\profile.css" />
     <Content Include="AdultPage.aspx" />
     <Content Include="DisabilitiesPage.aspx" />
@@ -710,240 +713,280 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TripsA1.aspx.cs">
       <DependentUpon>TripsA1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsA1.aspx.designer.cs">
       <DependentUpon>TripsA1.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsA2.aspx.cs">
       <DependentUpon>TripsA2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsA2.aspx.designer.cs">
       <DependentUpon>TripsA2.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsA3.aspx.cs">
       <DependentUpon>TripsA3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsA3.aspx.designer.cs">
       <DependentUpon>TripsA3.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsA4.aspx.cs">
       <DependentUpon>TripsA4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsA4.aspx.designer.cs">
       <DependentUpon>TripsA4.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsA5.aspx.cs">
       <DependentUpon>TripsA5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsA5.aspx.designer.cs">
       <DependentUpon>TripsA5.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsA6.aspx.cs">
       <DependentUpon>TripsA6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsA6.aspx.designer.cs">
       <DependentUpon>TripsA6.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsA7.aspx.cs">
       <DependentUpon>TripsA7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsA7.aspx.designer.cs">
       <DependentUpon>TripsA7.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsA8.aspx.cs">
       <DependentUpon>TripsA8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsA8.aspx.designer.cs">
       <DependentUpon>TripsA8.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsC1.aspx.cs">
       <DependentUpon>TripsC1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsC1.aspx.designer.cs">
       <DependentUpon>TripsC1.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsC2.aspx.cs">
       <DependentUpon>TripsC2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsC2.aspx.designer.cs">
       <DependentUpon>TripsC2.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsC3.aspx.cs">
       <DependentUpon>TripsC3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsC3.aspx.designer.cs">
       <DependentUpon>TripsC3.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsC4.aspx.cs">
       <DependentUpon>TripsC4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsC4.aspx.designer.cs">
       <DependentUpon>TripsC4.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsC5.aspx.cs">
       <DependentUpon>TripsC5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsC5.aspx.designer.cs">
       <DependentUpon>TripsC5.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsC6.aspx.cs">
       <DependentUpon>TripsC6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsC6.aspx.designer.cs">
       <DependentUpon>TripsC6.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsC7.aspx.cs">
       <DependentUpon>TripsC7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsC7.aspx.designer.cs">
       <DependentUpon>TripsC7.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsC8.aspx.cs">
       <DependentUpon>TripsC8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsC8.aspx.designer.cs">
       <DependentUpon>TripsC8.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsD1.aspx.cs">
       <DependentUpon>TripsD1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsD1.aspx.designer.cs">
       <DependentUpon>TripsD1.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsD2.aspx.cs">
       <DependentUpon>TripsD2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsD2.aspx.designer.cs">
       <DependentUpon>TripsD2.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsD3.aspx.cs">
       <DependentUpon>TripsD3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsD3.aspx.designer.cs">
       <DependentUpon>TripsD3.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsD4.aspx.cs">
       <DependentUpon>TripsD4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsD4.aspx.designer.cs">
       <DependentUpon>TripsD4.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsD5.aspx.cs">
       <DependentUpon>TripsD5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsD5.aspx.designer.cs">
       <DependentUpon>TripsD5.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsD6.aspx.cs">
       <DependentUpon>TripsD6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsD6.aspx.designer.cs">
       <DependentUpon>TripsD6.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsD7.aspx.cs">
       <DependentUpon>TripsD7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsD7.aspx.designer.cs">
       <DependentUpon>TripsD7.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsD8.aspx.cs">
       <DependentUpon>TripsD8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsD8.aspx.designer.cs">
       <DependentUpon>TripsD8.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsP1.aspx.cs">
       <DependentUpon>TripsP1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsP1.aspx.designer.cs">
       <DependentUpon>TripsP1.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsP2.aspx.cs">
       <DependentUpon>TripsP2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsP2.aspx.designer.cs">
       <DependentUpon>TripsP2.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsP3.aspx.cs">
       <DependentUpon>TripsP3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsP3.aspx.designer.cs">
       <DependentUpon>TripsP3.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsP4.aspx.cs">
       <DependentUpon>TripsP4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsP4.aspx.designer.cs">
       <DependentUpon>TripsP4.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsP5.aspx.cs">
       <DependentUpon>TripsP5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsP5.aspx.designer.cs">
       <DependentUpon>TripsP5.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsP6.aspx.cs">
       <DependentUpon>TripsP6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsP6.aspx.designer.cs">
       <DependentUpon>TripsP6.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsP7.aspx.cs">
       <DependentUpon>TripsP7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsP7.aspx.designer.cs">
       <DependentUpon>TripsP7.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsP8.aspx.cs">
       <DependentUpon>TripsP8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsP8.aspx.designer.cs">
       <DependentUpon>TripsP8.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsS1.aspx.cs">
       <DependentUpon>TripsS1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsS1.aspx.designer.cs">
       <DependentUpon>TripsS1.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsS2.aspx.cs">
       <DependentUpon>TripsS2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsS2.aspx.designer.cs">
       <DependentUpon>TripsS2.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsS3.aspx.cs">
       <DependentUpon>TripsS3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsS3.aspx.designer.cs">
       <DependentUpon>TripsS3.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsS4.aspx.cs">
       <DependentUpon>TripsS4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsS4.aspx.designer.cs">
       <DependentUpon>TripsS4.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsS5.aspx.cs">
       <DependentUpon>TripsS5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsS5.aspx.designer.cs">
       <DependentUpon>TripsS5.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsS6.aspx.cs">
       <DependentUpon>TripsS6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsS6.aspx.designer.cs">
       <DependentUpon>TripsS6.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsS7.aspx.cs">
       <DependentUpon>TripsS7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsS7.aspx.designer.cs">
       <DependentUpon>TripsS7.aspx</DependentUpon>
     </Compile>
     <Compile Include="TripsS8.aspx.cs">
       <DependentUpon>TripsS8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TripsS8.aspx.designer.cs">
       <DependentUpon>TripsS8.aspx</DependentUpon>
@@ -1141,16 +1184,17 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.NetAnalyzers.7.0.3\build\Microsoft.CodeAnalysis.NetAnalyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.NetAnalyzers.7.0.3\build\Microsoft.CodeAnalysis.NetAnalyzers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.NetAnalyzers.7.0.3\build\Microsoft.CodeAnalysis.NetAnalyzers.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.NetAnalyzers.7.0.3\build\Microsoft.CodeAnalysis.NetAnalyzers.targets'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.1.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Data.SqlClient.SNI.5.1.0\build\net462\Microsoft.Data.SqlClient.SNI.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
   </Target>
   <Import Project="..\packages\Microsoft.CodeAnalysis.NetAnalyzers.7.0.3\build\Microsoft.CodeAnalysis.NetAnalyzers.targets" Condition="Exists('..\packages\Microsoft.CodeAnalysis.NetAnalyzers.7.0.3\build\Microsoft.CodeAnalysis.NetAnalyzers.targets')" />
   <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.5.1.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.1.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

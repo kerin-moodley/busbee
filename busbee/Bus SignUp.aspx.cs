@@ -28,4 +28,5 @@ namespace busbee
                 conn.Close();
             }
         }
+    }
 }
