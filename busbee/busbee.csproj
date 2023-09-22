@@ -459,6 +459,7 @@
     <Content Include="dashboard-notifications.aspx" />
     <Content Include="Payment.aspx" />
     <Content Include="profilecss\avatar.png" />
+    <Content Include="profilecss\bee.png" />
     <Content Include="profilecss\beestyle.css" />
     <Content Include="profilecss\profile.css" />
     <Content Include="AdultPage.aspx" />

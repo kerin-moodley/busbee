@@ -1,41 +1,40 @@
-﻿.wrapper {
-    display: flex;
-    justify-content: space-around;
-    height: 50%;
-    align-items: center;
-    min-height: 50%;
-    background-color: #f2f2f2; /* Background color */
-}
-
-.inner {
-    display: flex;
-    width: 80%; /* Occupy the entire width */
-    margin: 0 auto; /* Center align the content */
-}
-
-.container {
-    flex: 1;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+﻿.header {
+    text-align: center;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    height: 700px;
+    font-size: 24px;
+    border:solid black;
 }
 
-.avatar-container {
+.wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    background-color: #f2f2f2;
+    justify-content: center;
+    min-height:83vh;
+   
+    
+}
+
+
+.avatar-container {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-left: 2cm; 
+    padding-right: 2cm; 
+    background-color: #ffffff;
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .avatar {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #ccc;
@@ -55,17 +54,64 @@
         background-color: #2980b9;
     }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+.form-container {
+    flex: 1;
+    display: grid;
+    max-width: 800px;
+    margin-top: 20px; /* Add spacing between avatar and form */
+    padding: 20px;
+    padding-left: 4cm;
+    padding-right: 4cm;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-right: 20px;
 }
 
-.form-control {
-    padding: 6px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Split the form-group into two columns */
+    align-items: center; /* Vertically center-align labels and inputs */
+    margin-bottom: 20px;
+    padding-left: 0; /* Remove extra padding */
+    padding-right: 0; /* Remove extra padding */
 }
+.label {
+    font-weight: bold;
+    font-size: 24px; /* Adjust the font size as needed */
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Add spacing between label and input */
+}
+.form-control {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 24px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+    .form-control:hover {
+        background-color: #e6f7e4; /* Greenish hue on hover */
+    }
+/* Add this CSS to your existing styles */
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .form-row .form-group {
+        flex: 1;
+        margin-right: 10px; /* Add space between inputs in a row */
+    }
+
+.form-group:last-child {
+    margin-right: 0; /* Remove margin for the last input in a row */
+}
+
 
 .save-btn {
     padding: 8px 16px;
@@ -80,6 +126,14 @@
     .save-btn:hover {
         background-color: #219653;
     }
+.form-group input[type="text"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px; /* Adjust the font size as needed */
+}
 
 input[type="file"] {
     display: none;

@@ -151,64 +151,62 @@
       </div>
     <!--  Sidebar End -->
     <!--  Main wrapper -->
-    <div class="body-wrapper">
-
-
-
-
-
-      <!--Profile page-->
- <div class="wrapper">
-  <div class="inner">
-    <div class="container">
-      <div class="avatar-container">
-
-        <img src="profilecss/avatar.png" alt="Avatar" class="avatar" id="avatar">
-          <p>JPG or PNG no larger than 5 MB</p>
-        <label for="fileInput" class="upload-btn">Upload Image
-        </label>
+   <div class="header">
+        <h1>PERSONAL DETAILS</h1>
+    </div>
+   
+   <div class="wrapper">
+    <div class="avatar-container">
+        <img src="profilecss/bee.png" alt="Avatar" class="avatar" id="avatar">
+        <p>JPG or PNG no larger than 5 MB</p>
+        <label for="fileInput" class="upload-btn">Upload Image</label>
         <input type="file" id="fileInput" accept="image/*" onchange="updateAvatar(this)">
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="form-group">
-            <label for="username">User Name:</label>
-            <input type="text" class="form-control" id="Text1" runat="server" required="required" />
+        <div class="form-container">
+            <div class="form-group">
+                <label for="username">User Name:</label>
+                <input type="text"  class="form-control" id="Text8" runat="server" required="required" />
+            </div>
+
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" class="form-control" id="Text9" runat="server" required="required" />
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" class="form-control" id="Text10" runat="server" required="required" />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="text" class="form-control" id="Text11" runat="server" required="required" />
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" class="form-control" id="Text12" runat="server" required="required" />
+            </div>
+
+            <div class="form-group">
+                <label for="bday">Birthday:</label>
+                <input type="text" class="form-control" id="Text13" runat="server" required="required" />
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" class="form-control" id="Text14" runat="server" required="required" />
+            </div>
+
+            <button class="save-btn">Save Changes</button>
         </div>
-        <div class="form-group">
-            <label for="firstname">First Name:</label>
-            <input type="text" class="form-control" id="Text2" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="lastname">Last Name:</label>
-            <input type="text" class="form-control" id="Text3" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="email">Email Address:</label>
-            <input type="text" class="form-control" id="Text4" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="text" class="form-control" id="Text5" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="bday">Brthday:</label>
-            <input type="text" class="form-control" id="Text6" runat="server" required="required" />
-        </div>
-        <div class="form-group">
-            <label for="location">Location:</label>
-            <input type="text" class="form-control" id="Text7" runat="server" required="required" />
-        </div>  
-      <button class="save-btn">Save Changes</button>
     </div>
-  </div>
 </div>
 
+         
+    
 
-
-
-
+    
 
 
 <script>
@@ -226,7 +224,7 @@
     }
 </script>
 
-  </div>
+  
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/sidebarmenu.js"></script>
