@@ -10,7 +10,7 @@ namespace busbee
             //Session value is assign on the label  
             if (Session["UserName"] != null)
             {
-                lblusername.Text = lblusername.Text + Session["UserName"].ToString();
+                //lblusername.Text = lblusername.Text + Session["UserName"].ToString();
             }
             else
             {
