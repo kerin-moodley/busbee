@@ -130,9 +130,9 @@
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 8px;
+    padding: 3px;
     margin-bottom: 10px;
-    font-size: 4px; /* Adjust the font size as needed */
+    font-size: 12px; /* Adjust the font size as needed */
 }
 
 input[type="file"] {
