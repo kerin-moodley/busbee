@@ -42,7 +42,7 @@
 
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="DashboardProfile.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="dashboard-profile.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-user"></i>
                 </span>
@@ -53,7 +53,7 @@
               
               
               <li class="sidebar-item">
-              <a class="sidebar-link" href="DashboardDelete.aspx" aria-expanded="false">
+              <a class="sidebar-link" href="dashboard-delete.aspx" aria-expanded="false">
                 <span>
                   <i class="ti ti-user-minus"></i>
                 </span>

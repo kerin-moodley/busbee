@@ -64,7 +64,7 @@
                 <span>
                   <i class="ti ti-user-minus"></i>
                 </span>
-                <span class="hide-menu">Delete account</span>
+                <span class="hide-menu">Delete Account</span>
               </a>
             </li>
 
