@@ -164,6 +164,7 @@
     <div class="avatar-container">
         <img src="profilecss/BusdriverBee.png" alt="Avatar" class="avatar" id="avatar">
         <p>JPG or PNG no larger than 5 MB</p>
+        <p>hi banana </p>
         <label for="fileInput" class="upload-btn">Upload Image</label>
         <input type="file" id="fileInput" accept="image/*" onchange="updateAvatar(this)">
 
