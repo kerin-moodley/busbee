@@ -178,7 +178,7 @@
     <div class="body-wrapper">
 <!--DELETE ACCOUNT-->
    <div class="wrapper">
-    <div class="inner">
+   
         <div class="container">
             <h2>DELETE ACCOUNT</h2>
             <p>Welcome to the Account Deletion Page.
@@ -215,7 +215,7 @@
 
         </div>
     </div>
-</div>
+
         </div>
    
     

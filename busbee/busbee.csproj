@@ -413,6 +413,8 @@
     <Content Include="assets-2\js\popper.js" />
     <Content Include="Bus login.aspx" />
     <Content Include="Bus SignUp.aspx" />
+    <Content Include="busadmin.aspx" />
+    <Content Include="busadmin.css" />
     <Content Include="busdriver.css" />
     <Content Include="BusNotification.aspx" />
     <Content Include="Children.aspx" />
@@ -461,6 +463,7 @@
     <Content Include="profilecss\avatar.png" />
     <Content Include="profilecss\bee.png" />
     <Content Include="profilecss\beestyle.css" />
+    <Content Include="profilecss\BusdriverBe.png" />
     <Content Include="profilecss\BusdriverBee.png" />
     <Content Include="profilecss\profile.css" />
     <Content Include="AdultPage.aspx" />
@@ -533,6 +536,13 @@
     </Compile>
     <Compile Include="Bus SignUp.aspx.designer.cs">
       <DependentUpon>Bus SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="busadmin.aspx.cs">
+      <DependentUpon>busadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="busadmin.aspx.designer.cs">
+      <DependentUpon>busadmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="BusNotification.aspx.cs">
       <DependentUpon>BusNotification.aspx</DependentUpon>

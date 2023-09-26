@@ -162,11 +162,14 @@
 <button id="navigateButton" class="common-button" style="display: none;">Go to BusNotification</button>
 <button id="stopAutoUpdate" class="common-button">Stop Automatic Update</button>
 
+<ul id="locationHistory"></ul>
+
+                
 
     <script src="script.js"></script>
     </div>
         </div>
-         </div>
+         
 
 
     </div>
