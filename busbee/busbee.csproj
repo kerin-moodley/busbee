@@ -454,6 +454,10 @@
     <Content Include="deletecss\bus.png" />
     <Content Include="deletecss\dashboard-purchase.aspx" />
     <Content Include="deletecss\delete.css" />
+    <Content Include="Images\busoutline.png" />
+    <Content Include="Images\Maintence.jpg" />
+    <Content Include="Images\Route.jpg" />
+    <Content Include="Images\Weather.jpg" />
     <Content Include="landing.aspx" />
     <Content Include="login.aspx" />
     <Content Include="dashboard-maps.aspx" />
@@ -461,10 +465,12 @@
     <Content Include="dashboard-notifications.aspx" />
     <Content Include="Payment.aspx" />
     <Content Include="profilecss\avatar.png" />
-    <Content Include="profilecss\bee.png" />
+    <Content Include="profilecss\bee1.png" />
     <Content Include="profilecss\beestyle.css" />
+    <Content Include="profilecss\busdriver.jpg" />
     <Content Include="profilecss\BusdriverBe.png" />
     <Content Include="profilecss\BusdriverBee.png" />
+    <Content Include="profilecss\conductor.png" />
     <Content Include="profilecss\profile.css" />
     <Content Include="AdultPage.aspx" />
     <Content Include="DisabilitiesPage.aspx" />

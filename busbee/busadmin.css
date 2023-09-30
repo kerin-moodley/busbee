@@ -1,12 +1,15 @@
 ﻿body {
     
 }
+.card-1{
+    border:none;
+}
 .avatar {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px;
+    border: none;
 }
 
 .upload-btn {
@@ -33,15 +36,17 @@ input[type="file"] {
 .form-container {
     width: 600px;
     height: 270px;
-    position: absolute;
+    position:relative;
     left: 300px;
-    top: 2%;
+    top: -250px;
     padding-left: 2cm;
     padding-right: 2cm;
     background-color: #ffffff;
     padding-top: 5px;
     border-radius: 8px;
     text-align: center;
+ 
+   
 }
 
 .form-group {
@@ -55,7 +60,7 @@ input[type="file"] {
 
 .label {
     font-weight: bold;
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 32px; /* Adjust the font size as needed */
     display: block; /* Display labels as block elements */
     margin-bottom: 5px; /* Add spacing between label and input */
 }
