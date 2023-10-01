@@ -150,11 +150,11 @@
     <!--  Sidebar End -->
     <!--  Main wrapper -->
     <div class="body-wrapper">
-        <div class="container-fluid px-4">
+        <div class="container-fluid px-4" style="align-self:center;">
             
             
             <div>
-                <iframe src="https://www.tomtom.com/en_gb/traffic-index/johannesburg-traffic/" title="Traffic information for Johannesburg" style="width: 950px; height: 500px;  align-self:center;" ></iframe>
+                <iframe src="https://www.tomtom.com/en_gb/traffic-index/johannesburg-traffic/" title="Traffic information for Johannesburg" style="width: 1050px; height: 500px;  align-self:center;" ></iframe>
             </div>
             
             <br />
