@@ -15,6 +15,15 @@ namespace busbee
     {
 
         /// <summary>
+        /// imgprofile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgprofile;
+
+        /// <summary>
         /// Text8 control.
         /// </summary>
         /// <remarks>
