@@ -1,7 +1,7 @@
 ﻿.header {
     text-align: center;
-    padding: 18px;
-    font-size: 24px;
+    padding: 1px;
+    font-size: 12px;
     border: solid black;
     
 }
@@ -19,11 +19,11 @@
 
 
 .avatar-container {
-    width: 800px;
+    width: 600px;
     height: auto;
     position: absolute;
-    left: auto;
-    top: 10%;
+    left: 500px;
+    top: 9%;
     padding-left: 2cm;
     padding-right: 2cm;
     background-color: #ffffff;
@@ -35,15 +35,15 @@
 }
 
 .avatar {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #ccc;
 }
 
 .upload-btn {
-    padding: 8px 16px;
+    padding: 4px 8px;
     background-color: #46ad40;
     color: #fff;
     border: none;
@@ -74,7 +74,7 @@
     display: grid;
     grid-template-columns: 1fr 3fr; /* Split the form-group into two columns */
     align-items: center; /* Vertically center-align labels and inputs */
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding-left: 0; /* Remove extra padding */
     padding-right: 0; /* Remove extra padding */
 }
@@ -130,9 +130,9 @@
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 8px;
+    padding: 3px;
     margin-bottom: 10px;
-    font-size: 16px; /* Adjust the font size as needed */
+    font-size: 12px; /* Adjust the font size as needed */
 }
 
 input[type="file"] {
