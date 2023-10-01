@@ -13,33 +13,28 @@
     background-color: #f2f2f2;
     justify-content: center;
     min-height:99vh;
-   
-    
-}
+ }
 
 
 .avatar-container {
-    width: 600px;
-    height: auto;
+    width: 80%;
+    height: 100%;
     position: absolute;
-    left: 500px;
-    top: 9%;
+    left: 270px;
     padding-left: 2cm;
     padding-right: 2cm;
     background-color: #ffffff;
     padding-top: 25px;
-   
-    border: 1px solid #ccc;
-    border-radius: 8px;
     text-align: center;
 }
 
-.avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.profile-avatar {
+    width: 15%;
+    height: 22%;
+    border-radius: 200%;
     object-fit: cover;
     border: 2px solid #ccc;
+    align-self:center;
 }
 
 .upload-btn {
@@ -60,12 +55,10 @@
 .form-container {
     flex: 1;
     display: grid;
-    max-width: 800px;
+    width: 103%;
     margin-top: 20px; /* Add spacing between avatar and form */
     padding: 20px;   
-    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     margin-right: 20px;
 }
@@ -73,7 +66,7 @@
 .form-group {
     display: grid;
     grid-template-columns: 1fr 3fr; /* Split the form-group into two columns */
-    align-items: center; /* Vertically center-align labels and inputs */
+    align-items: baseline; /* Vertically center-align labels and inputs */
     margin-bottom: 5px;
     padding-left: 0; /* Remove extra padding */
     padding-right: 0; /* Remove extra padding */

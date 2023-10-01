@@ -151,14 +151,11 @@
       </div>
     <!--  Sidebar End -->
     <!--  Main wrapper -->
-   <div class="header">
-        <h1>PERSONAL DETAILS</h1>
-    </div>
    
    <div class="wrapper">
     <div class="avatar-container">
-        <img src="profilecss/bee.png" alt="Avatar" class="avatar" id="avatar">
-        <p>JPG or PNG no larger than 5 MB</p>
+        <asp:Image ID="imgprofile" runat="server" class="profile-avatar"/>
+        <p></p>
         <label for="fileInput" class="upload-btn">Upload Image</label>
         <input type="file" id="fileInput" accept="image/*" onchange="updateAvatar(this)">
 
@@ -197,6 +194,8 @@
                 <label for="location">Location:</label>
                 <input type="text" class="form-control" id="Text14" runat="server" required="required" />
             </div>
+            
+            <br />
 
             <button class="save-btn">Save Changes</button>
         </div>
