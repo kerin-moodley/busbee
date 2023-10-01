@@ -5,22 +5,22 @@
     border:none;
 }
 .avatar {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     border: none;
 }
 
 .upload-btn {
-    padding: 4px 8px;
+    padding: 6px 12px;
     background-color: #1A9082;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-    Height:39px;
+    Height:40px;
     Width:250px;
 }
 
@@ -34,11 +34,11 @@ input[type="file"] {
 
 
 .form-container {
-    width: 600px;
-    height: 270px;
+    width: 700px;
+    height: 370px;
     position:relative;
-    left: 300px;
-    top: -250px;
+    left: 400px;
+    top: -350px;
     padding-left: 2cm;
     padding-right: 2cm;
     background-color: #ffffff;
@@ -69,7 +69,7 @@ input[type="file"] {
     flex: 1;
     border: 1px solid #ccc;
     padding: 3px;
-    font-size: 14px;
+    font-size: 32px;
     border-radius: 4px;
     transition: background-color 0.3s;
     width: 100%;
@@ -100,43 +100,158 @@ input[type="file"] {
 .p4{
     font-size:24px;
 }
-.checkmark {
+/*Code for the section for which bus*/
+
+
+/* The container must be positioned relative: */
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+    input[type=text] {
+        background-color: #f1f1f1;
+        width: 100%;
+    }
+
+    input[type=submit] {
+        background-color: DodgerBlue;
+        color: #fff;
+        cursor: pointer;
+    }
+
+.autocomplete-items {
     position: absolute;
-    top: 0;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /* Position the autocomplete items to be the same width as the container: */
+    top: 100%;
     left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 50%;
+    right: 0;
 }
 
-/* On mouse-over, add a grey background color */
-.container-fluid:hover input ~ .checkmark {
-    background-color: #ccc;
+    .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+        /* When hovering an item: */
+        .autocomplete-items div:hover {
+            background-color: #e9e9e9;
+        }
+
+/* When navigating through the items using the arrow keys: */
+.autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
 }
 
-/* When the radio button is checked, add a blue background */
-.container-fluid input:checked ~ .checkmark {
-    background-color: #2196F3;
+#selected-route {
+    margin-top: 10px;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-    content: "";
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #3e8e41;
+    }
+
+#myInputDropdown {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+    #myInputDropdown:focus {
+        outline: 3px solid #ddd;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
     position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+.column {
+    float: left;
+    width: 25%; /* Adjust the width to control the number of columns */
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#button-container {
+    text-align: right; /* Aligns the button to the right */
+    position: relative; /* Enable relative positioning */
+    top: -10px; /* Adjust the top position as needed */
+}
+
+#route-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #1A9082;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+#routes-container {
     display: none;
 }
 
-/* Show the indicator (dot/circle) when checked */
-.container-fluid input:checked ~ .checkmark:after {
-    display: block;
+.route-column {
+    width: 25%;
+    float: left;
+    padding: 10px;
 }
-
-/* Style the indicator (dot/circle) */
-.container-fluid .checkmark:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;

@@ -87,7 +87,7 @@ img {vertical-align: middle;}
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.1s ease;
+  transition: 0.5s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
@@ -207,19 +207,19 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="Images/Maintence.jpg" style="width:100%">
+  <img src="Images/Maintence.jpg" style="width:100%"/>
  
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="Images/Route.jpg" style="width:100%">
+  <img src="Images/Route.jpg" style="width:100%"/>
   
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="Images/Weather.jpg" style="width:100%">
+  <img src="Images/Weather.jpg" style="width:100%"/>
  
 </div>
 
@@ -308,320 +308,99 @@ img {vertical-align: middle;}
       </div>
     
     </section>
-    <!-- End Our Services Section -->
-      <div class="container-fluid">
-        
-        <label>
-            <input type="radio" name="street" value="556 Alveda Park to Megawatt Park"> 556 Alveda Park to Megawatt Park
-        </label>
-        
-        <label>
-            <input type="radio" name="street" value="521 Naturena to Kramerville"> 521 Naturena to Kramerville
-        </label>
-        <label>
-            <input type="radio" name="street" value="518C Sandton to Forest Hill"> 518C Sandton to Forest Hill
-        </label>
-<label>
-    <input type="radio" name="street" value="421A Auckland Park to Yeoville"> 421A Auckland Park to Yeoville
-</label>
-
-<label>
-    <input type="radio" name="street" value="413 Gandhi Square to Roodekraans"> 413 Gandhi Square to Roodekraans
-</label>
-
-<label>
-    <input type="radio" name="street" value="227 Judith's Paarl to Crosby"> 227 Judith's Paarl to Crosby
-</label>
-
-<label>
-    <input type="radio" name="street" value="85 Westgate to Johannesburg North"> 85 Westgate to Johannesburg North
-</label>
-
-<label>
-    <input type="radio" name="street" value="80B Westgate to Randburg"> 80B Westgate to Randburg
-</label>
-
-<label>
-    <input type="radio" name="street" value="63 Fashion District to Newland"> 63 Fashion District to Newland
-</label>
-
-<label>
-    <input type="radio" name="street" value="42 Elandspark to Braamfontein"> 42 Elandspark to Braamfontein
-</label>
-
-<label>
-    <input type="radio" name="street" value="553 Protea Glen to Kya Sands"> 553 Protea Glen to Kya Sands
-</label>
-
-<label>
-    <input type="radio" name="street" value="01 Gandhi Square to Parkhurst"> 01 Gandhi Square to Parkhurst
-</label>
-
-<label>
-    <input type="radio" name="street" value="03 Westgate to Highlands North"> 03 Westgate to Highlands North
-</label>
-
-<label>
-    <input type="radio" name="street" value="04 Gandhi Square to Rosebank"> 04 Gandhi Square to Rosebank
-</label>
-
-<label>
-    <input type="radio" name="street" value="05 Stock exchange to Birnam"> 05 Stock exchange to Birnam
-</label>
-<label>
-    <input type="radio" name="street" value="05C Gandhi Square to Sandton"> 05C Gandhi Square to Sandton
-</label>
-
-<label>
-    <input type="radio" name="street" value="05D Gandhi Square to Sunninghill"> 05D Gandhi Square to Sunninghill
-</label>
-
-<label>
-    <input type="radio" name="street" value="07D Gandhi Square to Centurion"> 07D Gandhi Square to Centurion
-</label>
-
-<label>
-    <input type="radio" name="street" value="08 Stock Exchange to Barlopark"> 08 Stock Exchange to Barlopark
-</label>
-
-<label>
-    <input type="radio" name="street" value="09 Gandhi Square to Linbro Park"> 09 Gandhi Square to Linbro Park
-</label>
-
-<label>
-    <input type="radio" name="street" value="10 Stock Exchange to Melrose Arch"> 10 Stock Exchange to Melrose Arch
-</label>
-
-<label>
-    <input type="radio" name="street" value="12 Gandhi Square to Lonehill"> 12 Gandhi Square to Lonehill
-</label>
-
-<label>
-    <input type="radio" name="street" value="13B Gandhi Square to Lyndhurst"> 13B Gandhi Square to Lyndhurst
-</label>
-
-<label>
-    <input type="radio" name="street" value="06 Gandhi Square to Leeuwkop prison via Woodmead, Sunninghill, and Petervale"> 06 Gandhi Square to Leeuwkop prison via Woodmead, Sunninghill, and Petervale
-</label>
-
-<label>
-    <input type="radio" name="street" value="15B Gandhi Square to Lombardy"> 15B Gandhi Square to Lombardy
-</label>
-
-<label>
-    <input type="radio" name="street" value="15F Gandhi Square to Longmeadow"> 15F Gandhi Square to Longmeadow
-</label>
-
-<label>
-    <input type="radio" name="street" value="18 Forest hill to Johannesburg Hospital"> 18 Forest hill to Johannesburg Hospital
-</label>
-
-<label>
-    <input type="radio" name="street" value="32 Braamfontein to Eastgate Mall"> 32 Braamfontein to Eastgate Mall
-</label>
-
-<label>
-    <input type="radio" name="street" value="33 Westgate to Bedford Gardens"> 33 Westgate to Bedford Gardens
-</label>
-
-<label>
-    <input type="radio" name="street" value="34 Stock Exchange to Malvern"> 34 Stock Exchange to Malvern
-</label>
-
-<label>
-    <input type="radio" name="street" value="46 Rossetenville to Jhb Hospital"> 46 Rossetenville to Jhb Hospital
-</label>
-<label>
-    <input type="radio" name="street" value="47 Gandhi Square to Townsview"> 47 Gandhi Square to Townsview
-</label>
-
-<label>
-    <input type="radio" name="street" value="48 Gandhi Square to Towerby"> 48 Gandhi Square to Towerby
-</label>
-
-<label>
-    <input type="radio" name="street" value="52B Fashion district to Winchester hills"> 52B Fashion district to Winchester hills
-</label>
-
-<label>
-    <input type="radio" name="street" value="54 Sanlam to The Glen"> 54 Sanlam to The Glen
-</label>
-
-<label>
-    <input type="radio" name="street" value="55B Gandhi Square to Evans Park"> 55B Gandhi Square to Evans Park
-</label>
-
-<label>
-    <input type="radio" name="street" value="56 Mayfield Park to Braamfontein"> 56 Mayfield Park to Braamfontein
-</label>
-
-<label>
-    <input type="radio" name="street" value="59 Gandhi Square to Crown Extension"> 59 Gandhi Square to Crown Extension
-</label>
-
-<label>
-    <input type="radio" name="street" value="62 Claremont to Fashion District"> 62 Claremont to Fashion District
-</label>
-
-<label>
-    <input type="radio" name="street" value="71A Gandhi Square to Fairlands"> 71A Gandhi Square to Fairlands
-</label>
-
-<label>
-    <input type="radio" name="street" value="74 Westgate to Blaigowrie"> 74 Westgate to Blaigowrie
-</label>
-
-<label>
-    <input type="radio" name="street" value="79 Gandhi Square to Parkhurst"> 79 Gandhi Square to Parkhurst
-</label>
-
-<label>
-    <input type="radio" name="street" value="80A Gandhi Square to Beverley Gardens"> 80A Gandhi Square to Beverley Gardens
-</label>
-
-<label>
-    <input type="radio" name="street" value="80D Gandhi Square to Dainfern"> 80D Gandhi Square to Dainfern
-</label>
-
-<label>
-    <input type="radio" name="street" value="82 Gandhi Square to Ferndale"> 82 Gandhi Square to Ferndale
-</label>
-
-<label>
-    <input type="radio" name="street" value="83 Westgate to Malanshof"> 83 Westgate to Malanshof
-</label>
-
-<label>
-    <input type="radio" name="street" value="83C Westgate to Randpark Ridge"> 83C Westgate to Randpark Ridge
-</label>
-
-<label>
-    <input type="radio" name="street" value="86 Gandhi Square to Kya Sands"> 86 Gandhi Square to Kya Sands
-</label>
-
-<label>
-    <input type="radio" name="street" value="89 Gandhi to Northgate"> 89 Gandhi to Northgate
-</label>
-
-<label>
-    <input type="radio" name="street" value="260 Paarlshoop to Eastgate"> 260 Paarlshoop to Eastgate
-</label>
-
-<label>
-    <input type="radio" name="street" value="262 Hillbrow to Kempton Park"> 262 Hillbrow to Kempton Park
-</label>
-
-<label>
-    <input type="radio" name="street" value="412 Gandhi Square to Witpoortjie"> 412 Gandhi Square to Witpoortjie
-</label>
-
-<label>
-    <input type="radio" name="street" value="414 Gandhi Square to Lindhaven"> 414 Gandhi Square to Lindhaven
-</label>
-
-<label>
-    <input type="radio" name="street" value="415 Gandhi Square to Strubens Valley"> 415 Gandhi Square to Strubens Valley
-</label>
-
-<label>
-    <input type="radio" name="street" value="417 Gandhi Square to Davidsonville via Fleurhof"> 417 Gandhi Square to Davidsonville via Fleurhof
-</label>
-<label>
-    <input type="radio" name="street" value="421D Belleveue East to Sunninghill"> 421D Belleveue East to Sunninghill
-</label>
-
-<label>
-    <input type="radio" name="street" value="430 Westgate Mall to Sunninghill"> 430 Westgate Mall to Sunninghill
-</label>
-
-<label>
-    <input type="radio" name="street" value="520 Naturena to Randburg"> 520 Naturena to Randburg
-</label>
-
-<label>
-    <input type="radio" name="street" value="45 Marist Brothers to Braamfontein"> 45 Marist Brothers to Braamfontein
-</label>
-
-<label>
-    <input type="radio" name="street" value="44 South Hills to Braamfontein"> 44 South Hills to Braamfontein
-</label>
-
-<label>
-    <input type="radio" name="street" value="57 Naturena to Braamfontein"> 57 Naturena to Braamfontein
-</label>
-
-<label>
-    <input type="radio" name="street" value="59 Gandhi Sqaure to Crown extension"> 59 Gandhi Sqaure to Crown extension
-</label>
-
-<label>
-    <input type="radio" name="street" value="67 Gandhi Square to Melville"> 67 Gandhi Square to Melville
-</label>
-
-<label>
-    <input type="radio" name="street" value="63 Newlands to Fashion District"> 63 Newlands to Fashion District
-</label>
-
-<label>
-    <input type="radio" name="street" value="91 Kliptown to Heriotdale"> 91 Kliptown to Heriotdale
-</label>
-
-<label>
-    <input type="radio" name="street" value="92 Kliptown to Robertsham"> 92 Kliptown to Robertsham
-</label>
-
-<label>
-    <input type="radio" name="street" value="93 Longtill to New Centre"> 93 Longtill to New Centre
-</label>
-
-<label>
-    <input type="radio" name="street" value="313 Gandhi Square to Lyndhurst"> 313 Gandhi Square to Lyndhurst
-</label>
-
-<label>
-    <input type="radio" name="street" value="420 Westgate Mall to Randburg"> 420 Westgate Mall to Randburg
-</label>
-
-<label>
-    <input type="radio" name="street" value="522 Naturena to Randburg"> 522 Naturena to Randburg
-</label>
-
-<label>
-    <input type="radio" name="street" value="523 Naturena to Fourways Mall"> 523 Naturena to Fourways Mall
-</label>
-
-<label>
-    <input type="radio" name="street" value="546E Rosettenville to Leewkop Prison"> 546E Rosettenville to Leewkop Prison
-</label>
-
-<label>
-    <input type="radio" name="street" value="547C Townsview to Santon"> 547C Townsview to Santon
-</label>
-
-<label>
-    <input type="radio" name="street" value="550 Princess to Jabulani Mall"> 550 Princess to Jabulani Mall
-</label>
-
-<label>
-    <input type="radio" name="street" value="562 Southgate Mall to ORT Freight Terminal"> 562 Southgate Mall to ORT Freight Terminal
-</label>
-          <br />
-          <br />
-          <br />
-          <br />
-           <p4>Which location are you driving today? <span id="selectedLocation"></span></p4>
-          <br />
-          <br />
+  
+<p>Please type the number of the route you are going to drive today!</p>
+
+<!--Make sure the form has the autocomplete function switched off:-->
+<form autocomplete="off" action="/action_page.php">
+  <div class="autocomplete" style="width:300px;">
+    <input id="myInput" type="text" name="myCountry" placeholder="Bus Route">
+  </div>
+
+</form>
+
+<!-- Display selected route and confirm button -->
+<div id="selected-route">
+  <p>Which bus route are you doing today?</p>
+  <p id="selected-route-text"></p>
+
+</div>
+      <div id="button-container">
+      <p>View all the routes</p>
+       <button id="route-button" type="button" >Show Routes</button>
+    <div id="routes-container">
+       <div class="route-column">
+    <ul>
+        <li>556 Alveda Park to Megawatt Park</li>
+        <li>521 Naturena to Kramerville</li>
+        <li>518C Sandton to Forest Hill</li>
+        <li>421A Auckland Park to Yeoville</li>
+        <li>413 Gandhi Square to Roodekraans</li>
+        <li>227 Judith's Paarl to Crosby</li>
+        <li>85 Westgate to Johannesburg North</li>
+        <li>80B Westgate to Randburg</li>
+        <li>63 Fashion District to Newland</li>
+        <li>42 Elandspark to Braamfontein</li>
+        <li>553 Protea Glen to Kya Sands</li>
+        <li>01 Gandhi Square to Parkhurst</li>
+    </ul>
+</div>
+<div class="route-column">
+    <ul>
+        <li>03 Westgate to Highlands North</li>
+        <li>04 Gandhi Square to Rosebank</li>
+        <li>05 Stock exchange to Birnam</li>
+        <li>05C Gandhi Square to Sandton</li>
+        <li>05D Gandhi Square to Sunninghill</li>
+        <li>07D Gandhi Square to Centurion</li>
+        <li>08 Stock Exchange to Barlopark</li>
+        <li>09 Gandhi Square to Linbro Park</li>
+         <li>10 Stock Exchange to Melrose Arch</li>
+        <li>12 Gandhi Square to Lonehill</li>
+         <li>13B Gandhi Square to Lyndhurst</li>
+        <li>06 Gandhi Square to Leeuwkop prison via Woodmead, Sunninghill, and Petervale</li>
+    </ul>
+</div>
+<div class="route-column">
+    <ul>
+        <li>15B Gandhi Square to Lombardy</li>
+        <li>15F Gandhi Square to Longmeadow</li>
+        <li>18 Forest hill to Johannesburg Hospital</li>
+        <li>32 Braamfontein to Eastgate Mall</li>
+        <li>33 Westgate to Bedford Gardens</li>
+        <li>34 Stock Exchange to Malvern</li>
+         <li>46 Rossetenville to Jhb Hospital</li>
+        <li>47 Gandhi Square to Townsview</li>
+         <li>48 Gandhi Square to Towerby</li>
+        <li>52B Fashion district to Winchester hills</li>
+        <li>54 Sanlam to The Glen</li>
+        <li>55B Gandhi Square to Evans Park</li>
+          <li>56 Mayfield Park to Braamfontein</li>
+    </ul>
+</div>
+<div class="route-column">
+    <ul>
+        <li>56 Mayfield Park to Braamfontein</li>
+        <li>59 Gandhi Square to Crown Extension</li>
+        <li>62 Claremont to Fashion District</li>
+        <li>71A Gandhi Square to Fairlands</li>
+        <li>74 Westgate to Blaigowrie</li>
+        <li>79 Gandhi Square to Parkhurst</li>
+        <li>80A Gandhi Square to Beverley Gardens</li>
+        <li>80D Gandhi Square to Dainfern</li>
+        <li>82 Gandhi Square to Ferndale</li>
+        <li>83 Westgate to Malanshof</li>
+        <li>83C Westgate to Randpark Ridge</li>
+        <li>86 Gandhi Square to Kya Sands</li>
+         <li>89 Gandhi to Northgate</li>
+        <li>260 Paarlshoop to Eastgate</li>
+    </ul>
+</div>
+</div>
     </div>
-       
-       
+      
 
-
-
-
-
-
-
+      
 
 
     <!-- ======= Location Section ======= -->
@@ -633,7 +412,7 @@ img {vertical-align: middle;}
           <p>Current location will be shared to the passenger.</p>
             <p>Remember to Stop Update at the end of the workday.</p>
         </div>
-          <asp:Button ID="locationButton" runat="server" Text="Allow to detect location" BackColor="#1A9082" BorderStyle="None" ForeColor="White" Height="39px" Width="250px" />
+          <asp:Button ID="locationButton" type="button" runat="server" Text="Allow to detect location" BackColor="#1A9082" BorderStyle="None" ForeColor="White" Height="39px" Width="250px" />
 <label id="locationLabel" class="common-label"></label>
 
 <asp:Button ID="stopAutoUpdate" runat="server" Text="Stop Automatic Update" BackColor="#1A9082" BorderStyle="None" ForeColor="White" Height="39px" Width="250px" />
@@ -847,16 +626,70 @@ img {vertical-align: middle;}
      });
  </script>
 
-    <!--Script for dropdown-->
-     <script>
-         document.addEventListener("click", function (e) {
-             const busDriver = document.getElementById("busDriver");
-             if (!busDriver.contains(e.target)) {
-                 const dropdownContent = busDriver.querySelector(".dropdown-content");
-                 dropdownContent.style.display = "none";
-             }
-         });
-     </script>
+    <script>
+        const button = document.getElementById("locationButton");
+        const label = document.getElementById("locationLabel");
+        const stopAutoUpdateButton = document.getElementById("stopAutoUpdate");
+        const locationHistory = document.getElementById("locationHistory"); // New element to display location history
+        let intervalId;
+
+        button.addEventListener("click", () => {
+            if (navigator.geolocation) {
+                button.disabled = true;
+                label.textContent = "Detecting your location...";
+                navigator.geolocation.getCurrentPosition(onSuccess, onError);
+            } else {
+                label.textContent = "Your browser does not support geolocation";
+            }
+        });
+
+        function onSuccess(position) {
+            let { latitude, longitude } = position.coords;
+
+            fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=3f8d83eeff5d44bd89dd4fe7ed45386e`)
+                .then(response => response.json())
+                .then(response => {
+                    let allDetails = response.results[0].components;
+                    console.table(allDetails);
+                    let { city, suburb, road, country } = allDetails;
+                    label.textContent = `${road}, ${suburb}, ${city}, ${country}`;
+
+                    // Create a new list item to display the location
+                    const locationInfo = `${road}, ${suburb}, ${city}, ${country}`;
+                    const locationItem = document.createElement("li");
+                    locationItem.textContent = locationInfo;
+
+                    // Append the location item to the history list
+                    locationHistory.appendChild(locationItem);
+                })
+                .catch(() => {
+                    label.textContent = "Something went wrong";
+                })
+                .finally(() => {
+                    button.disabled = false;
+                });
+        }
+
+        function onError(error) {
+            if (error.code == 1) {
+                label.textContent = "You denied the request";
+            } else if (error.code == 2) {
+                label.textContent = "Location is unavailable";
+            } else {
+                label.textContent = "Something went wrong";
+            }
+            button.disabled = true;
+        }
+
+        intervalId = setInterval(() => {
+            button.click();
+        }, 30000);
+
+        stopAutoUpdateButton.addEventListener("click", () => {
+            clearInterval(intervalId);
+        });
+
+    </script>
     <!--AVATAR-->
     <script>
         function updateAvatar(input) {
@@ -872,21 +705,218 @@ img {vertical-align: middle;}
             }
         }
     </script>
-    <!--RADIO-->
+    <!--Routes-->
     <script>
-        const radioButtons = document.querySelectorAll('input[type="radio"]');
-        const selectedLocation = document.getElementById('selectedLocation');
+        function autocomplete(inp, arr) {
+            /*the autocomplete function takes two arguments,
+            the text field element and an array of possible autocompleted values:*/
+            var currentFocus;
+            var selectedRouteText = document.getElementById("selected-route-text");
+            var confirmButton = document.getElementById("confirm-button");
 
-        // Add an event listener to each radio button
-        radioButtons.forEach((radio) => {
-            radio.addEventListener('change', () => {
-                // Update the selected location text when a radio button is selected
-                selectedLocation.textContent = radio.value;
+            /*execute a function when someone writes in the text field:*/
+            inp.addEventListener("input", function (e) {
+                var a, b, i, val = this.value;
+                /*close any already open lists of autocompleted values*/
+                closeAllLists();
+                if (!val) { return false; }
+                currentFocus = -1;
+                /*create a DIV element that will contain the items (values):*/
+                a = document.createElement("DIV");
+                a.setAttribute("id", this.id + "autocomplete-list");
+                a.setAttribute("class", "autocomplete-items");
+                /*append the DIV element as a child of the autocomplete container:*/
+                this.parentNode.appendChild(a);
+                /*for each item in the array...*/
+                for (i = 0; i < arr.length; i++) {
+                    /*check if the item starts with the same letters as the text field value:*/
+                    if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                        /*create a DIV element for each matching element:*/
+                        b = document.createElement("DIV");
+                        /*make the matching letters bold:*/
+                        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                        b.innerHTML += arr[i].substr(val.length);
+                        /*insert a input field that will hold the current array item's value:*/
+                        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                        /*execute a function when someone clicks on the item value (DIV element):*/
+                        b.addEventListener("click", function (e) {
+                            /*insert the value for the autocomplete text field:*/
+                            inp.value = this.getElementsByTagName("input")[0].value;
+                            /*update the selected route text:*/
+                            selectedRouteText.textContent = "Selected route: " + inp.value;
+                            /*enable the confirm button:*/
+                            confirmButton.disabled = false;
+                            /*close the list of autocompleted values,
+                            (or any other open lists of autocompleted values:*/
+                            closeAllLists();
+                        });
+                        a.appendChild(b);
+                    }
+                }
             });
-        });
-    </script>
+            /*execute a function presses a key on the keyboard:*/
+            inp.addEventListener("keydown", function (e) {
+                var x = document.getElementById(this.id + "autocomplete-list");
+                if (x) x = x.getElementsByTagName("div");
+                if (e.keyCode == 40) {
+                    /*If the arrow DOWN key is pressed,
+                    increase the currentFocus variable:*/
+                    currentFocus++;
+                    /*and and make the current item more visible:*/
+                    addActive(x);
+                } else if (e.keyCode == 38) { //up
+                    /*If the arrow UP key is pressed,
+                    decrease the currentFocus variable:*/
+                    currentFocus--;
+                    /*and and make the current item more visible:*/
+                    addActive(x);
+                } else if (e.keyCode == 13) {
+                    /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                    e.preventDefault();
+                    if (currentFocus > -1) {
+                        /*and simulate a click on the "active" item:*/
+                        if (x) x[currentFocus].click();
+                    }
+                }
+            });
+            function addActive(x) {
+                /*a function to classify an item as "active":*/
+                if (!x) return false;
+                /*start by removing the "active" class on all items:*/
+                removeActive(x);
+                if (currentFocus >= x.length) currentFocus = 0;
+                if (currentFocus < 0) currentFocus = (x.length - 1);
+                /*add class "autocomplete-active":*/
+                x[currentFocus].classList.add("autocomplete-active");
+            }
+            function removeActive(x) {
+                /*a function to remove the "active" class from all autocomplete items:*/
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove("autocomplete-active");
+                }
+            }
+            function closeAllLists(elmnt) {
+                /*close all autocomplete lists in the document,
+                except the one passed as an argument:*/
+                var x = document.getElementsByClassName("autocomplete-items");
+                for (var i = 0; i < x.length; i++) {
+                    if (elmnt != x[i] && elmnt != inp) {
+                        x[i].parentNode.removeChild(x[i]);
+                    }
+                }
+            }
+            /*execute a function when someone clicks in the document:*/
+            document.addEventListener("click", function (e) {
+                closeAllLists(e.target);
+            });
+        }
 
- <script src="script.js"></script>
+        /* An array containing bus routes: */
+        var busRoutes = [
+            "556 Alveda Park to Megawatt Park",
+            "521 Naturena to Kramerville",
+            "518C Sandton to Forest Hill",
+            "421A Auckland Park to Yeoville",
+            "413 Gandhi Square to Roodekraans",
+            "227 Judith's Paarl to Crosby",
+            "85 Westgate to Johannesburg North",
+            "80B Westgate to Randburg",
+            "63 Fashion District to Newland",
+            "42 Elandspark to Braamfontein",
+            "553 Protea Glen to Kya Sands",
+            "01 Gandhi Square to Parkhurst",
+            "03 Westgate to Highlands North",
+            "04 Gandhi Square to Rosebank",
+            "05 Stock Exchange to Birnam",
+            "05C Gandhi Square to Sandton",
+            "05D Gandhi Square to Sunninghill",
+            "07D Gandhi Square to Centurion",
+            "08 Stock Exchange to Barlopark",
+            "09 Gandhi Square to Linbro Park",
+            "10 Stock Exchange to Melrose Arch",
+            "12 Gandhi Square to Lonehill",
+            "13B Gandhi Square to Lyndhurst",
+            "06 Gandhi Square to Leeuwkop prison via Woodmead, Sunninghill, and Petervale",
+            "15B Gandhi Square to Lombardy",
+            "15F Gandhi Square to Longmeadow",
+            "18 Forest Hill to Johannesburg Hospital",
+            "32 Braamfontein to Eastgate Mall",
+            "33 Westgate to Bedford Gardens",
+            "34 Stock Exchange to Malvern",
+            "46 Rossetenville to Jhb Hospital",
+            "47 Gandhi Square to Townsview",
+            "48 Gandhi Square to Towerby",
+            "52B Fashion District to Winchester hills",
+            "54 Sanlam to The Glen",
+            "55B Gandhi Square to Evans Park",
+            "56 Mayfield Park to Braamfontein",
+            "59 Gandhi Square to Crown Extension",
+            "62 Claremont to Fashion District",
+            "71A Gandhi Square to Fairlands",
+            "74 Westgate to Blaigowrie",
+            "79 Gandhi Square to Parkhurst",
+            "80A Gandhi Square to Beverley Gardens",
+            "80D Gandhi Square to Dainfern",
+            "82 Gandhi Square to Ferndale",
+            "83 Westgate to Malanshof",
+            "83C Westgate to Randpark Ridge",
+            "86 Gandhi Square to Kya Sands",
+            "89 Gandhi to Northgate",
+            "260 Paarlshoop to Eastgate",
+            "262 Hillbrow to Kempton Park",
+            "412 Gandhi Square to Witpoortjie",
+            "414 Gandhi Square to Lindhaven",
+            "415 Gandhi Square to Strubens Valley",
+            "417 Gandhi Square to Davidsonville via Fleurhof",
+            "421D Belleveue East to Sunninghill",
+            "430 Westgate Mall to Sunninghill",
+            "520 Naturena to Randburg",
+            "45 Marist Brothers to Braamfontein",
+            "44 South Hills to Braamfontein",
+            "57 Naturena to Braamfontein",
+            "59 Gandhi Sqaure to Crown extension",
+            "67 Gandhi Square to Melville",
+            "63 Newlands to Fashion District",
+            "91 Kliptown to Heriotdale",
+            "92 Kliptown to Robertsham",
+            "93 Longtill to New Centre",
+            "313 Gandhi Square to Lyndhurst",
+            "420 Westgate Mall to Randburg",
+            "522 Naturena to Randburg",
+            "523 Naturena to Fourways Mall",
+            "546E Rosettenville to Leewkop Prison",
+            "547C Townsview to Santon",
+            "550 Princess to Jabulani Mall",
+            "562 Southgate Mall to ORT Freight Terminal",
+
+
+
+
+
+        ];
+
+        /*initiate the autocomplete function on the "myInput" element, and pass along the busRoutes array as possible autocomplete values:*/
+        autocomplete(document.getElementById("myInput"), busRoutes);
+    </script>
+    <!--view routes-->
+   <script>
+       // Get references to the button and routes container
+       const routeButton = document.getElementById("route-button");
+       const routesContainer = document.getElementById("routes-container");
+
+       // Add a click event listener to the button
+       routeButton.addEventListener("click", function () {
+           // Toggle the visibility of the routes container
+           if (routesContainer.style.display === "block") {
+               routesContainer.style.display = "none";
+           } else {
+               routesContainer.style.display = "block";
+           }
+       });
+   </script>
+
+
+
 </body>
 
 </html>
