@@ -203,6 +203,8 @@ img {vertical-align: middle;}
       </section>
     <!-- End Hero Section -->
         <!--Slideshow-->
+        <section id="slideshow" class="slideshow">
+              <div class="container" data-aos="fade-up">
        <div class="slideshow-container">
 
 <div class="mySlides fade">
@@ -235,6 +237,9 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
 
+      </div>  
+
+</section>
 
   <main id="main">
 
@@ -419,7 +424,8 @@ img {vertical-align: middle;}
 
           <ul id="locationHistory"></ul>      
 
-      
+         <script src="script.js"></script>
+
       </div>
     </section><!-- End Our Team Section -->
 

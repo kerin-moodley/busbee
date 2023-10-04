@@ -485,6 +485,7 @@
     <Content Include="dashboard-schedules.aspx" />
     <Content Include="ScholarPage.aspx" />
     <Content Include="script.js" />
+    <Content Include="Script2.js" />
     <Content Include="signup.aspx" />
     <Content Include="TripsA1.aspx" />
     <Content Include="TripsA2.aspx" />
