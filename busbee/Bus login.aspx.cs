@@ -46,7 +46,7 @@ namespace busbee
                             Session["Username"] = this.txtUsername.Text; // Store the username in a session for later use
                             txtPassword.Text = string.Empty;
                             txtUsername.Text = string.Empty;
-                            Response.Redirect("DashboardBus.aspx"); // Redirect to the home page
+                            Response.Redirect("Dashboard-BusDriver.aspx"); // Redirect to the home page
                         }
                         else
                         {

@@ -446,16 +446,16 @@
     <Content Include="dashboard-purchase.aspx" />
     <Content Include="dashboard.aspx" />
     <Content Include="DashboardBus.aspx" />
-    <Content Include="DashboardDelete.aspx" />
-    <Content Include="DashBoardMaps.aspx" />
-    <Content Include="DashboardProfile.aspx" />
-    <Content Include="DashboardReport.aspx" />
-    <Content Include="DashboardSchedule.aspx" />
     <Content Include="deletecss\bus.png" />
     <Content Include="deletecss\dashboard-purchase.aspx" />
     <Content Include="deletecss\delete.css" />
+    <Content Include="Images\B4today.png" />
     <Content Include="Images\busoutline.png" />
+    <Content Include="Images\contact.png" />
+    <Content Include="Images\location.png" />
+    <Content Include="Images\location1.png" />
     <Content Include="Images\Maintence.jpg" />
+    <Content Include="Images\Profile.png" />
     <Content Include="Images\Route.jpg" />
     <Content Include="Images\Weather.jpg" />
     <Content Include="landing.aspx" />
@@ -485,8 +485,14 @@
     <Content Include="dashboard-schedules.aspx" />
     <Content Include="ScholarPage.aspx" />
     <Content Include="script.js" />
-    <Content Include="Script2.js" />
     <Content Include="signup.aspx" />
+    <Content Include="signupcss\css\style.css" />
+    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.svg" />
+    <Content Include="signupcss\fonts\linearicons\Read Me.txt" />
+    <Content Include="signupcss\fonts\linearicons\style.css" />
+    <Content Include="signupcss\images\BUSSTOP1.png" />
+    <Content Include="signupcss\images\image-1.png" />
+    <Content Include="signupcss\images\image-2.png" />
     <Content Include="TripsA1.aspx" />
     <Content Include="TripsA2.aspx" />
     <Content Include="TripsA3.aspx" />
@@ -606,41 +612,6 @@
     </Compile>
     <Compile Include="DashboardBus.aspx.designer.cs">
       <DependentUpon>DashboardBus.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DashboardDelete.aspx.cs">
-      <DependentUpon>DashboardDelete.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DashboardDelete.aspx.designer.cs">
-      <DependentUpon>DashboardDelete.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DashBoardMaps.aspx.cs">
-      <DependentUpon>DashBoardMaps.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DashBoardMaps.aspx.designer.cs">
-      <DependentUpon>DashBoardMaps.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DashboardProfile.aspx.cs">
-      <DependentUpon>DashboardProfile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DashboardProfile.aspx.designer.cs">
-      <DependentUpon>DashboardProfile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DashboardReport.aspx.cs">
-      <DependentUpon>DashboardReport.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DashboardReport.aspx.designer.cs">
-      <DependentUpon>DashboardReport.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DashboardSchedule.aspx.cs">
-      <DependentUpon>DashboardSchedule.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DashboardSchedule.aspx.designer.cs">
-      <DependentUpon>DashboardSchedule.aspx</DependentUpon>
     </Compile>
     <Compile Include="deletecss\dashboard-purchase.aspx.cs">
       <DependentUpon>dashboard-purchase.aspx</DependentUpon>
@@ -1161,6 +1132,16 @@
     <Content Include="assets-2\scss\style.scss" />
     <None Include="Properties\PublishProfiles\BusBee - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\busbee20230911112628 - Web Deploy.pubxml" />
+    <Content Include="signupcss\css\style.css.map" />
+    <Content Include="signupcss\css\style.scss" />
+    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.eot" />
+    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.ttf" />
+    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.woff" />
+    <Content Include="signupcss\fonts\linearicons\fonts\Linearicons-Free.woff2" />
+    <Content Include="signupcss\fonts\linearicons\selection.json" />
+    <Content Include="signupcss\fonts\muli\Muli-Bold.ttf" />
+    <Content Include="signupcss\fonts\muli\Muli-Regular.ttf" />
+    <Content Include="signupcss\fonts\muli\Muli-SemiBold.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1177,6 +1158,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

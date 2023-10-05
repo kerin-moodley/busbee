@@ -1,6 +1,7 @@
 ﻿body {
     
 }
+/*Avatar*/
 .card-1{
     border:none;
 }
@@ -32,7 +33,7 @@ input[type="file"] {
     display: none;
 }
 
-
+/*input form*/
 .form-container {
     width: 700px;
     height: 370px;
@@ -117,7 +118,7 @@ input {
 }
 
     input[type=text] {
-        background-color: #f1f1f1;
+        background-color: #ddd;
         width: 100%;
     }
 

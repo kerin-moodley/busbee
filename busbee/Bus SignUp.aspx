@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="signupcss/fonts/linearicons/style.css">
 
     <!-- STYLE CSS -->
-    <link rel="stylesheet" href="signupcss/css/style1.css">
+    <link rel="stylesheet" href="signupcss/css/style.css">
     <script>
         function togglePasswordVisibility(inputId, iconId) {
             var passwordInput = document.getElementById(inputId);
@@ -126,7 +126,7 @@
           </center>
         </div>
       </form>
-      <img src="SignUpcss/images/BUSSTOP1.png" alt="" class="image-1">
+      <img src="signupcss/images/BUSSTOP1.png" alt="" class="image-2">
     </div>
   </div>
 

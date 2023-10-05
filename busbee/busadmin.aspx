@@ -63,86 +63,16 @@
 .dropdown:focus-within .dropdown-content {
   display: block;
 }
-/*slideshow*/
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 10000px;
-  position: relative;
-  margin: auto;
+div.scroll-container {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.5s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.1s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+div.scroll-container img {
+  padding: 10px;
 }
    </style>
 </head>
@@ -203,43 +133,17 @@ img {vertical-align: middle;}
       </section>
     <!-- End Hero Section -->
         <!--Slideshow-->
-        <section id="slideshow" class="slideshow">
-              <div class="container" data-aos="fade-up">
-       <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="Images/Maintence.jpg" style="width:100%"/>
+        <section>
+            
+<div class="scroll-container">
+  <img src="Images/Maintence.jpg" alt="Maintence" width="1800" height="500">
+  <img src="Images/Route.jpg" alt="Route" width="1800" height="500">
+  <img src="Images/Weather.jpg" alt="Weather" width="1800" height="500">
  
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="Images/Route.jpg" style="width:100%"/>
-  
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="Images/Weather.jpg" style="width:100%"/>
- 
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-      </div>  
-
-</section>
+        </section>
 
   <main id="main">
 
@@ -307,7 +211,7 @@ img {vertical-align: middle;}
       <div class="container">
 
         <div class="section-header">
-          <h2>Bus for Today</h2>
+          <h2>Bus 4 Today</h2>
         </div>
 
       </div>
@@ -581,56 +485,7 @@ img {vertical-align: middle;}
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
     <!--Slideshow-->
- <script>
-     let slideIndex = 1;
-     showSlides(slideIndex);
 
-     function plusSlides(n) {
-         showSlides(slideIndex += n);
-     }
-
-     function currentSlide(n) {
-         showSlides(slideIndex = n);
-     }
-
-     function showSlides(n) {
-         let i;
-         let slides = document.getElementsByClassName("mySlides");
-         let dots = document.getElementsByClassName("dot");
-         if (n > slides.length) { slideIndex = 1 }
-         if (n < 1) { slideIndex = slides.length }
-         for (i = 0; i < slides.length; i++) {
-             slides[i].style.display = "none";
-         }
-         for (i = 0; i < dots.length; i++) {
-             dots[i].className = dots[i].className.replace(" active", "");
-         }
-         slides[slideIndex - 1].style.display = "block";
-         dots[slideIndex - 1].className += " active";
-     }
-
-     // Automatic slideshow
-     let intervalId;
-
-     function startSlideShow() {
-         intervalId = setInterval(function () {
-             plusSlides(1); // Auto-advance to the next slide
-         }, 2000); // Change slide every 3 seconds (adjust as needed)
-     }
-
-     // Start the automatic slideshow when the page loads
-     window.addEventListener("load", startSlideShow);
-
-     // Pause the automatic slideshow when clicking previous or next buttons
-     document.querySelector(".prev").addEventListener("click", function () {
-         clearInterval(intervalId);
-         startSlideShow(); // Restart after clicking
-     });
-     document.querySelector(".next").addEventListener("click", function () {
-         clearInterval(intervalId);
-         startSlideShow(); // Restart after clicking
-     });
- </script>
 
     <script>
         const button = document.getElementById("locationButton");
