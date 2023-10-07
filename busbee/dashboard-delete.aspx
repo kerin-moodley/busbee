@@ -188,7 +188,7 @@
             <p>Please proceed with caution, as deleting your account will result in the loss of all your saved preferences and data within the app.</p>
             <br />
             <div class="form-group">
-                <label for="reasons">Why do you want to delete Busbee?</label>
+                <label for="reasons" style="font-size:18px">Why do you want to delete Busbee?</label>
                 <select name="reasons" id="reasons">
                     <option value="nothing">---</option>
                     <option value="ads">Too many ads</option>

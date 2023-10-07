@@ -25,6 +25,16 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+        <!--Script for dropdown-->
+     <script>
+         document.addEventListener("click", function (e) {
+             const busDriver = document.getElementById("busDriver");
+             if (!busDriver.contains(e.target)) {
+                 const dropdownContent = busDriver.querySelector(".dropdown-content");
+                 dropdownContent.style.display = "none";
+             }
+         });
+     </script>
     <!--style for dropDoown-->
    <style>
        /* Style for the dropdown menu */
@@ -527,16 +537,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-    <!--Script for dropdown-->
-     <script>
-         document.addEventListener("click", function (e) {
-             const busDriver = document.getElementById("busDriver");
-             if (!busDriver.contains(e.target)) {
-                 const dropdownContent = busDriver.querySelector(".dropdown-content");
-                 dropdownContent.style.display = "none";
-             }
-         });
-     </script>
+ 
 
 </body>
 

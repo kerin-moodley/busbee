@@ -156,10 +156,11 @@
 
    <div class="wrapper">
     <div class="avatar-container">
-        <asp:Image ID="imgProfile" runat="server" class="profile-avatar"/>
-        <asp:FileUpload ID="FileUpload1" runat="server" />
-        <p></p>
-        <asp:Button ID="btnUploadProfileImage" class="upload-btn" runat="server" Text="Upload Image" OnClick="btnUploadProfileImage_Click" />
+          <img src="profilecss/b2b.png" alt="Avatar" class="avatar" id="avatar" style="height:300px">
+            <p>JPG or PNG no larger than 5 MB</p>
+             <label for="fileInput" class="upload-btn">Upload Image</label>
+              <input type="file" id="fileInput" accept="image/*" onchange="updateAvatar(this)">
+            <div class="form-container">
 
         <div class="form-container">
             <div class="form-group">

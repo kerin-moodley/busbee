@@ -445,7 +445,6 @@
     <Content Include="dashboard-profile.aspx" />
     <Content Include="dashboard-purchase.aspx" />
     <Content Include="dashboard.aspx" />
-    <Content Include="DashboardBus.aspx" />
     <Content Include="deletecss\bus.png" />
     <Content Include="deletecss\dashboard-purchase.aspx" />
     <Content Include="deletecss\delete.css" />
@@ -465,6 +464,8 @@
     <Content Include="dashboard-notifications.aspx" />
     <Content Include="Payment.aspx" />
     <Content Include="profilecss\avatar.png" />
+    <Content Include="profilecss\b2b.png" />
+    <Content Include="profilecss\bee.png" />
     <Content Include="profilecss\bee1.png" />
     <Content Include="profilecss\beestyle.css" />
     <Content Include="profilecss\busdriver.jpg" />
@@ -605,13 +606,6 @@
     </Compile>
     <Compile Include="dashboard.aspx.designer.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DashboardBus.aspx.cs">
-      <DependentUpon>DashboardBus.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DashboardBus.aspx.designer.cs">
-      <DependentUpon>DashboardBus.aspx</DependentUpon>
     </Compile>
     <Compile Include="deletecss\dashboard-purchase.aspx.cs">
       <DependentUpon>dashboard-purchase.aspx</DependentUpon>
