@@ -204,7 +204,7 @@
              <br />
              
              <asp:Label ID="result" runat="server" Text="" class="booking-result"></asp:Label>
-             <asp:Button ID="confirm_button" class="confirm_button" runat="server" Text="Confirm Booking" OnClick="confirm_button_Click" Width="311px" />
+             <asp:Button ID="confirm_button" class="confirm_button" runat="server" Text="Confirm Booking" OnClick="confirm_button_Click" Width="432px" />
     </div>
 
    
