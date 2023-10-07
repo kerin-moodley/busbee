@@ -197,11 +197,14 @@
                  <asp:ListItem Value="19:00"></asp:ListItem>
              </asp:DropDownList>
 
-            <label for="notification_checkbox">Receive notifications:</label>
-            <asp:CheckBox ID="notification_checkbox" runat="server" />
+            <div>
+            </div>
+            
+            <asp:CheckBox ID="notification_checkbox" runat="server" Text="Receive notifications:" />                
 
         </div>
              
+             <br />
              
              <asp:Label ID="result" runat="server" Text="" class="booking-result"></asp:Label>
              <asp:Button ID="confirm_button" class="confirm_button" runat="server" Text="Confirm Booking" OnClick="confirm_button_Click" Width="311px" />

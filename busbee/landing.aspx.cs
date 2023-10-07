@@ -24,7 +24,7 @@ namespace busbee
 
             var email = new MimeMessage();
             email.From.Add(new MailboxAddress("Sender Name", useremail));
-            email.To.Add(new MailboxAddress("Receiver Name", "knmoodley1215@gmail.com"));
+            email.To.Add(new MailboxAddress("Receiver Name", "busbeeservices@gmail.com"));
             email.Subject = subject;
             email.Body = new TextPart(MimeKit.Text.TextFormat.Plain) { Text = message };
 
@@ -32,7 +32,7 @@ namespace busbee
             {
                 smtp.Connect("smtp.gmail.com", 587, false);
                 // Note: only needed if the SMTP server requires authentication
-                smtp.Authenticate("knmoodley1215@gmail.com", "gexmnyyzzngxerfz");
+                smtp.Authenticate("busbeeservices@gmail.com", "kdbl wpii hqjq kxds");
                 smtp.Send(email);
                 smtp.Disconnect(true);
             }

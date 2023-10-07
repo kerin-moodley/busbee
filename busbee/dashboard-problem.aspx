@@ -150,44 +150,77 @@
       <!-- End Sidebar scroll-->
     </aside>
     <!--  Sidebar End -->
+
+
+
+
+<form runat="server">
     <!--  Main wrapper -->
     <div class="body-wrapper">
       
 <!--REPORT A PROBLEM PAGE-->
 <div class="wrapper">
     <div class="inner">
-                    
-                     <div class="container" >
+        
+        <div class="container" >
         <h2>Report Issue</h2>
         <p>Welcome to the Report Issues page. Please use this form to report any problems or concerns you encounter during your bus journey.</p>
+         
+            <div class="form-group">
+          <label for="txtName">Name:</label>
+          <asp:TextBox ID="txtName" class="form-control" runat="server"></asp:TextBox>
+        </div>
+            
         <div class="form-group">
-            <label for="issueTitle">Issue Title:</label>
-            <input type="text" class="form-control" id="Text1" runat="server" required="required" />
+          <label for="txtemail">Email:</label>
+          <asp:TextBox ID="txtemail" class="form-control" runat="server"></asp:TextBox>
         </div>
-          <div class="form-group">
-            <label for="busNumber">Bus Number:</label>
-            <input type="text" class="form-control" id="Text2" runat="server" required="required" />
-        </div>
-           <div class="form-group">
-            <label for="dateof">Date of Incident:</label>
-            <input type="text" class="form-control" id="Text3" runat="server" required="required" />
-        </div>
-                   <div class="form-group">
-            <label for="descrip">Description:</label>
-            <input type="text" class="form-control" id="Text4" runat="server" required="required" />
-        </div>
-      <button type="button" id="btnSubmit" class="btn btn-success">Submit Issue</button>
 
+        <div class="form-group">
+            <label for="txtsubject">Issue Title:</label>
+            <asp:TextBox ID="txtsubject" class="form-control" runat="server"></asp:TextBox>
 
-       <asp:Label ID="Label1" runat="server" Text="" Style="display:inherit"></asp:Label>
-
-    </div>
+        <div class="form-group">
+            <label for="txtdescription">Description: (Please include date of incident as well as bus number)</label>
+            <asp:TextBox ID="txtdescription" class="form-control" runat="server"></asp:TextBox>
         </div>
-         </div>
 
+      <asp:Button ID="btnSubmit" class="btn btn-success" runat="server" Text="Submit Issue" OnClick="btnSubmit_Click" />
+
+        </div>
+
+                     </div>
 
     </div>
+
+</div>
+
+
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
+
+
+
+
+
+
+
+
+
+
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/sidebarmenu.js"></script>

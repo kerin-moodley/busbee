@@ -28,6 +28,8 @@
            // Check if the image has been dropped in div2
            if (document.getElementById("div2").contains(document.getElementById("drag1"))) {
                alert("Account has been deleted.");
+               // Go to another page
+               window.location.href = "landing.aspx";
            } else {
                alert("Please drag the image to the second rectangle.");
            }
@@ -211,7 +213,7 @@
             <br />
             <br />
             
-             <button  Text="DELETE" class="button button2" id="btnDelete"  OnClick="verifyImage()">DELETE</button>
+            <button  Text="DELETE" class="button button2" id="btnDelete"  OnClick="verifyImage()">DELETE</button>
 
         </div>
     </div>

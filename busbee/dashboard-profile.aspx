@@ -152,52 +152,44 @@
     <!--  Sidebar End -->
     <!--  Main wrapper -->
    
+    <form runat="server">
+
    <div class="wrapper">
     <div class="avatar-container">
-        <asp:Image ID="imgprofile" runat="server" class="profile-avatar"/>
+        <asp:Image ID="imgProfile" runat="server" class="profile-avatar"/>
+        <asp:FileUpload ID="FileUpload1" runat="server" />
         <p></p>
-        <label for="fileInput" class="upload-btn">Upload Image</label>
-        <input type="file" id="fileInput" accept="image/*" onchange="updateAvatar(this)">
+        <asp:Button ID="btnUploadProfileImage" class="upload-btn" runat="server" Text="Upload Image" OnClick="btnUploadProfileImage_Click" />
 
         <div class="form-container">
             <div class="form-group">
                 <label for="username">User Name:</label>
-                <input type="text"  class="form-control" id="Text8" runat="server" required="required" />
+                <asp:TextBox ID="txtUsername" class="form-control" runat="server"></asp:TextBox>
             </div>
 
             <div class="form-group">
                 <label for="firstname">First Name:</label>
-                <input type="text" class="form-control" id="Text9" runat="server" required="required" />
+                <asp:TextBox ID="txtFirstName" class="form-control" runat="server"></asp:TextBox>
             </div>
 
             <div class="form-group">
                 <label for="lastname">Last Name:</label>
-                <input type="text" class="form-control" id="Text10" runat="server" required="required" />
+                <asp:TextBox ID="txtLastName" class="form-control" runat="server"></asp:TextBox>
             </div>
 
             <div class="form-group">
                 <label for="email">Email Address:</label>
-                <input type="text" class="form-control" id="Text11" runat="server" required="required" />
+                <asp:TextBox ID="txtEmail" class="form-control" runat="server"></asp:TextBox>
             </div>
 
             <div class="form-group">
                 <label for="phone">Phone Number:</label>
-                <input type="text" class="form-control" id="Text12" runat="server" required="required" />
-            </div>
-
-            <div class="form-group">
-                <label for="bday">Birthday:</label>
-                <input type="text" class="form-control" id="Text13" runat="server" required="required" />
-            </div>
-
-            <div class="form-group">
-                <label for="location">Location:</label>
-                <input type="text" class="form-control" id="Text14" runat="server" required="required" />
+                <asp:TextBox ID="txtPhoneNum" class="form-control" runat="server"></asp:TextBox>
             </div>
             
             <br />
 
-            <button class="save-btn">Save Changes</button>
+            <asp:Button ID="btnSave" class="save-btn" runat="server" Text="Save Changes" />
         </div>
     </div>
 </div>
@@ -223,7 +215,10 @@
     }
 </script>
 
-  
+  </form>
+
+
+
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/sidebarmenu.js"></script>
