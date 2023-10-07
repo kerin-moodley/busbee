@@ -33,7 +33,7 @@ namespace busbee
         {
             string selectedBus = bus_select.SelectedValue; // Assuming bus_select is the ID of the DropDownList
             string selectedTime = time_input.SelectedValue; // Assuming time_input is the ID of the TextBox
-            bool receiveNotifications = notification_checkbox.Checked; // Assuming notification_checkbox is the ID of the CheckBox
+            bool receiveNotifications = chkNotifications.Checked; // Assuming notification_checkbox is the ID of the CheckBox
 
             // Calculate estimated arrival time and send notifications (C# equivalent logic)
             var selectedTimeParts = selectedTime.Split(':');
