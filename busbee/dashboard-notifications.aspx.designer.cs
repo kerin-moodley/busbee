@@ -42,13 +42,13 @@ namespace busbee
         protected global::System.Web.UI.WebControls.DropDownList time_input;
 
         /// <summary>
-        /// notification_checkbox control.
+        /// chkNotifications control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox notification_checkbox;
+        protected global::System.Web.UI.WebControls.CheckBox chkNotifications;
 
         /// <summary>
         /// result control.

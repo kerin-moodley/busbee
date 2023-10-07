@@ -165,7 +165,7 @@
 
 
         <div id="bus-selection">
-            <label for="bus_select">Choose a bus:</label>
+            <label for="bus_select" style="font-size:18px">Choose a bus:</label>
             <asp:DropDownList ID="bus_select" runat="server">
                 <asp:ListItem Value="412 Ghandi Square to Witpoortjie"></asp:ListItem>
                 <asp:ListItem Value="413 Ghandi Square to Roodekrans"></asp:ListItem>
@@ -176,7 +176,7 @@
 
 
         <div id="time-selection">
-            <label for="time_input">Choose a time between 04:00 AM and 07:00 PM:</label>
+            <label for="time_input"style="font-size:18px">Choose a time between 04:00 AM and 07:00 PM:</label>
 
             <asp:DropDownList ID="time_input" runat="server">
                  <asp:ListItem Value="07:00"></asp:ListItem>
@@ -197,8 +197,12 @@
                  <asp:ListItem Value="19:00"></asp:ListItem>
              </asp:DropDownList>
 
-            <label for="notification_checkbox">Receive notifications:</label>
-            <asp:CheckBox ID="notification_checkbox" runat="server" />
+            
+            <div class="form-group">
+    <label for="chkNotifications">Do you want to receive notifications?</label>
+    <asp:CheckBox ID="chkNotifications" runat="server" CssClass="custom-checkbox"  />
+</div>
+
 
         </div>
              
