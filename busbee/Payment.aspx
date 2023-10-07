@@ -6,16 +6,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="purchase/payment.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../dashboard-assets/css/styles.min.css" />
-  <link rel ="stylesheet" href="profilecss/profile.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    <link rel="stylesheet" href="purchase/payment.css" />
 </head>
 
 
@@ -156,10 +152,11 @@
       <!-- End Sidebar scroll-->
     </aside>
       </div>
-
-
-        <div class="col-lg-6 mx-auto">
-            <div class="card ">
+  
+                    
+                    
+                          <div class="col-lg-6 mx-auto">
+            <div class="card custom-card">
                 <div class="card-header">
                     <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
                         <!-- Credit card form tabs -->
@@ -235,7 +232,8 @@
                 </div>
             </div>
         </div>
-
+      
+      
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()

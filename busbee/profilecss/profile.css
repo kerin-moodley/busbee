@@ -132,3 +132,12 @@ input[type="file"] {
     display: none;
 }
 
+.custom-card {
+    width: 300px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 100px; /* Adjust the top margin to set the distance from the top */
+    border: 2px solid #ccc; /* Grey border */
+    padding: 20px;
+    background-color: #fff; /* Background color for the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a card-like effect */
+}
